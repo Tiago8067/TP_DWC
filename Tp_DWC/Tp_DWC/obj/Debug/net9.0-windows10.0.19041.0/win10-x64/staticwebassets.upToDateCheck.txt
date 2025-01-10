@@ -1,0 +1,4 @@
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\wwwroot\index.html
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\wwwroot\app.css
+wwwroot\app.css
+wwwroot\index.html

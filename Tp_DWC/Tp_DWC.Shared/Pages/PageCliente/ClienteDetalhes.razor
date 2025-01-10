@@ -1,0 +1,145 @@
+﻿@page "/clientedetalhes"
+@page "/clientedetalhes/{pk}"
+@using System.Net
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.ClienteService
+@* @using Microsoft.AspNetCore.Authorization
+@attribute [Authorize] *@
+
+<h3>ClienteDetalhes</h3>
+
+@if (string.IsNullOrEmpty(Pk))
+{
+    <PageTitle>Adicione um novo Cliente</PageTitle>
+    <h3>Adicione um novo Cliente</h3>
+}
+else
+{
+    <PageTitle>Atualize o Cliente</PageTitle>
+    <h3>Atualize o Cliente</h3>
+}
+
+<div class="row">
+    <EditForm Model="@Cliente" OnValidSubmit="@HandleValidResquest" OnInvalidSubmit="@HandleFailedResquest">
+        <div class="form-group">
+            <label class="col-md-3">Nome Do Cliente</label>
+            <InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Nome" required></InputText>
+        </div>
+        <div class="form-group">
+            <label class="col-md-3">Website</label>
+            <InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Website" required></InputText>
+        </div>
+        @* <div class="form-group">
+            <label class="col-md-3">Preço por Hora</label>
+            <InputNumber type="number" min="0" step="0.01" class="col-md-8 form-control" @bind-Value="@Cliente.Ativo" required></InputNumber>
+        </div> *@
+        <br />
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-warning">Guarda o Projeto</button>
+            <a @onclick="@GoToProjects" class="btn btn-primary">Cancelar</a>
+
+            <br />
+
+            @if (!string.IsNullOrEmpty(Pk))
+            {
+                <a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar Projeto</a>
+            }
+        </div>
+        <br />
+        <p style="color: red;">@Message</p>
+    </EditForm>
+</div>
+
+@code {
+    protected string Message = string.Empty;
+    protected Cliente Cliente { get; set; } = new Cliente();
+
+    [Parameter]
+    public string Pk { get; set; }
+
+    [Inject]
+    private IClienteService ClienteService { get; set; }
+
+    [Inject]
+    private NavigationManager NavigationManager { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(Pk))
+        {
+            Guid clientePk = Guid.Parse(Pk);
+
+            var apiProjeto = await ClienteService.GetCliente(clientePk);
+
+            if (apiProjeto != null)
+            {
+                Cliente = apiProjeto;
+            }
+        }
+    }
+
+    protected void HandleFailedResquest()
+    {
+        Message = "Algo correu mal, formulário não foi submetido";
+    }
+
+    protected void GoToProjects()
+    {
+        NavigationManager.NavigateTo("/clientes");
+    }
+
+    protected async Task DeleteProjeto()
+    {
+        if (!string.IsNullOrEmpty(Pk))
+        {
+            Guid utilId = Guid.Parse(Pk);
+
+            var result = await ClienteService.DeleteCliente(utilId);
+
+            if (result)
+            {
+                NavigationManager.NavigateTo("/clientes");
+            }
+            else
+            {
+                Message = "Erro ao apagar o cliente. Verifique os dados fornecidos.";
+            }
+        }
+    }
+
+    protected async void HandleValidResquest()
+    {
+        if (string.IsNullOrEmpty(Pk))
+        {
+            var result = await ClienteService.AddCliente(Cliente);
+
+            if (result)
+            {
+                NavigationManager.NavigateTo("/clientes");
+            }
+            else
+            {
+                Message = "Erro ao adicionar o cliente. Verifique os dados fornecidos.";
+            }
+        }
+        else
+        {
+            var result = await ClienteService.UpdateCliente(Cliente.PK_Cliente, Cliente);
+
+            if (result)
+            {
+                NavigationManager.NavigateTo("/clientes");
+            }
+            else
+            {
+                Message = "Erro ao atualizar o cliente. Verifique os dados fornecidos.";
+            }
+        }
+
+        if (HttpStatusCode.BadRequest != (HttpStatusCode)0 || HttpStatusCode.InternalServerError != (HttpStatusCode)0) //Encontrar o 200
+        {
+            Message = "O Nome Cliente já existe! Insira outro.";
+        }
+    }
+}

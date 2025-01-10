@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Tp_DWC.Web.Client.props" />
+</Project>

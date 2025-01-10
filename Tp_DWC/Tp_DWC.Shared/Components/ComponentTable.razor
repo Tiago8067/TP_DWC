@@ -1,0 +1,47 @@
+﻿
+<table class="table">
+    <thead>
+        <tr>
+            @foreach (var header in Headers)
+            {
+                <th>@header</th>
+            }
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Items)
+        {
+            <tr>
+                @foreach (var column in Columns)
+                {
+                    <td>@column(item)</td>
+                }
+                <td>
+                    <a href="@EditCallback(item)" class="btn btn-success">Editar</a>
+                    @if (DeleteCallback.HasDelegate)
+                    {
+                        <button @onclick="() => DeleteCallback.InvokeAsync(item)" class="btn btn-danger">Apagar</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public IEnumerable<object> Items { get; set; }
+
+    [Parameter]
+    public IEnumerable<string> Headers { get; set; }
+
+    [Parameter]
+    public IEnumerable<Func<object, object>> Columns { get; set; }
+
+    [Parameter]
+    public Func<object, string> EditCallback { get; set; }
+
+    [Parameter]
+    public EventCallback<object> DeleteCallback { get; set; }
+}

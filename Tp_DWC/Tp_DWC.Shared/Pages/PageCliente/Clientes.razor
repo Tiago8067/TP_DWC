@@ -1,0 +1,52 @@
+﻿@page "/clientes"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.ClienteService
+@* @using Microsoft.AspNetCore.Authorization *@
+@* @attribute [Authorize] *@
+
+<h3>Lista de Clientes</h3>
+
+<a href="@($"ClienteDetalhes")" class="btn btn-success">Adicionar um Novo Projeto</a>
+
+<br />
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Website</th>
+            <th>Ativo</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var item in clientes)
+        {
+            <tr>
+                @* <td>@item.Id</td> *@
+                <td>@item.Nome</td>
+                <td>@item.Website</td>
+                <td>@(item.Ativo ? "Sim" : "Não")</td>
+                <td>
+                    <a href="@($"ClienteDetalhes/{item.PK_Cliente}")" class="btn btn-success">Editar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Inject]
+    private IClienteService ClienteService { get; set; }
+
+    public IEnumerable<Cliente> clientes { get; set; } = new List<Cliente>();
+
+    protected async override Task OnInitializedAsync()
+    {
+        var apiClientes = await ClienteService.AllClientes();
+
+        if (apiClientes != null && apiClientes.Any())
+        {
+            clientes = apiClientes;
+        }
+    }
+}

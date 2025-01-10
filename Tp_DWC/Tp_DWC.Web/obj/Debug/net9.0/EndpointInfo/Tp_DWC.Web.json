@@ -1,0 +1,689 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Tp_DWC.Web",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Cliente": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Cliente"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cliente/{pk}": {
+      "get": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "pk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Cliente"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "pk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cliente"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Cliente"
+        ],
+        "parameters": [
+          {
+            "name": "pk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Cliente"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Assistencia": {
+        "required": [
+          "dataCriacao",
+          "estadoId"
+        ],
+        "type": "object",
+        "properties": {
+          "numeroInterno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dataCriacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataPrevisaoResolucao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataPrevisaoEntrega": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataConclusao": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "descricaoProduto": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "descricaoProblema": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "estadoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estado": {
+            "$ref": "#/components/schemas/Estado"
+          },
+          "registosFotograficos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistoFotografico"
+            },
+            "nullable": true
+          },
+          "registosMaoDeObra": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistoMaoDeObra"
+            },
+            "nullable": true
+          },
+          "registosMateriais": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RegistoMaterial"
+            },
+            "nullable": true
+          },
+          "mudancasEstado": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MudancaEstado"
+            },
+            "nullable": true
+          },
+          "clienteId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "pK_Cliente": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "boolean"
+          },
+          "moradas": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Morada"
+            },
+            "nullable": true
+          },
+          "contactos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Contacto"
+            },
+            "nullable": true
+          },
+          "emails": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Email"
+            },
+            "nullable": true
+          },
+          "assistencias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assistencia"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Contacto": {
+        "type": "object",
+        "properties": {
+          "pK_Contacto": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "tipoContacto": {
+            "type": "string",
+            "nullable": true
+          },
+          "numero": {
+            "type": "string",
+            "nullable": true
+          },
+          "clienteId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Email": {
+        "type": "object",
+        "properties": {
+          "pK_Email": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "tipoEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "enderecoEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "clienteId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Estado": {
+        "required": [
+          "descricao"
+        ],
+        "type": "object",
+        "properties": {
+          "pK_Estado": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "descricao": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "assistencias": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assistencia"
+            },
+            "nullable": true
+          },
+          "mudancasEstado": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/MudancaEstado"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Morada": {
+        "type": "object",
+        "properties": {
+          "pK_Morada": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "nomeMorada": {
+            "type": "string",
+            "nullable": true
+          },
+          "moradaCompleta": {
+            "type": "string",
+            "nullable": true
+          },
+          "empresa": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoMorada": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoPostal": {
+            "type": "string",
+            "nullable": true
+          },
+          "localidade": {
+            "type": "string",
+            "nullable": true
+          },
+          "pais": {
+            "type": "string",
+            "nullable": true
+          },
+          "nif": {
+            "maxLength": 9,
+            "type": "string",
+            "nullable": true
+          },
+          "clienteId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "cliente": {
+            "$ref": "#/components/schemas/Cliente"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MudancaEstado": {
+        "required": [
+          "assistenciaId",
+          "dataMudanca",
+          "estadoAtualId",
+          "novoEstadoId"
+        ],
+        "type": "object",
+        "properties": {
+          "pK_MudancaEstado": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estadoAtualId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "estadoAtual": {
+            "$ref": "#/components/schemas/Estado"
+          },
+          "novoEstadoId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "novoEstado": {
+            "$ref": "#/components/schemas/Estado"
+          },
+          "dataMudanca": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "assistenciaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assistencia": {
+            "$ref": "#/components/schemas/Assistencia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistoFotografico": {
+        "required": [
+          "assistenciaId",
+          "dataRegisto"
+        ],
+        "type": "object",
+        "properties": {
+          "pK_RegistoFotografico": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "foto": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataRegisto": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "assistenciaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assistencia": {
+            "$ref": "#/components/schemas/Assistencia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistoMaoDeObra": {
+        "required": [
+          "assistenciaId",
+          "dataRegisto"
+        ],
+        "type": "object",
+        "properties": {
+          "pK_RegistoMaoDeObra": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quantidadeHoras": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "precoUnitario": {
+            "type": "number",
+            "format": "double"
+          },
+          "precoTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataRegisto": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "assistenciaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assistencia": {
+            "$ref": "#/components/schemas/Assistencia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "RegistoMaterial": {
+        "required": [
+          "assistenciaId",
+          "dataRegisto"
+        ],
+        "type": "object",
+        "properties": {
+          "pK_RegistoMaterial": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quantidadeMaterial": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "precoUnitario": {
+            "type": "number",
+            "format": "double"
+          },
+          "precoTotal": {
+            "type": "number",
+            "format": "double"
+          },
+          "observacoes": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataRegisto": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "assistenciaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assistencia": {
+            "$ref": "#/components/schemas/Assistencia"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

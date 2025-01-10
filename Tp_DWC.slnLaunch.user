@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Novo Perfil",
+    "Projects": [
+      {
+        "Path": "Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj",
+        "Action": "StartWithoutDebugging"
+      },
+      {
+        "Path": "Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]

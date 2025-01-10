@@ -1,0 +1,7 @@
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\wwwroot\app.css
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\wwwroot\bootstrap\bootstrap.min.css
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\app.css
+wwwroot\bootstrap\bootstrap.min.css
+wwwroot\bootstrap\bootstrap.min.css.map
+wwwroot\favicon.png

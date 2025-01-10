@@ -1,0 +1,4 @@
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\wwwroot\appsettings.Development.json
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\wwwroot\appsettings.json
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
