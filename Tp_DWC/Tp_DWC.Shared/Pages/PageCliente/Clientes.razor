@@ -1,38 +1,31 @@
 ﻿@page "/clientes"
 @using Tp_DWC.Shared.Models
 @using Tp_DWC.Shared.Services.ClienteService
-@* @using Microsoft.AspNetCore.Authorization *@
-@* @attribute [Authorize] *@
 
 <h3>Lista de Clientes</h3>
 
 <a href="@($"ClienteDetalhes")" class="btn btn-success">Adicionar um Novo Projeto</a>
 
 <br />
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Website</th>
-            <th>Ativo</th>
-        </tr>
-    </thead>
 
-    <tbody>
-        @foreach (var item in clientes)
+<Tp_DWC.Shared.Components.ComponentTable 
+    Items="clientes" 
+    Headers="headers"
+    Columns="columns"
+    EditCallback="EditClienteCallback"
+    AdditionalButtons="RenderAdditionalButtons"></Tp_DWC.Shared.Components.ComponentTable>
+
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes do Cliente" IsOpen="IsModalOpen" OnClose="CloseModal">
+    <BodyContent>
+        @if (SelectedCliente != null)
         {
-            <tr>
-                @* <td>@item.Id</td> *@
-                <td>@item.Nome</td>
-                <td>@item.Website</td>
-                <td>@(item.Ativo ? "Sim" : "Não")</td>
-                <td>
-                    <a href="@($"ClienteDetalhes/{item.PK_Cliente}")" class="btn btn-success">Editar</a>
-                </td>
-            </tr>
+            <p><strong>Nome:</strong> @SelectedCliente.Nome</p>
+            <p><strong>Website:</strong> @SelectedCliente.Website</p>
+            <p><strong>Ativo:</strong> @(SelectedCliente.Ativo ? "Sim" : "Não")</p>
         }
-    </tbody>
-</table>
+    </BodyContent>
+</Tp_DWC.Shared.Components.ComponentModal>
+
 
 @code {
     [Inject]
@@ -49,4 +42,46 @@
             clientes = apiClientes;
         }
     }
+
+    public List<string> headers { get; set; } = new List<string> { "Nome", "Website", "Ativo" };
+    public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
+    {
+        item => ((Cliente)item).Nome,
+        item => ((Cliente)item).Website,
+        item => ((Cliente)item).Ativo ? "Sim" : "Não"
+    };
+    private string EditClienteCallback(object item)
+    {
+        if (item is Cliente cliente)
+        {
+            return $"ClienteDetalhes/{cliente.PK_Cliente}";
+        }
+        return "#";
+    }
+
+    public Cliente SelectedCliente { get; set; }
+    public bool IsModalOpen { get; set; } = false;
+    private void OpenModal(object item)
+    {
+        if (item is Cliente cliente)
+        {
+            SelectedCliente = cliente;
+            IsModalOpen = true;
+        }
+    }
+
+    private void CloseModal()
+    {
+        IsModalOpen = false;
+        SelectedCliente = null;
+    }
+
+    private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
+    {
+        __builder.OpenElement(0, "button");
+        __builder.AddAttribute(1, "class", "btn btn-info");
+        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        __builder.AddContent(3, "Ver Detalhes");
+        __builder.CloseElement();
+    };
 }

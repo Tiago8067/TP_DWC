@@ -23,6 +23,10 @@
                     {
                         <button @onclick="() => DeleteCallback.InvokeAsync(item)" class="btn btn-danger">Apagar</button>
                     }
+                    @if (AdditionalButtons != null)
+                    {
+                        @AdditionalButtons(item)
+                    }
                 </td>
             </tr>
         }
@@ -44,4 +48,7 @@
 
     [Parameter]
     public EventCallback<object> DeleteCallback { get; set; }
+
+    [Parameter]
+    public RenderFragment<object> AdditionalButtons { get; set; }
 }

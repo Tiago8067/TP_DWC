@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Tp_DWC.Web.Client",
   "resources": {
-    "hash": "sha256-EUfvV8rmPNBty2lA4zkrJOXwdKaFjN0k/k4DqCVGdOI=",
+    "hash": "sha256-cpTlm1FBy4qy5P49vxUykll+XZ6YUbL/ZIcmRgm6AaA=",
     "fingerprinting": {
       "Azure.Core.92q6rqqhly.wasm": "Azure.Core.wasm",
       "Azure.Identity.b6ekoqlu3w.wasm": "Azure.Identity.wasm",
@@ -234,10 +234,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Tp_DWC.Shared.nmd81sg09t.wasm": "Tp_DWC.Shared.wasm",
-      "Tp_DWC.Shared.t6qn910cea.pdb": "Tp_DWC.Shared.pdb",
-      "Tp_DWC.Web.Client.rbk5fz8hcp.wasm": "Tp_DWC.Web.Client.wasm",
-      "Tp_DWC.Web.Client.f836tt4676.pdb": "Tp_DWC.Web.Client.pdb"
+      "Tp_DWC.Shared.nfc43fi5cr.wasm": "Tp_DWC.Shared.wasm",
+      "Tp_DWC.Shared.j8rbhi7cxi.pdb": "Tp_DWC.Shared.pdb",
+      "Tp_DWC.Web.Client.epzodqn8s7.wasm": "Tp_DWC.Web.Client.wasm",
+      "Tp_DWC.Web.Client.zjx3nr2qpv.pdb": "Tp_DWC.Web.Client.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.hmanx9razn.js": "sha256-d7UNSArplVrX3arY2Kmhxp1wN79ng8hLqIBrkiQ9Gbo="
@@ -480,12 +480,12 @@
       "WindowsBase.377bly7twj.wasm": "sha256-0VmBdMjdc0nZGHDSfaGirT6y3mJTM0qx8eqCUC/rpiE=",
       "mscorlib.o0184ey5ia.wasm": "sha256-2GxNKZQJVJvYMUxSTuXa5V2qxawSMMHZtwG33SKVCZU=",
       "netstandard.hb3h2rr8mk.wasm": "sha256-DWn9+RH/ElZQ6imlYqVwZvir1KTzNwY18AzGmnyiymU=",
-      "Tp_DWC.Shared.nmd81sg09t.wasm": "sha256-/4dHC7yOFS9clIfwXMDEIbt7+77Q8a4a1/vKIzw9G0Q=",
-      "Tp_DWC.Web.Client.rbk5fz8hcp.wasm": "sha256-J5FTaDWcBZ5891R3UcWAdILKok8vEqCm1JADQ15sWGs="
+      "Tp_DWC.Shared.nfc43fi5cr.wasm": "sha256-8/ZNXiyNq4hilKqvFoZN+S9L0VTZVeKUXjnoeVYdhF4=",
+      "Tp_DWC.Web.Client.epzodqn8s7.wasm": "sha256-PvBni8i5UVq6VGgRTM5Y98gbPNPU5G4YccO2r5Hbmvc="
     },
     "pdb": {
-      "Tp_DWC.Shared.t6qn910cea.pdb": "sha256-VTFTkRt3CWQwpYaQNsrR8wN9xfShw88/FY/1esoeYYs=",
-      "Tp_DWC.Web.Client.f836tt4676.pdb": "sha256-3+aAjYX2IaBieVV6fcOZJ7RXih+iZFw4pYIWrnosXLk="
+      "Tp_DWC.Shared.j8rbhi7cxi.pdb": "sha256-XfhGzxao9CPCeaDn5K1VRdrViZ5rJz/I1GblacDLh5c=",
+      "Tp_DWC.Web.Client.zjx3nr2qpv.pdb": "sha256-YdDai6fOLyqEOP0FRKbydFmsRQknlK5IHx6DrnZmLas="
     }
   },
   "cacheBootResources": true,

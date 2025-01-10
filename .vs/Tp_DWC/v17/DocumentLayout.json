@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\components\\componentmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\components\\componentmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -21,14 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\clienteservice\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\clienteservice\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +63,6 @@
       "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\clienteservice\\iclienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -75,58 +83,97 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T16:11:59.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T16:08:31.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\appsettings.json",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\appsettings.json",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-10T16:04:36.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ComponentModal.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-10T15:47:13.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "ComponentTable.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-10T15:02:52.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\appsettings.json",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-10T12:51:12.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "ClienteDetalhes.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGkAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-10T12:29:46.997Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Clientes.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAkwB8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAEgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-10T12:19:33.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\ClienteService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\ClienteService.cs",
@@ -134,12 +181,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\ClienteService.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAwEoAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T12:05:45.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T12:05:45.162Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "IClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\IClienteService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\IClienteService.cs",
@@ -147,25 +193,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\ClienteService\\IClienteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T12:05:16.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T12:05:16.513Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-10T11:59:51.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\ClienteController.cs",
@@ -173,25 +205,24 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\ClienteController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:36:37.934Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T11:36:37.934Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwCEAAACMAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAwCEAAACKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T11:34:41.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\Cliente.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\Cliente.cs",
@@ -199,12 +230,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\Cliente.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:22:02.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T11:22:02.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
@@ -212,12 +242,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:17:41.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T11:17:41.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\IClienteService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\IClienteService.cs",
@@ -225,12 +254,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\IClienteService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T11:17:22.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T11:17:22.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Data\\ApplicationDbContext.cs",
@@ -238,12 +266,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAowDEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:26:41.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T10:26:41.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Layout\\NavMenu.razor",
@@ -251,8 +278,7 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T09:58:05.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-10T09:58:05.422Z"
             }
           ]
         }

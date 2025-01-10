@@ -31,12 +31,11 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IClienteService, ClienteService>();
 
 //Adcionar os services do Frontend
-//builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
-
-
+builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
 builder.Services.AddHttpClient<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>(client =>
 {
-    client.BaseAddress = new Uri(apiBaseAddress);
+    //client.BaseAddress = new Uri(apiBaseAddress);
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/"); // Base URL do seu backend
 });
 
 // Adicionar suporte a controladores

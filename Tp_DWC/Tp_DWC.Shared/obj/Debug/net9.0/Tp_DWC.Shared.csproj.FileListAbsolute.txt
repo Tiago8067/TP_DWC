@@ -33,3 +33,4 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\re
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.runtimeconfig.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.genruntimeconfig.cache
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.sourcelink.json
