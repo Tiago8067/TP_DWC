@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Tp_DWC.Shared.Services;
 using Tp_DWC.Shared.Services.ClienteService;
+using Tp_DWC.Shared.Services.MoradaService;
 using Tp_DWC.Web.Client.Services;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
@@ -16,5 +17,6 @@ builder.Services.AddScoped(sp => new HttpClient
 
 //Adcionar os services do Frontend
 builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IMoradaService, MoradaService>();
 
 await builder.Build().RunAsync();

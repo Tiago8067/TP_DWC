@@ -1,6 +1,161 @@
-﻿
-<h3>MoradasDetalhes</h3>
+﻿@page "/moradadetalhes"
+@page "/moradadetalhes/{clientePk}/{moradaPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.MoradaService
+@inject IMoradaService MoradaService
+@inject NavigationManager NavigationManager
+
+<h3>Detalhes da Morada</h3>
+
+@if (string.IsNullOrEmpty(clientePk))
+{
+    <p>Cliente não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(moradaPk))
+    {
+        <PageTitle>Adicionar Nova Morada</PageTitle>
+        <h3>Adicionar Nova Morada</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Morada</PageTitle>
+        <h3>Atualizar Morada</h3>
+    }
+
+    <EditForm Model="@morada" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Nome da Morada</label>
+            <InputText class="form-control" @bind-Value="morada.NomeMorada" />
+        </div>
+        <div class="form-group">
+            <label>Morada Completa</label>
+            <InputText class="form-control" @bind-Value="morada.MoradaCompleta" />
+        </div>
+        <div class="form-group">
+            <label>Empresa</label>
+            <InputText class="form-control" @bind-Value="morada.Empresa" />
+        </div>
+        <div class="form-group">
+            <label>Tipo de Morada</label>
+            <InputText class="form-control" @bind-Value="morada.TipoMorada" />
+        </div>
+        <div class="form-group">
+            <label>Código Postal</label>
+            <InputText class="form-control" @bind-Value="morada.CodigoPostal" />
+        </div>
+        <div class="form-group">
+            <label>Localidade</label>
+            <InputText class="form-control" @bind-Value="morada.Localidade" />
+        </div>
+        <div class="form-group">
+            <label>País</label>
+            <InputText class="form-control" @bind-Value="morada.Pais" />
+        </div>
+        <div class="form-group">
+            <label>NIF</label>
+            <InputText class="form-control" @bind-Value="morada.NIF" maxlength="9" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning">
+            @(string.IsNullOrEmpty(moradaPk) ? "Adicionar Morada" : "Atualizar Morada")
+        </button>
+        @if (!string.IsNullOrEmpty(moradaPk))
+        {
+            <button type="button" class="btn btn-danger" @onclick="DeleteMorada">Excluir Morada</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Cancelar</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
 
 @code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string moradaPk { get; set; }  // Opcional
 
+    private Morada morada { get; set; } = new Morada();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(clientePk))
+        {
+            // Se for atualização (moradaPk informado), obtém a morada
+            if (!string.IsNullOrEmpty(moradaPk))
+            {
+                Guid cPk = Guid.Parse(clientePk);
+                Guid mPk = Guid.Parse(moradaPk);
+                var result = await MoradaService.GetMorada(cPk, mPk);
+                if (result != null)
+                {
+                    morada = result;
+                }
+                else
+                {
+                    Message = "Morada não encontrada.";
+                }
+            }
+        }
+        else
+        {
+            Message = "Cliente não informado.";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        Guid clienteId = Guid.Parse(clientePk);
+        if (string.IsNullOrEmpty(moradaPk))
+        {
+            // Inserir nova morada para o cliente
+            result = await MoradaService.AddMoradaToCliente(clienteId, morada);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid mPk = Guid.Parse(moradaPk);
+            result = await MoradaService.UpdateMoradaToCliente(clienteId, mPk, morada);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar a morada.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteMorada()
+    {
+        if (!string.IsNullOrEmpty(moradaPk))
+        {
+            Guid clienteId = Guid.Parse(clientePk);
+            Guid mPk = Guid.Parse(moradaPk);
+            bool result = await MoradaService.DeleteMoradaToCliente(clienteId, mPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+            }
+            else
+            {
+                Message = "Erro ao excluir a morada.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+    }
 }

@@ -1,21 +1,19 @@
 ﻿@using Tp_DWC.Shared.Models
 
-<h3>Moradas do Cliente</h3>
+<h3>Emails do Cliente</h3>
 
-<a href="@($"/moradadetalhes/{clientePk}")" class="btn btn-success">
-    Adicionar uma Nova Morada
-</a>
+<a href="@($"MoradasDetalhes")" class="btn btn-success">Adicionar um Novo Email</a>
 
 <br />
 
-<Tp_DWC.Shared.Components.ComponentTable Items="moradas"
+<Tp_DWC.Shared.Components.ComponentTable Items="emails"
     Headers="headers"
     Columns="columns"
     EditCallback="EditClienteCallback"
     AdditionalButtons="RenderAdditionalButtons">
 </Tp_DWC.Shared.Components.ComponentTable>
 
-<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes da Morada" IsOpen="IsModalOpen" OnClose="CloseModal">
+@* <Tp_DWC.Shared.Components.ComponentModal Title="Detalhes do Cliente" IsOpen="IsModalOpen" OnClose="CloseModal">
     <BodyContent>
         @if (SelectedMorada != null)
         {
@@ -29,45 +27,39 @@
             <p><strong>NIF:</strong> @SelectedMorada.NIF</p>
         }
     </BodyContent>
-</Tp_DWC.Shared.Components.ComponentModal>
+</Tp_DWC.Shared.Components.ComponentModal> *@
 
 @code {
     [Parameter]
-    public List<Morada> moradas { get; set; }
-
-    // parâmetro para o ID do cliente
-    [Parameter]
-    public string clientePk { get; set; }
+    public List<Email> emails { get; set; }
 
     protected async override Task OnInitializedAsync()
     {
     }
 
-    public List<string> headers { get; set; } = new List<string> { "País", "Localidade", "Código Postal", "Tipo de Morada" };
+    public List<string> headers { get; set; } = new List<string> { "Tipo", "Email" };
     public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
     {
-        item => ((Morada)item).Pais,
-        item => ((Morada)item).Localidade,
-        item => ((Morada)item).CodigoPostal,
-        item => ((Morada)item).TipoMorada
+        item => ((Email)item).TipoEmail,
+        item => ((Email)item).EnderecoEmail
     };
     private string EditClienteCallback(object item)
     {
-        if (item is Morada morada)
+        if (item is Email email)
         {
-            // return "#";
-            return $"/moradadetalhes/{morada.ClienteId}/{morada.PK_Morada}";
+            return "#";
+            //return $"ClienteDetalhes/{morada.ClienteId}/moradasdetalhes/{morada.PK_Morada}";
         }
         return "#";
     }
 
-    public Morada SelectedMorada { get; set; }
+    public Email SelectedEmail { get; set; }
     public bool IsModalOpen { get; set; } = false;
     private void OpenModal(object item)
     {
-        if (item is Morada morada)
+        if (item is Email email)
         {
-            SelectedMorada = morada;
+            SelectedEmail = email;
             IsModalOpen = true;
         }
     }
@@ -75,15 +67,15 @@
     private void CloseModal()
     {
         IsModalOpen = false;
-        SelectedMorada = null;
+        SelectedEmail = null;
     }
 
     private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
     {
-        __builder.OpenElement(0, "button");
-        __builder.AddAttribute(1, "class", "btn btn-info");
-        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
-        __builder.AddContent(3, "Ver Detalhes");
-        __builder.CloseElement();
+        // __builder.OpenElement(0, "button");
+        // __builder.AddAttribute(1, "class", "btn btn-info");
+        // __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        // __builder.AddContent(3, "Ver Detalhes");
+        // __builder.CloseElement();
     };
 }

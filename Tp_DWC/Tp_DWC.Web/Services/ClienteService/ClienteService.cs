@@ -28,6 +28,8 @@ namespace Tp_DWC.Web.Services.ClienteService
 
             var cliente = await _context.Clientes
                                     .Include(c => c.Moradas) // Inclui os relacionamentos que forem necessários
+                                    .Include(c => c.Contactos) 
+                                    .Include(c => c.Emails) 
                                     .FirstOrDefaultAsync(c => c.PK_Cliente == pk);
 
             if (cliente == null)

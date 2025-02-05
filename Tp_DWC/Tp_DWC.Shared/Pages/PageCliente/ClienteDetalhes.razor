@@ -34,22 +34,36 @@ else
         <br />
 
         <div class="form-group">
-            <button type="submit" class="btn btn-warning">Guarda o Projeto</button>
-            <a @onclick="@GoToProjects" class="btn btn-primary">Cancelar</a>
+            <button type="submit" class="btn btn-warning">Guardar o Cliente</button>
 
             @if (!string.IsNullOrEmpty(Pk))
             {
-                <a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar Projeto</a>
+                <a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar o Cliente</a>
             }
+
+            <a @onclick="@GoToProjects" class="btn btn-primary">Voltar Atrás</a>
         </div>
         <br />
         <p style="color: red;">@Message</p>
     </EditForm>
 
-    <!--Integrar Moradas deste Cliente-->
-    <Tp_DWC.Shared.Pages.PageMorada.Moradas moradas="@Cliente.Moradas">
 
-    </Tp_DWC.Shared.Pages.PageMorada.Moradas>
+	@if (!string.IsNullOrEmpty(Pk))
+	{
+		<!--Integrar Moradas deste Cliente-->
+		<Tp_DWC.Shared.Pages.PageMorada.Moradas moradas="@Cliente.Moradas"
+												clientePk="@Pk" />
+
+		<!--Integrar Contactos deste Cliente-->
+		<Tp_DWC.Shared.Pages.PageContacto.ContactosList contactos="@Cliente.Contactos">
+
+		</Tp_DWC.Shared.Pages.PageContacto.ContactosList>
+
+		<!--Integrar Emails deste Cliente-->
+		<Tp_DWC.Shared.Pages.PageEmail.EmailsList emails="@Cliente.Emails">
+
+		</Tp_DWC.Shared.Pages.PageEmail.EmailsList>
+	}
 </div>
 
 @code {
