@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Path": "Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj",
-        "Action": "StartWithoutDebugging"
+        "Action": "Start",
+        "DebugTarget": "Tp_DWC.Shared"
       },
       {
         "Path": "Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj",
-        "Action": "StartWithoutDebugging"
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
       }
     ]
   }

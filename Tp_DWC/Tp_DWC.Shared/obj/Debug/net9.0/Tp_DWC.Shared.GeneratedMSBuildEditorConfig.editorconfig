@@ -52,6 +52,34 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcQ2xpZW50ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageCliente/DetalhesCliente.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcRGV0YWxoZXNDbGllbnRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageContacto/ContactosDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNvbnRhY3RvXENvbnRhY3Rvc0RldGFsaGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageContacto/ContactosList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNvbnRhY3RvXENvbnRhY3Rvc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageEmail/EmailsDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVtYWlsXEVtYWlsc0RldGFsaGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageEmail/EmailsList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUVtYWlsXEVtYWlsc0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageMorada/Moradas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZU1vcmFkYVxNb3JhZGFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageMorada/MoradasDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZU1vcmFkYVxNb3JhZGFzRGV0YWxoZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

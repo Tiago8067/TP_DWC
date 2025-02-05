@@ -1,0 +1,137 @@
+﻿@page "/emaildetalhes"
+@page "/emaildetalhes/{clientePk}/{emailPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.EmailService
+@inject IEmailService EmailService
+@inject NavigationManager NavigationManager
+
+<h3>Detalhes do Email</h3>
+
+@if (string.IsNullOrEmpty(clientePk))
+{
+    <p>Cliente não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(emailPk))
+    {
+        <PageTitle>Adicionar Novo Email</PageTitle>
+        <h3>Adicionar Novo Email</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Email</PageTitle>
+        <h3>Atualizar Email</h3>
+    }
+
+    <EditForm Model="@email" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Tipo de Contacto</label>
+            <InputText class="form-control" @bind-Value="email.TipoEmail" />
+        </div>
+        <div class="form-group">
+            <label>Número</label>
+            <InputText class="form-control" @bind-Value="email.EnderecoEmail" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning">
+            @(string.IsNullOrEmpty(emailPk) ? "Adicionar Email" : "Atualizar Email")
+        </button>
+        @if (!string.IsNullOrEmpty(emailPk))
+        {
+            <button type="button" class="btn btn-danger" @onclick="DeleteMorada">Eliminar Email</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Cancelar</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string emailPk { get; set; }  // Opcional
+
+    private Email email { get; set; } = new Email();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(clientePk))
+        {
+            // Se for atualização (moradaPk informado), obtém a morada
+            if (!string.IsNullOrEmpty(emailPk))
+            {
+                Guid cPk = Guid.Parse(clientePk);
+                Guid mPk = Guid.Parse(emailPk);
+                var result = await EmailService.GetEmailByIdCliente(cPk, mPk);
+                if (result != null)
+                {
+                    email = result;
+                }
+                else
+                {
+                    Message = "Email não encontrada.";
+                }
+            }
+        }
+        else
+        {
+            Message = "Cliente não informado.";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        Guid clienteId = Guid.Parse(clientePk);
+        if (string.IsNullOrEmpty(emailPk))
+        {
+            // Inserir nova morada para o cliente
+            result = await EmailService.AddEmailToCliente(clienteId, email);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid mPk = Guid.Parse(emailPk);
+            result = await EmailService.UpdateEmailToCliente(clienteId, mPk, email);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar o email.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteMorada()
+    {
+        if (!string.IsNullOrEmpty(emailPk))
+        {
+            Guid clienteId = Guid.Parse(clientePk);
+            Guid mPk = Guid.Parse(emailPk);
+            bool result = await EmailService.DeleteEmailToCliente(clienteId, mPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+            }
+            else
+            {
+                Message = "Erro ao eliminar o contacto.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+    }
+}

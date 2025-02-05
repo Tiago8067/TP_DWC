@@ -562,3 +562,4 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-windows10
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\System.Windows.Extensions.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\sni.dll
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\Tp_DWC.sourcelink.json

@@ -1,0 +1,137 @@
+﻿@page "/contactodetalhes"
+@page "/contactodetalhes/{clientePk}/{contactoPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.ContactoService
+@inject IContactoService ContactoService
+@inject NavigationManager NavigationManager
+
+<h3>Detalhes do Contacto</h3>
+
+@if (string.IsNullOrEmpty(clientePk))
+{
+    <p>Cliente não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(contactoPk))
+    {
+        <PageTitle>Adicionar Novo Contacto</PageTitle>
+        <h3>Adicionar Novo Contacto</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Contacto</PageTitle>
+        <h3>Atualizar Contacto</h3>
+    }
+
+    <EditForm Model="@contacto" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Tipo de Contacto</label>
+            <InputText class="form-control" @bind-Value="contacto.TipoContacto" />
+        </div>
+        <div class="form-group">
+            <label>Número</label>
+            <InputText class="form-control" @bind-Value="contacto.Numero" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning">
+            @(string.IsNullOrEmpty(contactoPk) ? "Adicionar Contacto" : "Atualizar Contacto")
+        </button>
+        @if (!string.IsNullOrEmpty(contactoPk))
+        {
+            <button type="button" class="btn btn-danger" @onclick="DeleteMorada">Eliminar Contacto</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Cancelar</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string contactoPk { get; set; }  // Opcional
+
+    private Contacto contacto { get; set; } = new Contacto();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(clientePk))
+        {
+            // Se for atualização (moradaPk informado), obtém a morada
+            if (!string.IsNullOrEmpty(contactoPk))
+            {
+                Guid cPk = Guid.Parse(clientePk);
+                Guid mPk = Guid.Parse(contactoPk);
+                var result = await ContactoService.GetContactoByIdCliente(cPk, mPk);
+                if (result != null)
+                {
+                    contacto = result;
+                }
+                else
+                {
+                    Message = "Contacto não encontrada.";
+                }
+            }
+        }
+        else
+        {
+            Message = "Cliente não informado.";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        Guid clienteId = Guid.Parse(clientePk);
+        if (string.IsNullOrEmpty(contactoPk))
+        {
+            // Inserir nova morada para o cliente
+            result = await ContactoService.AddContactoToCliente(clienteId, contacto);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid mPk = Guid.Parse(contactoPk);
+            result = await ContactoService.UpdateContactoToCliente(clienteId, mPk, contacto);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar a morada.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteMorada()
+    {
+        if (!string.IsNullOrEmpty(contactoPk))
+        {
+            Guid clienteId = Guid.Parse(clientePk);
+            Guid mPk = Guid.Parse(contactoPk);
+            bool result = await ContactoService.DeleteContactoToCliente(clienteId, mPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+            }
+            else
+            {
+                Message = "Erro ao eliminar o contacto.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+    }
+}

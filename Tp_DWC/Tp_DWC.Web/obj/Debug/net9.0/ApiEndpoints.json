@@ -127,5 +127,580 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ClienteController",
+    "Method": "AddClienteComDetalhes",
+    "RelativePath": "api/Cliente/adicionar-cliente-completo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteCompletoDto",
+        "Type": "Tp_DWC.Web.DTO.ClienteCompletoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "GetAllContactos",
+    "RelativePath": "api/Contacto",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Contacto, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "AddContacto",
+    "RelativePath": "api/Contacto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contacto",
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Contacto, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "GetContactoById",
+    "RelativePath": "api/Contacto/{clientePk}/{contactoPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contactoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "GetContactoById",
+    "RelativePath": "api/Contacto/{pk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "UpdateContacto",
+    "RelativePath": "api/Contacto/{pk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contacto",
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Contacto, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "DeleteContacto",
+    "RelativePath": "api/Contacto/{pk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Contacto, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "AddContactoToCliente",
+    "RelativePath": "api/Contacto/ByCliente/{clientePk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contacto",
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "UpdateContactoToCliente",
+    "RelativePath": "api/Contacto/ByCliente/{clientePk}/{contactoPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contactoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contacto",
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.ContactoController",
+    "Method": "DeleteContactoForCliente",
+    "RelativePath": "api/Contacto/ByCliente/{clientePk}/{contactoPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "contactoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.EmailController",
+    "Method": "GetEmailById",
+    "RelativePath": "api/Email/{clientePk}/{emailPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "emailPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.EmailController",
+    "Method": "AddEmailToCliente",
+    "RelativePath": "api/Email/ByCliente/{clientePk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "Tp_DWC.Shared.Models.Email",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Contacto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.EmailController",
+    "Method": "UpdateEmailToCliente",
+    "RelativePath": "api/Email/ByCliente/{clientePk}/{emailPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "emailPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "email",
+        "Type": "Tp_DWC.Shared.Models.Email",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.EmailController",
+    "Method": "DeleteEmailForCliente",
+    "RelativePath": "api/Email/ByCliente/{clientePk}/{emailPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "emailPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "GetAllMoradas",
+    "RelativePath": "api/Morada",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Morada, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "AddMorada",
+    "RelativePath": "api/Morada",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "morada",
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Morada, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "GetMoradaById",
+    "RelativePath": "api/Morada/{clientePk}/{moradaPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "moradaPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "UpdateMorada",
+    "RelativePath": "api/Morada/{pk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "morada",
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Morada, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "DeleteMorada",
+    "RelativePath": "api/Morada/{pk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Tp_DWC.Shared.Models.Morada, Tp_DWC.Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "AddMoradaToCliente",
+    "RelativePath": "api/Morada/ByCliente/{clientePk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "morada",
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "UpdateMoradaToCliente",
+    "RelativePath": "api/Morada/ByCliente/{clientePk}/{moradaPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "moradaPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "morada",
+        "Type": "Tp_DWC.Shared.Models.Morada",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
+    "Method": "DeleteMoradaForCliente",
+    "RelativePath": "api/Morada/ByCliente/{clientePk}/{moradaPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "moradaPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

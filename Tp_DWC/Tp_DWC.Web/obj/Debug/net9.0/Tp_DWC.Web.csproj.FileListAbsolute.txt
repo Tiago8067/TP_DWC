@@ -186,5 +186,5 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\bin\Debug\net9.0\runti
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\obj\Debug\net9.0\Tp_DWC.Web.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\obj\Debug\net9.0\Tp_DWC.Web.sourcelink.json
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
