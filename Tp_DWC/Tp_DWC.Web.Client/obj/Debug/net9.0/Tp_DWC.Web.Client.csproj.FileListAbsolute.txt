@@ -232,8 +232,6 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XmlSerializer.bq97vodilp.wasm
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.k51e820493.wasm
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Xml.XPath.XDocument.0ke5udk43d.wasm
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.yxd9tkoxpc.pdb
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.kyl6acm0js.wasm
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\WindowsBase.377bly7twj.wasm
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.04kjs9vh65.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Timer.yf2iqnmdhk.wasm.gz
@@ -353,7 +351,6 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.IO.FileSystem.DriveInfo.bz9hg0lkvw.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Threading.39d9zoj3c0.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.yxd9tkoxpc.pdb.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Security.Cryptography.9qczpn3q1h.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Resources.Reader.j15bnzkt27.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\dotnet.native.hmanx9razn.js.gz
@@ -471,7 +468,6 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.InteropServices.RuntimeInformation.efuomfulte.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\System.Drawing.Primitives.1cifgrgsmj.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Microsoft.IdentityModel.Logging.8ithpgtr9z.wasm.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.kyl6acm0js.wasm.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\Tp_DWC.Shared.staticwebassets.runtime.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\Tp_DWC.Shared.staticwebassets.endpoints.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\Tp_DWC.Web.Client.staticwebassets.runtime.json
@@ -1186,8 +1182,6 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\vs62yj9dns-tjcz0u77k5.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\iezm3ywrng-tptq2av103.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\ypwg7tovfc-lfu7j35m59.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\zwf33ok3fs-kyl6acm0js.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\ipbmbd3iyj-yxd9tkoxpc.gz
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -1203,10 +1197,16 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\refint\Tp_DWC.Web.Client.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\Tp_DWC.Web.Client.pdb
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\ref\Tp_DWC.Web.Client.dll
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.k6jwfzyp01.pdb
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.c2yhgg41pq.wasm
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.k6jwfzyp01.pdb.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.c2yhgg41pq.wasm.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\jvuiccskar-c2yhgg41pq.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\34ctq97us4-k6jwfzyp01.gz
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\ssh1i4xb9i-d0ad3g16uq.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.zcvez95l8p.pdb
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.l8gv8tpzuq.wasm
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.yazsnpbjj8.pdb
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.fcjpflir2s.wasm
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.zcvez95l8p.pdb.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.yazsnpbjj8.pdb.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Shared.l8gv8tpzuq.wasm.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\bin\Debug\net9.0\wwwroot\_framework\Tp_DWC.Web.Client.fcjpflir2s.wasm.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\jvuiccskar-l8gv8tpzuq.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\34ctq97us4-zcvez95l8p.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\zwf33ok3fs-fcjpflir2s.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\ipbmbd3iyj-yazsnpbjj8.gz
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Web.Client\obj\Debug\net9.0\compressed\ssh1i4xb9i-es5k8wth0s.gz
