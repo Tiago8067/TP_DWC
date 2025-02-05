@@ -19,7 +19,16 @@ namespace Tp_DWC.Web.Services.ClienteService
 
         public async Task<Cliente?> GetClientesById(Guid pk)
         {
-            var cliente = await _context.Clientes.FindAsync(pk);
+            //var cliente = await _context.Clientes.FindAsync(pk);
+            //var cliente = await _context.Clientes
+            //                        .Include(c => c.Moradas.Where(m => m.ClienteId == pk))
+            //                        .Include(c => c.Contactos.Where(ct => ct.ClienteId == pk))
+            //                        .Include(c => c.Emails.Where(e => e.ClienteId == pk))
+            //                        .FirstOrDefaultAsync(c => c.PK_Cliente == pk);
+
+            var cliente = await _context.Clientes
+                                    .Include(c => c.Moradas) // Inclui os relacionamentos que forem necessários
+                                    .FirstOrDefaultAsync(c => c.PK_Cliente == pk);
 
             if (cliente == null)
             {
@@ -74,5 +83,50 @@ namespace Tp_DWC.Web.Services.ClienteService
             await _context.SaveChangesAsync();
             return await _context.Clientes.ToListAsync();
         }
+
+        public async Task<bool> AddClienteComDetalhes(Cliente cliente, List<Morada> moradas, List<Contacto> contactos, List<Email> emails)
+        {
+            using var transaction = await _context.Database.BeginTransactionAsync();
+            try
+            {
+                // Adicionar o cliente
+                _context.Clientes.Add(cliente);
+                await _context.SaveChangesAsync();
+
+                // Associar o ClienteId às moradas, contactos e emails
+                foreach (var morada in moradas)
+                {
+                    morada.ClienteId = cliente.PK_Cliente;
+                    _context.Moradas.Add(morada);
+                }
+
+                foreach (var contacto in contactos)
+                {
+                    contacto.ClienteId = cliente.PK_Cliente;
+                    _context.Contactos.Add(contacto);
+                }
+
+                foreach (var email in emails)
+                {
+                    email.ClienteId = cliente.PK_Cliente;
+                    _context.Emails.Add(email);
+                }
+
+                // Salvar alterações
+                await _context.SaveChangesAsync();
+
+                // Confirmar a transação
+                await transaction.CommitAsync();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Reverter transação em caso de erro
+                await transaction.RollbackAsync();
+                Console.WriteLine($"Erro: {ex.Message}");
+                return false;
+            }
+        }
+
     }
 }

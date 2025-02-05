@@ -9,5 +9,6 @@ namespace Tp_DWC.Web.Services.ClienteService
         Task<List<Cliente>> AddCliente(Cliente cliente);
         Task<List<Cliente>?> UpdateCliente(Guid pk, Cliente clienteRequest);
         Task<List<Cliente>?> DeleteCliente(Guid pk);
+        Task<bool> AddClienteComDetalhes(Cliente cliente, List<Morada> moradas, List<Contacto> contactos, List<Email> emails);
     }
 }

@@ -4,6 +4,10 @@ using Tp_DWC.Shared.Services;
 using Tp_DWC.Web.Components;
 using Tp_DWC.Web.Services;
 using Tp_DWC.Web.Services.ClienteService;
+using Tp_DWC.Web.Services.MoradaService;
+using Tp_DWC.Web.Services.ContactoService;
+using Tp_DWC.Web.Services.EmailService;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiBaseAddress = builder.Configuration["ApiBaseAddress"];
@@ -27,8 +31,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //fim
 
-//Adicionar os services do Backend
+//Adicionar os services do Backend -> Tp_DWC.Web.Services.ClienteService
+//builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IMoradaService, MoradaService>();
+builder.Services.AddScoped<IContactoService, ContactoService>();
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 //Adcionar os services do Frontend
 builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
@@ -37,11 +45,41 @@ builder.Services.AddHttpClient<Tp_DWC.Shared.Services.ClienteService.IClienteSer
     //client.BaseAddress = new Uri(apiBaseAddress);
     client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/"); // Base URL do seu backend
 });
+builder.Services.AddScoped<Tp_DWC.Shared.Services.ContactoService.IContactoService, Tp_DWC.Shared.Services.ContactoService.ContactoService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.ContactoService.IContactoService, Tp_DWC.Shared.Services.ContactoService.ContactoService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.MoradaService.IMoradaService, Tp_DWC.Shared.Services.MoradaService.MoradaService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.MoradaService.IMoradaService, Tp_DWC.Shared.Services.MoradaService.MoradaService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.EmailService.IEmailService, Tp_DWC.Shared.Services.EmailService.EmailService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.EmailService.IEmailService, Tp_DWC.Shared.Services.EmailService.EmailService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
 
 // Adicionar suporte a controladores
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+});
 
 var app = builder.Build();
+
+
+var service = app.Services.GetService<Tp_DWC.Shared.Services.ClienteService.IClienteService>();
+if (service == null)
+{
+    Console.WriteLine("Serviço IClienteService (Shared) não encontrado!");
+}
+else
+{
+    Console.WriteLine("Serviço IClienteService (Shared) registrado com sucesso!");
+}
 
 // Configure o Swagger apenas em ambiente de desenvolvimento
 if (app.Environment.IsDevelopment())

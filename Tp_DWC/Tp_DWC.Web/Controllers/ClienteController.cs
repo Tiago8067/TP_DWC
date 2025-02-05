@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Tp_DWC.Shared.Models;
+using Tp_DWC.Web.Services.ContactoService;
+using Tp_DWC.Web.Services.EmailService;
+using Tp_DWC.Web.Services.MoradaService;
 using Tp_DWC.Web.Services.ClienteService;
+using Tp_DWC.Web.DTO;
 
 namespace Tp_DWC.Web.Controllers
 {
@@ -9,10 +13,17 @@ namespace Tp_DWC.Web.Controllers
     public class ClienteController : ControllerBase
     {
         private readonly IClienteService _clienteService;
+        //private readonly IMoradaService _moradaService;
+        //private readonly IContactoService _contactoService;
+        //private readonly IEmailService _emailService;
 
+        //public ClienteController(IClienteService clienteService, IMoradaService moradaService, IContactoService contactoService, IEmailService emailService)
         public ClienteController(IClienteService clienteService)
         {
             _clienteService = clienteService;
+            //_moradaService = moradaService;
+            //_contactoService = contactoService;
+            //_emailService = emailService;
         }   
 
         [HttpGet]
@@ -35,12 +46,17 @@ namespace Tp_DWC.Web.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Cliente>>> AddCliente(Cliente cliente)
+        public async Task<ActionResult<List<Cliente>>> AddCliente(Cliente cliente/*, Morada morada, Contacto contacto, Email email*/)
         {
             try
             {
-                var result = await _clienteService.AddCliente(cliente);
-                return Ok(result);
+                var resultCliente = await _clienteService.AddCliente(cliente);
+                //var resultMorada = await _moradaService.AddMorada(morada);
+                //var resultContacto = await _contactoService.AddContacto(contacto);
+                //var resultEmail = await _emailService.AddEmail(email);
+                //var result = resultCliente + resultMorada + resultContacto + resultEmail;
+                //return Ok(result);
+                return Ok(resultCliente);
             }
             catch (Exception ex) 
             {
@@ -74,5 +90,30 @@ namespace Tp_DWC.Web.Controllers
 
             return Ok(result);
         }
+
+        [HttpPost("adicionar-cliente-completo")]
+        public async Task<ActionResult> AddClienteComDetalhes([FromBody] ClienteCompletoDTO clienteCompletoDto)
+        {
+            try
+            {
+                var cliente = clienteCompletoDto.Cliente;
+                var moradas = clienteCompletoDto.Moradas;
+                var contactos = clienteCompletoDto.Contactos;
+                var emails = clienteCompletoDto.Emails;
+
+                var resultado = await _clienteService.AddClienteComDetalhes(cliente, moradas, contactos, emails);
+
+                if (resultado)
+                {
+                    return Ok("Cliente e detalhes adicionados com sucesso.");
+                }
+                return BadRequest("Erro ao adicionar cliente e detalhes.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Exceção ao adicionar cliente: {ex.Message}");
+            }
+        }
+
     }
 }

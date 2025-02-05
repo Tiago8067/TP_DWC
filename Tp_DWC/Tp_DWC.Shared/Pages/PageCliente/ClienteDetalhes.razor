@@ -3,8 +3,6 @@
 @using System.Net
 @using Tp_DWC.Shared.Models
 @using Tp_DWC.Shared.Services.ClienteService
-@* @using Microsoft.AspNetCore.Authorization
-@attribute [Authorize] *@
 
 <h3>ClienteDetalhes</h3>
 
@@ -39,8 +37,6 @@ else
             <button type="submit" class="btn btn-warning">Guarda o Projeto</button>
             <a @onclick="@GoToProjects" class="btn btn-primary">Cancelar</a>
 
-            <br />
-
             @if (!string.IsNullOrEmpty(Pk))
             {
                 <a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar Projeto</a>
@@ -49,6 +45,11 @@ else
         <br />
         <p style="color: red;">@Message</p>
     </EditForm>
+
+    <!--Integrar Moradas deste Cliente-->
+    <Tp_DWC.Shared.Pages.PageMorada.Moradas moradas="@Cliente.Moradas">
+
+    </Tp_DWC.Shared.Pages.PageMorada.Moradas>
 </div>
 
 @code {
@@ -75,6 +76,7 @@ else
             if (apiProjeto != null)
             {
                 Cliente = apiProjeto;
+                Moradas = Cliente.Moradas;
             }
         }
     }
@@ -142,4 +144,14 @@ else
             Message = "O Nome Cliente já existe! Insira outro.";
         }
     }
+
+    //Moradas
+    public List<Morada> Moradas { get; set; }// = @Cliente.Moradas;
+
+
+    //Contactos
+
+    //Emails
+
+    //Assistencias
 }

@@ -1,0 +1,118 @@
+﻿@page "/detalhesclientes"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.ClienteService
+@using Tp_DWC.Web.DTO
+
+<h3>Adicionar Cliente e Detalhes</h3>
+
+<EditForm Model="@ClienteCompleto" OnValidSubmit="@HandleValidRequest">
+    <!-- Cliente -->
+    <h4>Informações do Cliente</h4>
+    <div class="form-group">
+        <label>Nome:</label>
+        <InputText class="form-control" @bind-Value="ClienteCompleto.Cliente.Nome" required />
+    </div>
+    <div class="form-group">
+        <label>Website:</label>
+        <InputText class="form-control" @bind-Value="ClienteCompleto.Cliente.Website" required />
+    </div>
+    <div class="form-group">
+        <label>Ativo:</label>
+        <InputRadioGroup @bind-Value="ClienteCompleto.Cliente.Ativo">
+            <div>
+                <InputRadio Value="true" /> Sim
+                <InputRadio Value="false" /> Não
+            </div>
+        </InputRadioGroup>
+    </div>
+
+    <!-- Moradas -->
+    <h4>Moradas</h4>
+    @foreach (var morada in ClienteCompleto.Moradas)
+    {
+        <div class="form-group">
+            <label>Nome da Morada:</label>
+            <InputText class="form-control" @bind-Value="morada.NomeMorada" />
+        </div>
+        <div class="form-group">
+            <label>Morada Completa:</label>
+            <InputText class="form-control" @bind-Value="morada.MoradaCompleta" />
+        </div>
+    }
+    <button type="button" class="btn btn-secondary" @onclick="AdicionarMorada">Adicionar Morada</button>
+
+    <!-- Contactos -->
+    <h4>Contactos</h4>
+    @foreach (var contacto in ClienteCompleto.Contactos)
+    {
+        <div class="form-group">
+            <label>Tipo de Contacto:</label>
+            <InputText class="form-control" @bind-Value="contacto.TipoContacto" />
+        </div>
+        <div class="form-group">
+            <label>Número:</label>
+            <InputText class="form-control" @bind-Value="contacto.Numero" />
+        </div>
+    }
+    <button type="button" class="btn btn-secondary" @onclick="AdicionarContacto">Adicionar Contacto</button>
+
+    <!-- Emails -->
+    <h4>Emails</h4>
+    @foreach (var email in ClienteCompleto.Emails)
+    {
+        <div class="form-group">
+            <label>Tipo de Email:</label>
+            <InputText class="form-control" @bind-Value="email.TipoEmail" />
+        </div>
+        <div class="form-group">
+            <label>Email:</label>
+            <InputText class="form-control" @bind-Value="email.EnderecoEmail" />
+        </div>
+    }
+    <button type="button" class="btn btn-secondary" @onclick="AdicionarEmail">Adicionar Email</button>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn-success">Salvar Cliente</button>
+</EditForm>
+
+@code {
+    [Inject]
+    private IClienteService ClienteService { get; set; }
+
+    public ClienteCompletoDTO ClienteCompleto { get; set; } = new ClienteCompletoDTO
+        {
+            Cliente = new Cliente(),
+            Moradas = new List<Morada> { new Morada() },
+            Contactos = new List<Contacto> { new Contacto() },
+            Emails = new List<Email> { new Email() }
+        };
+
+    private void AdicionarMorada()
+    {
+        ClienteCompleto.Moradas.Add(new Morada());
+    }
+
+    private void AdicionarContacto()
+    {
+        ClienteCompleto.Contactos.Add(new Contacto());
+    }
+
+    private void AdicionarEmail()
+    {
+        ClienteCompleto.Emails.Add(new Email());
+    }
+
+    private async Task HandleValidRequest()
+    {
+        var result = await ClienteService.AddClienteComDetalhes(ClienteCompleto);
+
+        if (result)
+        {
+            // Redirecionar ou exibir mensagem de sucesso
+        }
+        else
+        {
+            // Exibir mensagem de erro
+        }
+    }
+}

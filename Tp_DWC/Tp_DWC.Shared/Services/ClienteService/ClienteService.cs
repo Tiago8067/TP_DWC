@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Tp_DWC.Shared.Models;
+using Tp_DWC.Web.DTO;
 
 namespace Tp_DWC.Shared.Services.ClienteService
 {
@@ -44,10 +46,18 @@ namespace Tp_DWC.Shared.Services.ClienteService
             {
                 var response = await _httpClient.GetStreamAsync($"api/Cliente/{pk}");
 
-                var cliente = await JsonSerializer.DeserializeAsync<Cliente>(response, new JsonSerializerOptions()
+                var options = new JsonSerializerOptions
                 {
-                    PropertyNameCaseInsensitive = true
-                });
+                    PropertyNameCaseInsensitive = true,
+                    ReferenceHandler = ReferenceHandler.IgnoreCycles // Ignora ciclos de referência
+                };
+
+                var cliente = await JsonSerializer.DeserializeAsync<Cliente>(response, options);
+
+                //var cliente = await JsonSerializer.DeserializeAsync<Cliente>(response, new JsonSerializerOptions()
+                //{
+                //    PropertyNameCaseInsensitive = true
+                //});
 
                 return cliente;
             }
@@ -106,5 +116,22 @@ namespace Tp_DWC.Shared.Services.ClienteService
                 throw;
             }
         }
+
+        public async Task<bool> AddClienteComDetalhes(ClienteCompletoDTO clienteCompleto)
+        {
+            try
+            {
+                var itemJson = new StringContent(JsonSerializer.Serialize(clienteCompleto), Encoding.UTF8, "application/json");
+                var response = await _httpClient.PostAsync("api/Cliente/adicionar-completo", itemJson);
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro: {ex.Message}");
+                throw;
+            }
+        }
+
     }
 }
