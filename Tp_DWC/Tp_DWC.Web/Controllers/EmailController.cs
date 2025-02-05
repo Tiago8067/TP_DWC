@@ -15,32 +15,49 @@ namespace Tp_DWC.Web.Controllers
             _emailService = emailService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<List<Email>>> GetAllEmails()
+        [HttpGet("{clientePk}/{emailPk}")]
+        public async Task<ActionResult<Contacto>> GetEmailById(Guid clientePk, Guid emailPk)
         {
-            return await _emailService.GetAllEmails();
-        }
-
-        [HttpGet("{pk}")]
-        public async Task<ActionResult<Email>> GetEmailById(Guid pk)
-        {
-            //var result = await _emailService.GetEmailById(pk);
-            var result = await _emailService.GetEmailByIdCliente(pk);
+            var result = await _emailService.GetEmailByIdCliente(clientePk, emailPk);
 
             if (result == null)
             {
-                return NotFound("Este Email não Existe");
+                return NotFound("Esta email não existe para o cliente especificado.");
             }
 
             return Ok(result);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<List<Email>>> AddEmail(Email email)
+        [HttpPost("ByCliente/{clientePk}")]
+        public async Task<ActionResult<Contacto>> AddEmailToCliente(Guid clientePk, [FromBody] Email email)
         {
             try
             {
-                var result = await _emailService.AddEmail(email);
+                var result = await _emailService.AddEmailToClient(clientePk, email);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest("Exceção ao adionar email:" + ex.Message);
+                throw;
+            }
+        }
+
+        [HttpPut("ByCliente/{clientePk}/{emailPk}")]
+        public async Task<IActionResult> UpdateEmailToCliente(Guid clientePk, Guid emailPk, [FromBody] Email email)
+        {
+            if (emailPk != email.PK_Email)
+            {
+                return BadRequest("O ID email não corresponde ao informado na URL.");
+            }
+
+            try
+            {
+                var result = await _emailService.UpdateEmailToCliente(clientePk, emailPk, email);
+                if (result == null)
+                {
+                    return NotFound("Erro ao atualizar o Email");
+                }
                 return Ok(result);
             }
             catch (Exception ex)
@@ -50,30 +67,18 @@ namespace Tp_DWC.Web.Controllers
             }
         }
 
-        [HttpPut("{pk}")]
-        public async Task<ActionResult<List<Email>>> UpdateEmail(Guid pk, Email email)
+        [HttpDelete("ByCliente/{clientePk}/{emailPk}")]
+        public async Task<IActionResult> DeleteEmailForCliente(Guid clientePk, Guid emailPk)
         {
-            var result = await _emailService.UpdateEmail(pk, email);
+            var result = await _emailService.DeleteEmailToCliente(clientePk, emailPk);
 
             if (result == null)
             {
-                return NotFound("Erro ao atualizar o Email");
+                return NotFound("eMAIL não encontrada para o cliente especificado.");
             }
 
             return Ok(result);
         }
 
-        [HttpDelete("{pk}")]
-        public async Task<ActionResult<List<Email>>> DeleteEmail(Guid pk)
-        {
-            var result = await _emailService.DeleteEmail(pk);
-
-            if (result == null)
-            {
-                return NotFound("Erro ao apagar o Email");
-            }
-
-            return Ok(result);
-        }
     }
 }

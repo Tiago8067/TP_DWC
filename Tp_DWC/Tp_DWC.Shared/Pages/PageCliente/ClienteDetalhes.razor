@@ -8,44 +8,44 @@
 
 @if (string.IsNullOrEmpty(Pk))
 {
-    <PageTitle>Adicione um novo Cliente</PageTitle>
-    <h3>Adicione um novo Cliente</h3>
+	<PageTitle>Adicione um novo Cliente</PageTitle>
+	<h3>Adicione um novo Cliente</h3>
 }
 else
 {
-    <PageTitle>Atualize o Cliente</PageTitle>
-    <h3>Atualize o Cliente</h3>
+	<PageTitle>Atualize o Cliente</PageTitle>
+	<h3>Atualize o Cliente</h3>
 }
 
 <div class="row">
-    <EditForm Model="@Cliente" OnValidSubmit="@HandleValidResquest" OnInvalidSubmit="@HandleFailedResquest">
-        <div class="form-group">
-            <label class="col-md-3">Nome Do Cliente</label>
-            <InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Nome" required></InputText>
-        </div>
-        <div class="form-group">
-            <label class="col-md-3">Website</label>
-            <InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Website" required></InputText>
-        </div>
-        @* <div class="form-group">
+	<EditForm Model="@Cliente" OnValidSubmit="@HandleValidResquest" OnInvalidSubmit="@HandleFailedResquest">
+		<div class="form-group">
+			<label class="col-md-3">Nome Do Cliente</label>
+			<InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Nome" required></InputText>
+		</div>
+		<div class="form-group">
+			<label class="col-md-3">Website</label>
+			<InputText type="text" class="col-md-8 form-control" @bind-Value="@Cliente.Website" required></InputText>
+		</div>
+		@* <div class="form-group">
             <label class="col-md-3">Preço por Hora</label>
             <InputNumber type="number" min="0" step="0.01" class="col-md-8 form-control" @bind-Value="@Cliente.Ativo" required></InputNumber>
         </div> *@
-        <br />
+		<br />
 
-        <div class="form-group">
-            <button type="submit" class="btn btn-warning">Guardar o Cliente</button>
+		<div class="form-group">
+			<button type="submit" class="btn btn-warning">Guardar o Cliente</button>
 
-            @if (!string.IsNullOrEmpty(Pk))
-            {
-                <a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar o Cliente</a>
-            }
+			@if (!string.IsNullOrEmpty(Pk))
+			{
+				<a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar o Cliente</a>
+			}
 
-            <a @onclick="@GoToProjects" class="btn btn-primary">Voltar Atrás</a>
-        </div>
-        <br />
-        <p style="color: red;">@Message</p>
-    </EditForm>
+			<a @onclick="@GoToProjects" class="btn btn-primary">Voltar Atrás</a>
+		</div>
+		<br />
+		<p style="color: red;">@Message</p>
+	</EditForm>
 
 
 	@if (!string.IsNullOrEmpty(Pk))
@@ -55,117 +55,105 @@ else
 												clientePk="@Pk" />
 
 		<!--Integrar Contactos deste Cliente-->
-		<Tp_DWC.Shared.Pages.PageContacto.ContactosList contactos="@Cliente.Contactos">
-
-		</Tp_DWC.Shared.Pages.PageContacto.ContactosList>
+		<Tp_DWC.Shared.Pages.PageContacto.ContactosList contactos="@Cliente.Contactos"
+														clientePk="@Pk" />
 
 		<!--Integrar Emails deste Cliente-->
-		<Tp_DWC.Shared.Pages.PageEmail.EmailsList emails="@Cliente.Emails">
-
-		</Tp_DWC.Shared.Pages.PageEmail.EmailsList>
+		<Tp_DWC.Shared.Pages.PageEmail.EmailsList emails="@Cliente.Emails"
+												  clientePk="@Pk" />
 	}
 </div>
 
 @code {
-    protected string Message = string.Empty;
-    protected Cliente Cliente { get; set; } = new Cliente();
+	protected string Message = string.Empty;
+	protected Cliente Cliente { get; set; } = new Cliente();
 
-    [Parameter]
-    public string Pk { get; set; }
+	[Parameter]
+	public string Pk { get; set; }
 
-    [Inject]
-    private IClienteService ClienteService { get; set; }
+	[Inject]
+	private IClienteService ClienteService { get; set; }
 
-    [Inject]
-    private NavigationManager NavigationManager { get; set; }
+	[Inject]
+	private NavigationManager NavigationManager { get; set; }
 
-    protected async override Task OnInitializedAsync()
-    {
-        if (!string.IsNullOrEmpty(Pk))
-        {
-            Guid clientePk = Guid.Parse(Pk);
+	protected async override Task OnInitializedAsync()
+	{
+		if (!string.IsNullOrEmpty(Pk))
+		{
+			Guid clientePk = Guid.Parse(Pk);
 
-            var apiProjeto = await ClienteService.GetCliente(clientePk);
+			var apiProjeto = await ClienteService.GetCliente(clientePk);
 
-            if (apiProjeto != null)
-            {
-                Cliente = apiProjeto;
-                Moradas = Cliente.Moradas;
-            }
-        }
-    }
+			if (apiProjeto != null)
+			{
+				Cliente = apiProjeto;
+			}
+		}
+	}
 
-    protected void HandleFailedResquest()
-    {
-        Message = "Algo correu mal, formulário não foi submetido";
-    }
+	protected void HandleFailedResquest()
+	{
+		Message = "Algo correu mal, formulário não foi submetido";
+	}
 
-    protected void GoToProjects()
-    {
-        NavigationManager.NavigateTo("/clientes");
-    }
+	protected void GoToProjects()
+	{
+		NavigationManager.NavigateTo("/clientes");
+	}
 
-    protected async Task DeleteProjeto()
-    {
-        if (!string.IsNullOrEmpty(Pk))
-        {
-            Guid utilId = Guid.Parse(Pk);
+	protected async Task DeleteProjeto()
+	{
+		if (!string.IsNullOrEmpty(Pk))
+		{
+			Guid utilId = Guid.Parse(Pk);
 
-            var result = await ClienteService.DeleteCliente(utilId);
+			var result = await ClienteService.DeleteCliente(utilId);
 
-            if (result)
-            {
-                NavigationManager.NavigateTo("/clientes");
-            }
-            else
-            {
-                Message = "Erro ao apagar o cliente. Verifique os dados fornecidos.";
-            }
-        }
-    }
+			if (result)
+			{
+				NavigationManager.NavigateTo("/clientes");
+			}
+			else
+			{
+				Message = "Erro ao apagar o cliente. Verifique os dados fornecidos.";
+			}
+		}
+	}
 
-    protected async void HandleValidResquest()
-    {
-        if (string.IsNullOrEmpty(Pk))
-        {
-            var result = await ClienteService.AddCliente(Cliente);
+	protected async void HandleValidResquest()
+	{
+		if (string.IsNullOrEmpty(Pk))
+		{
+			var result = await ClienteService.AddCliente(Cliente);
 
-            if (result)
-            {
-                NavigationManager.NavigateTo("/clientes");
-            }
-            else
-            {
-                Message = "Erro ao adicionar o cliente. Verifique os dados fornecidos.";
-            }
-        }
-        else
-        {
-            var result = await ClienteService.UpdateCliente(Cliente.PK_Cliente, Cliente);
+			if (result)
+			{
+				NavigationManager.NavigateTo("/clientes");
+			}
+			else
+			{
+				Message = "Erro ao adicionar o cliente. Verifique os dados fornecidos.";
+			}
+		}
+		else
+		{
+			var result = await ClienteService.UpdateCliente(Cliente.PK_Cliente, Cliente);
 
-            if (result)
-            {
-                NavigationManager.NavigateTo("/clientes");
-            }
-            else
-            {
-                Message = "Erro ao atualizar o cliente. Verifique os dados fornecidos.";
-            }
-        }
+			if (result)
+			{
+				NavigationManager.NavigateTo("/clientes");
+			}
+			else
+			{
+				Message = "Erro ao atualizar o cliente. Verifique os dados fornecidos.";
+			}
+		}
 
-        if (HttpStatusCode.BadRequest != (HttpStatusCode)0 || HttpStatusCode.InternalServerError != (HttpStatusCode)0) //Encontrar o 200
-        {
-            Message = "O Nome Cliente já existe! Insira outro.";
-        }
-    }
+		if (HttpStatusCode.BadRequest != (HttpStatusCode)0 || HttpStatusCode.InternalServerError != (HttpStatusCode)0) //Encontrar o 200
+		{
+			Message = "O Nome Cliente já existe! Insira outro.";
+		}
+	}
 
-    //Moradas
-    public List<Morada> Moradas { get; set; }// = @Cliente.Moradas;
-
-
-    //Contactos
-
-    //Emails
-
-    //Assistencias
 }

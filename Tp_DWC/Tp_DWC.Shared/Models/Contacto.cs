@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Tp_DWC.Shared.Models.TiposModels;
 
@@ -26,6 +27,7 @@ namespace Tp_DWC.Shared.Models
         // Relacionamento com Cliente
         [ForeignKey("Cliente")]
         public Guid ClienteId { get; set; }
-        public Cliente Cliente { get; set; }
+        [JsonIgnore]  // Isso evita que o ASP.NET Core valide ou serializa essa propriedade
+        public Cliente? Cliente { get; set; }
     }
 }

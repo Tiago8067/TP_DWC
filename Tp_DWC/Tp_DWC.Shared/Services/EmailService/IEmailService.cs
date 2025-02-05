@@ -9,9 +9,9 @@ namespace Tp_DWC.Shared.Services.EmailService
 {
     public interface IEmailService
     {
-        Task<Email?> GetEmail(Guid pk);
-        Task<bool> AddEmail(Email email, Guid idCliente);
-        Task<bool> UpdateEmail(Guid pk, Email email);
-        Task<bool> DeleteEmail(Guid pk);
+        Task<Email?> GetEmailByIdCliente(Guid clientePk, Guid emailPk);
+        Task<bool> DeleteEmailToCliente(Guid clientePk, Guid emailPk);
+        Task<bool> AddEmailToCliente(Guid clientePk, Email email);
+        Task<bool> UpdateEmailToCliente(Guid clientePk, Guid emailPk, Email email);
     }
 }

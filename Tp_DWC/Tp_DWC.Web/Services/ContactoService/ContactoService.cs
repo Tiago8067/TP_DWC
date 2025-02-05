@@ -12,6 +12,7 @@ namespace Tp_DWC.Web.Services.ContactoService
         {
             _context = context;
         }
+        #region crud simples só baseado no contacto
         public async Task<List<Contacto>> GetAllContactos()
         {
             return await _context.Contactos.Include(m => m.Cliente).ToListAsync();
@@ -66,5 +67,68 @@ namespace Tp_DWC.Web.Services.ContactoService
             await _context.SaveChangesAsync();
             return await _context.Contactos.ToListAsync();
         }
+
+        #endregion
+
+
+        #region crud pelo cliente especificado
+
+        public async Task<Contacto?> GetContactoByIdCliente(Guid clientePk, Guid contactoPk)
+        {
+            return await _context.Contactos
+                .FirstOrDefaultAsync(m => m.ClienteId == clientePk && m.PK_Contacto == contactoPk);
+        }
+
+        public async Task<List<Contacto>> AddContactoToClient(Guid clientePk, Contacto contacto)
+        {
+            // Garante que a morada fique associada ao cliente passado na URL
+            contacto.ClienteId = clientePk;
+
+            _context.Contactos.Add(contacto);
+            await _context.SaveChangesAsync();
+
+            return await _context.Contactos.ToListAsync();
+        }
+
+        public async Task<List<Contacto>?> UpdateContactoToCliente(Guid clientePk, Guid contactoPk, Contacto contactoRequest)
+        {
+            // Buscar a morada existente
+            var existingContacto = await _context.Contactos
+                .FirstOrDefaultAsync(m => m.PK_Contacto == contactoPk && m.ClienteId == clientePk);
+
+            if (existingContacto == null)
+            {
+                return await _context.Contactos.ToListAsync();
+            }
+
+            // Atualiza os campos
+            existingContacto.TipoContacto = contactoRequest.TipoContacto;
+            existingContacto.Numero = contactoRequest.Numero;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+                return await _context.Contactos.ToListAsync();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro no UpdateMoradaToCliente: {ex.Message}");
+                return await _context.Contactos.ToListAsync();
+            }
+        }
+
+        public async Task<List<Contacto>?> DeleteContactoToCliente(Guid clientePk, Guid contactoPk)
+        {
+            var contacto = await _context.Contactos
+                .FirstOrDefaultAsync(m => m.ClienteId == clientePk && m.PK_Contacto == contactoPk);
+
+            if (contacto == null) return null;
+
+            _context.Contactos.Remove(contacto);
+            await _context.SaveChangesAsync();
+            return await _context.Contactos.ToListAsync();
+        }
+
+        #endregion
     }
 }

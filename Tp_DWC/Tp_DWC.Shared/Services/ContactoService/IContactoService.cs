@@ -14,5 +14,10 @@ namespace Tp_DWC.Shared.Services.ContactoService
         Task<bool> AddContacto(Contacto contacto, Guid idCliente);
         Task<bool> UpdateContacto(Guid pk, Contacto contacto);
         Task<bool> DeleteContacto(Guid pk);
+
+        Task<Contacto?> GetContactoByIdCliente(Guid clientePk, Guid contactoPk);
+        Task<bool> DeleteContactoToCliente(Guid clientePk, Guid contactoPk);
+        Task<bool> AddContactoToCliente(Guid clientePk, Contacto contacto);
+        Task<bool> UpdateContactoToCliente(Guid clientePk, Guid contactoPk, Contacto contacto);
     }
 }

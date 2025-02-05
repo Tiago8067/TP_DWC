@@ -2,7 +2,9 @@
 
 <h3>Emails do Cliente</h3>
 
-<a href="@($"MoradasDetalhes")" class="btn btn-success">Adicionar um Novo Email</a>
+<a href="@($"/emaildetalhes/{clientePk}")" class="btn btn-success">
+    Adicionar um Novo Email
+    </a>
 
 <br />
 
@@ -13,25 +15,22 @@
     AdditionalButtons="RenderAdditionalButtons">
 </Tp_DWC.Shared.Components.ComponentTable>
 
-@* <Tp_DWC.Shared.Components.ComponentModal Title="Detalhes do Cliente" IsOpen="IsModalOpen" OnClose="CloseModal">
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes do Email" IsOpen="IsModalOpen" OnClose="CloseModal">
     <BodyContent>
-        @if (SelectedMorada != null)
+        @if (SelectedEmail != null)
         {
-            <p><strong>Nome Morada:</strong> @SelectedMorada.NomeMorada</p>
-            <p><strong>Morada Completa:</strong> @SelectedMorada.MoradaCompleta</p>
-            <p><strong>Empresa:</strong> @SelectedMorada.Empresa</p>
-            <p><strong>Tipo de Morada:</strong> @SelectedMorada.TipoMorada</p>
-            <p><strong>Código Postal:</strong> @SelectedMorada.CodigoPostal</p>
-            <p><strong>Localidade:</strong> @SelectedMorada.Localidade</p>
-            <p><strong>País:</strong> @SelectedMorada.Pais</p>
-            <p><strong>NIF:</strong> @SelectedMorada.NIF</p>
+            <p><strong>Tipo Email:</strong> @SelectedEmail.TipoEmail</p>
+            <p><strong>Endereço Email:</strong> @SelectedEmail.EnderecoEmail</p>
         }
     </BodyContent>
-</Tp_DWC.Shared.Components.ComponentModal> *@
+</Tp_DWC.Shared.Components.ComponentModal>
 
 @code {
     [Parameter]
     public List<Email> emails { get; set; }
+
+    [Parameter]
+    public string clientePk { get; set; }
 
     protected async override Task OnInitializedAsync()
     {
@@ -47,8 +46,7 @@
     {
         if (item is Email email)
         {
-            return "#";
-            //return $"ClienteDetalhes/{morada.ClienteId}/moradasdetalhes/{morada.PK_Morada}";
+            return $"/emaildetalhes/{email.ClienteId}/{email.PK_Email}";
         }
         return "#";
     }
@@ -72,10 +70,10 @@
 
     private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
     {
-        // __builder.OpenElement(0, "button");
-        // __builder.AddAttribute(1, "class", "btn btn-info");
-        // __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
-        // __builder.AddContent(3, "Ver Detalhes");
-        // __builder.CloseElement();
+        __builder.OpenElement(0, "button");
+        __builder.AddAttribute(1, "class", "btn btn-info");
+        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        __builder.AddContent(3, "Ver Detalhes");
+        __builder.CloseElement();
     };
 }
