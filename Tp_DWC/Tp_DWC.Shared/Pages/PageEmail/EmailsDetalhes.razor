@@ -5,8 +5,6 @@
 @inject IEmailService EmailService
 @inject NavigationManager NavigationManager
 
-<h3>Detalhes do Email</h3>
-
 @if (string.IsNullOrEmpty(clientePk))
 {
     <p>Cliente não informado.</p>
@@ -34,14 +32,14 @@ else
             <InputText class="form-control" @bind-Value="email.EnderecoEmail" />
         </div>
         <br />
-        <button type="submit" class="btn btn-warning">
+        <button type="submit" class="btn btn-warning me-2">
             @(string.IsNullOrEmpty(emailPk) ? "Adicionar Email" : "Atualizar Email")
         </button>
         @if (!string.IsNullOrEmpty(emailPk))
         {
-            <button type="button" class="btn btn-danger" @onclick="DeleteMorada">Eliminar Email</button>
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteMorada">Eliminar Email</button>
         }
-        <button type="button" class="btn btn-primary" @onclick="GoBack">Cancelar</button>
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
         <p style="color: red;">@Message</p>
     </EditForm>
 }

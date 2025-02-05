@@ -9,8 +9,7 @@
       },
       {
         "Path": "Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj",
-        "Action": "Start",
-        "DebugTarget": "IIS Express"
+        "Action": "Start"
       }
     ]
   }

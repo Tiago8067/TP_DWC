@@ -5,8 +5,6 @@
 @inject IContactoService ContactoService
 @inject NavigationManager NavigationManager
 
-<h3>Detalhes do Contacto</h3>
-
 @if (string.IsNullOrEmpty(clientePk))
 {
     <p>Cliente não informado.</p>
@@ -34,14 +32,14 @@ else
             <InputText class="form-control" @bind-Value="contacto.Numero" />
         </div>
         <br />
-        <button type="submit" class="btn btn-warning">
+        <button type="submit" class="btn btn-warning me-2">
             @(string.IsNullOrEmpty(contactoPk) ? "Adicionar Contacto" : "Atualizar Contacto")
         </button>
         @if (!string.IsNullOrEmpty(contactoPk))
         {
-            <button type="button" class="btn btn-danger" @onclick="DeleteMorada">Eliminar Contacto</button>
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteMorada">Eliminar Contacto</button>
         }
-        <button type="button" class="btn btn-primary" @onclick="GoBack">Cancelar</button>
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
         <p style="color: red;">@Message</p>
     </EditForm>
 }

@@ -376,3 +376,4 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-ios\iossi
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-ios\iossimulator-x64\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-ios\iossimulator-x64\System.Security.Permissions.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\bin\Debug\net9.0-ios\iossimulator-x64\System.Windows.Extensions.dll
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC\obj\Debug\net9.0-ios\iossimulator-x64\Tp_DWC.sourcelink.json

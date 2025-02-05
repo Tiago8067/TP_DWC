@@ -1,6 +1,7 @@
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.staticwebassets.runtime.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.staticwebassets.endpoints.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.deps.json
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.runtimeconfig.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.pdb
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.csproj.AssemblyReference.cache
@@ -8,6 +9,7 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.AssemblyInfoInputs.cache
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.AssemblyInfo.cs
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.sourcelink.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\scopedcss\Layout\MainLayout.razor.rz.scp.css
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\scopedcss\Layout\NavMenu.razor.rz.scp.css
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\scopedcss\bundle\Tp_DWC.Shared.styles.css
@@ -26,11 +28,9 @@ C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\st
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.Tp_DWC.Shared.props
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.Tp_DWC.Shared.props
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\refint\Tp_DWC.Shared.dll
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.pdb
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\ref\Tp_DWC.Shared.dll
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\bin\Debug\net9.0\Tp_DWC.Shared.runtimeconfig.json
 C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.genruntimeconfig.cache
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\Tp_DWC.Shared.sourcelink.json
-C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+C:\Users\Utilizador\source\repos\Tp_DWC\Tp_DWC\Tp_DWC.Shared\obj\Debug\net9.0\ref\Tp_DWC.Shared.dll

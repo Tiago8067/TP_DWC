@@ -4,12 +4,10 @@
 @using Tp_DWC.Shared.Models
 @using Tp_DWC.Shared.Services.ClienteService
 
-<h3>ClienteDetalhes</h3>
-
 @if (string.IsNullOrEmpty(Pk))
 {
-	<PageTitle>Adicione um novo Cliente</PageTitle>
-	<h3>Adicione um novo Cliente</h3>
+	<PageTitle>Adicione um Novo Cliente</PageTitle>
+	<h3>Adicione um Novo Cliente</h3>
 }
 else
 {
@@ -34,11 +32,11 @@ else
 		<br />
 
 		<div class="form-group">
-			<button type="submit" class="btn btn-warning">Guardar o Cliente</button>
+			<button type="submit" class="btn btn-warning me-2">Guardar Cliente</button>
 
 			@if (!string.IsNullOrEmpty(Pk))
 			{
-				<a @onclick="@DeleteProjeto" class="btn btn-danger">Apagar o Cliente</a>
+				<a @onclick="@DeleteProjeto" class="btn btn-danger me-2">Eliminar Cliente</a>
 			}
 
 			<a @onclick="@GoToProjects" class="btn btn-primary">Voltar Atrás</a>

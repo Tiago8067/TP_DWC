@@ -3,84 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailsdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailsdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactosdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactosdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\emailservice\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\contactoservice\\contactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\contactoservice\\contactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\emailservice\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\contactoservice\\icontactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\contactoservice\\icontactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\contactocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\contactoservice\\contactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\contactoservice\\contactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\contactoservice\\icontactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\contactoservice\\icontactoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\components\\componentmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\components\\componentmodal.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailsdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailsdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactosdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactosdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradasdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradasdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
@@ -107,63 +79,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-05T16:01:47.367Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\IEmailService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\IEmailService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:54:21.949Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\EmailService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\EmailService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\EmailService\\EmailService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAwE4AAABnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:54:30.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EmailsDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAHgAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T18:51:29.424Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EmailsList.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T18:47:52.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
@@ -172,230 +92,150 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-10T16:08:31.445Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ClienteDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T12:29:46.997Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Clientes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T01:34:27.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAC0AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T11:34:41.866Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "59294c69-0152-4b6e-82df-c15eb4df5b82",
-        "Display": 2,
-        "X": 203,
-        "Y": 117,
-        "Width": 1574,
-        "Height": 909,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 6,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "IContactoService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\IContactoService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\IContactoService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\IContactoService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\IContactoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:59:54.103Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ContactoService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\ContactoService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\ContactoService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\ContactoService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\ContactoService\\ContactoService.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAIwHoAAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:58:05.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ContactoController.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\ContactoController.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\ContactoController.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\ContactoController.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\ContactoController.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAqwJMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T17:55:34.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T13:33:59.987Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "IContactoService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\IContactoService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\IContactoService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\IContactoService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\IContactoService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:14:03.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-05T20:44:01.997Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ContactoService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\ContactoService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\ContactoService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\ContactoService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\ContactoService\\ContactoService.cs",
-              "ViewState": "AgIAAHMAAAAAAAAAAAAqwJAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:14:01.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ContactosDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ComponentModal.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentModal.razor",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T18:24:14.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ContactosList.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T18:19:59.999Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "41eb9234-66ab-4680-95f8-c6d4c4586f7f",
-        "Display": 3,
-        "X": 283,
-        "Y": 84,
-        "Width": 1552,
-        "Height": 935,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IEmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\IEmailService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\IEmailService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\IEmailService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\IEmailService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:54:53.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EmailService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\EmailService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\EmailService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\EmailService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\EmailService\\EmailService.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCAAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:55:07.517Z",
+              "WhenOpened": "2025-02-05T21:07:52.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "EmailController.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\EmailController.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\EmailController.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\EmailController.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\EmailController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAIwEUAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T18:55:10.616Z",
+              "Title": "EmailsDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsDetalhes.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACcAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:57:55.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ContactosDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosDetalhes.razor",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:56:02.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ContactosList.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAEkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:49:19.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmailsList.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEkAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:49:14.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Moradas.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:49:06.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ClienteDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAACYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:46:50.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Clientes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\Clientes.razor",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAFMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:44:21.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MoradasDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\MoradasDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\MoradasDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\MoradasDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\MoradasDetalhes.razor",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAD8AAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T20:38:54.215Z",
               "EditorCaption": ""
             }
           ]

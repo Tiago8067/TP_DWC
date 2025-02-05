@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tp_DWC.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0dfeb2c18fb9c1f1829575d12e9f087bbf3b68aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48eb6b78400df69a638054450d7e9ebc0914876c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tp_DWC.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tp_DWC.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
