@@ -30,6 +30,7 @@ namespace Tp_DWC.Web.Services.ClienteService
                                     .Include(c => c.Moradas) // Inclui os relacionamentos que forem necessários
                                     .Include(c => c.Contactos) 
                                     .Include(c => c.Emails) 
+                                    .Include(c => c.Assistencias)
                                     .FirstOrDefaultAsync(c => c.PK_Cliente == pk);
 
             if (cliente == null)

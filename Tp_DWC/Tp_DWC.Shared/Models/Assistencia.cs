@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Tp_DWC.Shared.Models.EstadoModels;
 
@@ -24,11 +25,11 @@ namespace Tp_DWC.Shared.Models
         public DateTime? DataConclusao { get; set; } // Opcional
 
         [MaxLength(200)]
-        public string DescricaoProduto { get; set; }
+        public string? DescricaoProduto { get; set; }
 
-        public string DescricaoProblema { get; set; }
+        public string? DescricaoProblema { get; set; }
 
-        public string Observacoes { get; set; }
+        public string? Observacoes { get; set; }
 
         //[Required]
         //public string Estado { get; set; } // Resolvido, Pendente, etc.
@@ -36,7 +37,7 @@ namespace Tp_DWC.Shared.Models
         [Required]
         [ForeignKey("Estado")]
         public Guid EstadoId { get; set; } // Estado atual da assistência
-        public Estado Estado { get; set; }
+        public Estado? Estado { get; set; }
 
         // Relacionamentos
         public List<RegistoFotografico> RegistosFotograficos { get; set; } = new List<RegistoFotografico>();
@@ -50,6 +51,7 @@ namespace Tp_DWC.Shared.Models
         // Relacionamento com Cliente
         [ForeignKey("Cliente")]
         public Guid ClienteId { get; set; }
-        public Cliente Cliente { get; set; }
+        [JsonIgnore]  // Isso evita que o ASP.NET Core valide ou serializa essa propriedade
+        public Cliente? Cliente { get; set; }
     }
 }

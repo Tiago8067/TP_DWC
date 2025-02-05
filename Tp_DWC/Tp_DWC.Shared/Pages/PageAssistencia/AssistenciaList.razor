@@ -1,0 +1,86 @@
+﻿@using Tp_DWC.Shared.Models
+
+<h3>Assistências do Cliente</h3>
+
+<a href="@($"/assistenciadetalhes/{clientePk}")" class="btn btn-outline-success">
+	Adicionar uma Nova Assistência
+</a>
+
+<br />
+
+<Tp_DWC.Shared.Components.ComponentTable Items="assis"
+    Headers="headers"
+    Columns="columns"
+    EditCallback="EditClienteCallback"
+    AdditionalButtons="RenderAdditionalButtons">
+</Tp_DWC.Shared.Components.ComponentTable>
+
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
+    <BodyContent>
+        @if (SelectedAssistencia != null)
+        {
+            <p><strong>Número Interno:</strong> @SelectedAssistencia.NumeroInterno</p>
+            <p><strong>Data de registo da assistência:</strong> @SelectedAssistencia.DataCriacao</p>
+            <p><strong>Data de previsão da resolução:</strong> @SelectedAssistencia.DataPrevisaoResolucao</p>
+            <p><strong>Data de previsão de entrega:</strong> @SelectedAssistencia.DataPrevisaoEntrega</p>
+            <p><strong>Produto (breve descrição):</strong> @SelectedAssistencia.DescricaoProduto</p>
+            <p><strong>Descrição do problema (pelo cliente):</strong> @SelectedAssistencia.DescricaoProblema</p>
+            <p><strong>Observações:</strong> @SelectedAssistencia.Observacoes</p>
+        }
+    </BodyContent>
+</Tp_DWC.Shared.Components.ComponentModal>
+
+@code {
+    [Parameter]
+    public List<Assistencia> assis { get; set; }
+
+    [Parameter]
+    public string clientePk { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+    }
+
+    public List<string> headers { get; set; } = new List<string> { "Número Interno", "Data de registo", "Data de previsão da resolução", "Data de previsão de entrega" };
+    public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
+    {
+        item => ((Assistencia)item).NumeroInterno,
+        item => ((Assistencia)item).DataCriacao,
+        item => ((Assistencia)item).DataPrevisaoResolucao,
+        item => ((Assistencia)item).DataPrevisaoEntrega
+    };
+    private string EditClienteCallback(object item)
+    {
+        if (item is Assistencia assis)
+        {
+            return $"/assistenciadetalhes/{assis.ClienteId}/{assis.NumeroInterno}";
+        }
+        return "#";
+    }
+
+    public Assistencia SelectedAssistencia { get; set; }
+    public bool IsModalOpen { get; set; } = false;
+    private void OpenModal(object item)
+    {
+        if (item is Assistencia assistencia)
+        {
+            SelectedAssistencia = assistencia;
+            IsModalOpen = true;
+        }
+    }
+
+    private void CloseModal()
+    {
+        IsModalOpen = false;
+        SelectedAssistencia = null;
+    }
+
+    private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
+    {
+        __builder.OpenElement(0, "button");
+        __builder.AddAttribute(1, "class", "btn btn-info ms-2");
+        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        __builder.AddContent(3, "Ver Detalhes");
+        __builder.CloseElement();
+    };
+}

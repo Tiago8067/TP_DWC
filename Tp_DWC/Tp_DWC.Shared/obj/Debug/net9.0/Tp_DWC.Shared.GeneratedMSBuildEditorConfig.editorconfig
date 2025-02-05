@@ -44,6 +44,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageAssistencia/AssistenciaDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUFzc2lzdGVuY2lhXEFzc2lzdGVuY2lhRGV0YWxoZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageAssistencia/AssistenciaList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUFzc2lzdGVuY2lhXEFzc2lzdGVuY2lhTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageCliente/ClienteDetalhes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcQ2xpZW50ZURldGFsaGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

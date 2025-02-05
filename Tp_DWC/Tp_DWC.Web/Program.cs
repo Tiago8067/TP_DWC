@@ -8,6 +8,7 @@ using Tp_DWC.Web.Services.MoradaService;
 using Tp_DWC.Web.Services.ContactoService;
 using Tp_DWC.Web.Services.EmailService;
 using System.Text.Json.Serialization;
+using Tp_DWC.Web.Services.AssistenciaService;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiBaseAddress = builder.Configuration["ApiBaseAddress"];
@@ -37,6 +38,7 @@ builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IMoradaService, MoradaService>();
 builder.Services.AddScoped<IContactoService, ContactoService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
+builder.Services.AddScoped<IAssistenciaService, AssistenciaService>();
 
 //Adcionar os services do Frontend
 builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
@@ -57,6 +59,11 @@ builder.Services.AddHttpClient<Tp_DWC.Shared.Services.MoradaService.IMoradaServi
 });
 builder.Services.AddScoped<Tp_DWC.Shared.Services.EmailService.IEmailService, Tp_DWC.Shared.Services.EmailService.EmailService>();
 builder.Services.AddHttpClient<Tp_DWC.Shared.Services.EmailService.IEmailService, Tp_DWC.Shared.Services.EmailService.EmailService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.AssistenciaService.IAssistenciaService, Tp_DWC.Shared.Services.AssistenciaService.AssistenciaService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.AssistenciaService.IAssistenciaService, Tp_DWC.Shared.Services.AssistenciaService.AssistenciaService>(client =>
 {
     client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
 });

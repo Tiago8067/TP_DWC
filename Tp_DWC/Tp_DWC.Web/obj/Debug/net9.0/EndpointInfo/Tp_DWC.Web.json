@@ -5,6 +5,195 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Assistencia/{clientePk}/{assistenciaPk}": {
+      "get": {
+        "tags": [
+          "Assistencia"
+        ],
+        "parameters": [
+          {
+            "name": "clientePk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "assistenciaPk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Assistencia/ByCliente/{clientePk}": {
+      "post": {
+        "tags": [
+          "Assistencia"
+        ],
+        "parameters": [
+          {
+            "name": "clientePk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assistencia"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Assistencia/ByCliente/{clientePk}/{assistenciaPk}": {
+      "put": {
+        "tags": [
+          "Assistencia"
+        ],
+        "parameters": [
+          {
+            "name": "clientePk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "assistenciaPk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Assistencia"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Assistencia"
+        ],
+        "parameters": [
+          {
+            "name": "clientePk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "assistenciaPk",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Cliente": {
       "get": {
         "tags": [
@@ -1385,9 +1574,6 @@
           "clienteId": {
             "type": "string",
             "format": "uuid"
-          },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
           }
         },
         "additionalProperties": false

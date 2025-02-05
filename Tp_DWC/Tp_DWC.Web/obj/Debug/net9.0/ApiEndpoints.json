@@ -1,5 +1,114 @@
 [
   {
+    "ContainingType": "Tp_DWC.Web.Controllers.AssistenciaController",
+    "Method": "GetAssistenciaByIdCliente",
+    "RelativePath": "api/Assistencia/{clientePk}/{assistenciaPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.AssistenciaController",
+    "Method": "AddAssistenciaToClient",
+    "RelativePath": "api/Assistencia/ByCliente/{clientePk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "assistencia",
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.AssistenciaController",
+    "Method": "UpdateAssistenciaToCliente",
+    "RelativePath": "api/Assistencia/ByCliente/{clientePk}/{assistenciaPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "assistencia",
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.AssistenciaController",
+    "Method": "DeleteEmailForCliente",
+    "RelativePath": "api/Assistencia/ByCliente/{clientePk}/{assistenciaPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientePk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Tp_DWC.Web.Controllers.ClienteController",
     "Method": "GetAllClientes",
     "RelativePath": "api/Cliente",
