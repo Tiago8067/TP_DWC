@@ -1,0 +1,25 @@
+﻿@page "/selecaoestado"
+@using Tp_DWC.Shared.Models.EstadoModels
+@inject IEstadoService EstadoService
+
+<h3>Selecione um Estado</h3>
+
+<select class="form-select" @bind="selectedEstadoId">
+    <option value="">Selecione um estado</option>
+    @foreach (var estado in estados)
+    {
+        <option value="@estado.PK_Estado">@estado.Descricao</option>
+    }
+</select>
+
+<p>Estado selecionado: @selectedEstadoId</p>
+
+@code {
+    private IEnumerable<Estado> estados = new List<Estado>();
+    private Guid? selectedEstadoId;
+
+    protected override async Task OnInitializedAsync()
+    {
+        estados = await EstadoService.GetAllEstados() ?? new List<Estado>();
+    }
+}

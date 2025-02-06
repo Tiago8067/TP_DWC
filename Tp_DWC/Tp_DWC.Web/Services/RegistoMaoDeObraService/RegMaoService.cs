@@ -22,6 +22,7 @@ namespace Tp_DWC.Web.Services.RegistoMaoDeObraService
         public async Task<List<RegistoMaoDeObra>> AddRegMaoToClient(int assistenciaPk, RegistoMaoDeObra regMao)
         {
             regMao.AssistenciaId = assistenciaPk;
+            regMao.PrecoTotal = Math.Round(regMao.PrecoUnitario * 1.23M, 2);
             regMao.DataRegisto = DateTime.Now;
 
             _context.RegistoMaoDeObras.Add(regMao);
@@ -56,7 +57,7 @@ namespace Tp_DWC.Web.Services.RegistoMaoDeObraService
             existing.QuantidadeHoras = regMaoRequest.QuantidadeHoras;
             existing.Descricao = regMaoRequest.Descricao;
             existing.PrecoUnitario = regMaoRequest.PrecoUnitario;
-            //existing.PrecoTotal = regMaoRequest.PrecoTotal;
+            existing.PrecoTotal = Math.Round(existing.PrecoUnitario * 1.23M, 2);
             existing.Observacoes = regMaoRequest.Observacoes;
             existing.DataRegisto = DateTime.Now;
 

@@ -3,96 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\components\\componenttable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\components\\componenttable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registofotografico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registofotografico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistencialist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistencialist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistenciadetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistenciadetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagemorada\\moradas.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageemail\\emailslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecontacto\\contactoslist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaodetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaodetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pagecliente\\clientedetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmat\\regmatlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\estadomodels\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\estadomodels\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregmao\\regmaolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registomaodeobra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registomaodeobra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\regmatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\regmatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registomaodeobraservice\\regmaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registomaodeobraservice\\regmaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\components\\dropestadoscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\components\\dropestadoscomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\assistenciaservice\\assistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\assistenciaservice\\assistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistenciadetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistenciadetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistencialist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageassistencia\\assistencialist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\assistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\assistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\estadoservice\\estadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\estadoservice\\estadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,12 +71,56 @@
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{76EDC419-5A72-4C1B-A365-4A9A20E0157B}|Tp_DWC\\Tp_DWC.Web.Client\\Tp_DWC.Web.Client.csproj|solutionrelative:tp_dwc\\tp_dwc.web.client\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\estadoservice\\estadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\estadoservice\\estadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\clienteservice\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\clienteservice\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\estadoservice\\iestadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\estadoservice\\iestadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\controllers\\regmatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\regmatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registomaterial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\estadoservice\\iestadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\estadoservice\\iestadoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotdetalhes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\pages\\pageregfot\\regfotlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registofotograficoservice\\regfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registofotograficoservice\\regfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registofotografico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registofotografico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\regmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\models\\registomaodeobra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\models\\registomaodeobra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\registomaterialservice\\iregmatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registomaodeobraservice\\regmaoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -139,10 +147,6 @@
       "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\controllers\\regfotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.web\\services\\registofotograficoservice\\regfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3D43CD9-01ED-4C17-AB6D-34A019D38D9D}|Tp_DWC\\Tp_DWC.Web\\Tp_DWC.Web.csproj|solutionrelative:tp_dwc\\tp_dwc.web\\services\\registofotograficoservice\\regfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|c:\\users\\utilizador\\source\\repos\\tp_dwc\\tp_dwc\\tp_dwc.shared\\services\\registofotograficoservice\\iregfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E1300E99-BB27-4788-97DA-8004037D61CF}|Tp_DWC\\Tp_DWC.Shared\\Tp_DWC.Shared.csproj|solutionrelative:tp_dwc\\tp_dwc.shared\\services\\registofotograficoservice\\iregfotservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -158,87 +162,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-05T16:01:47.367Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AssistenciaDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
-              "ViewState": "AgIAAHAAAAAAAAAAAADwvzcAAAANAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T14:35:20.291Z",
+              "WhenOpened": "2025-01-10T16:08:31.445Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T20:44:01.997Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Estado.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\EstadoModels\\Estado.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\EstadoModels\\Estado.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\EstadoModels\\Estado.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\EstadoModels\\Estado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T22:20:26.029Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T16:01:47.367Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "_Imports.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\_Imports.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-10T16:08:31.445Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web.Client\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T20:44:01.997Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Program.cs",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Program.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAiwJEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAF0AAACGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T11:34:41.866Z",
               "IsPinned": true,
@@ -246,93 +222,246 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ComponentTable.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Components\\ComponentTable.razor",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFwAAACFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T15:21:12.2Z",
+              "DocumentIndex": 11,
+              "Title": "Assistencia.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\Assistencia.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\Assistencia.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\Assistencia.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\Assistencia.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:17:51.863Z",
               "EditorCaption": ""
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "AssistenciaList.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaList.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaList.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaList.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaList.razor",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T15:19:14.668Z",
+              "WhenOpened": "2025-02-06T16:52:03.482Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Moradas.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageMorada\\Moradas.razor",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "AssistenciaDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageAssistencia\\AssistenciaDetalhes.razor",
+              "ViewState": "AgIAADEAAAAAAAAAAAAQwJgAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T15:18:22.358Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EmailsList.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageEmail\\EmailsList.razor",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACYAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T15:18:14.01Z",
+              "WhenOpened": "2025-02-06T16:52:00.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ContactosList.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageContacto\\ContactosList.razor",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T15:17:46.859Z",
+              "Title": "EstadoController.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\EstadoController.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\EstadoController.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\EstadoController.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\EstadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:42:56.746Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AssistenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\AssistenciaService\\AssistenciaService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\AssistenciaService\\AssistenciaService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\AssistenciaService\\AssistenciaService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\AssistenciaService\\AssistenciaService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAkwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T17:00:06.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IEstadoService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\IEstadoService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\IEstadoService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\IEstadoService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\IEstadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:44:36.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstadoService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\EstadoService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\EstadoService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\EstadoService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\EstadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:40:00.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EstadoService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\EstadoService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\EstadoService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\EstadoService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\EstadoService\\EstadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:44:25.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IEstadoService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\IEstadoService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\IEstadoService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\IEstadoService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\EstadoService\\IEstadoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T16:39:43.801Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "f782d95a-a899-4119-a9f7-27ba6b663c8b",
+        "Display": 2,
+        "X": -226,
+        "Y": 173,
+        "Width": 1574,
+        "Height": 931,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "RegistoMaterial.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:49:52.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IRegMatService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:49:47.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegMatService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:50:25.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "RegMatController.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:50:32.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IRegMatService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:50:48.961Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "ClienteService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\ClienteService\\ClienteService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACAAAABAAAAAAAAAAA==",
+              "Title": "RegMatService.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T21:44:18.608Z",
+              "WhenOpened": "2025-02-06T14:50:53.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegMatList.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T14:51:20.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ClienteDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageCliente\\ClienteDetalhes.razor",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RegMatDetalhes.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAIQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-05T21:44:18.643Z",
+              "WhenOpened": "2025-02-06T14:54:54.943Z",
               "EditorCaption": ""
             }
           ]
@@ -354,11 +483,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "RegistoFotografico.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoFotografico.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoFotografico.cs",
@@ -366,12 +495,11 @@
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoFotografico.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAYwBgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T09:38:26.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T09:38:26.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "IRegFotService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\IRegFotService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\IRegFotService.cs",
@@ -383,20 +511,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 25,
               "Title": "RegFotService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\RegFotService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\RegFotService.cs",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\RegFotService.cs",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoFotograficoService\\RegFotService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-06T09:39:24.477Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "RegFotController.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegFotController.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegFotController.cs",
@@ -409,7 +537,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "IRegFotService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoFotograficoService\\IRegFotService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoFotograficoService\\IRegFotService.cs",
@@ -421,7 +549,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "RegFotService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoFotograficoService\\RegFotService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoFotograficoService\\RegFotService.cs",
@@ -434,147 +562,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 24,
               "Title": "RegFotList.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotList.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotList.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotList.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBcAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T11:32:43.552Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-06T11:32:43.552Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 23,
               "Title": "RegFotDetalhes.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotDetalhes.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotDetalhes.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotDetalhes.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegFot\\RegFotDetalhes.razor",
-              "ViewState": "AgIAAFwAAAAAAAAAAAArwIUAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAqwGoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-06T11:32:54.757Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "f782d95a-a899-4119-a9f7-27ba6b663c8b",
-        "Display": 2,
-        "X": 441,
-        "Y": 55,
-        "Width": 1574,
-        "Height": 931,
-        "WindowState": 2
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 7,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RegistoMaterial.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:49:52.473Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "IRegMatService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:49:47.793Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "RegMatService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:50:25.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RegMatController.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMatController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:50:32.964Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "IRegMatService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\IRegMatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:50:48.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "RegMatService.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaterialService\\RegMatService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:50:53.836Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RegMatList.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatList.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T14:51:20.643Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RegMatDetalhes.razor",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMat\\RegMatDetalhes.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T14:54:54.943Z",
               "EditorCaption": ""
             }
           ]
@@ -596,23 +604,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RegistoMaoDeObra.cs",
-              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
-              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
-              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
-              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:19:51.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "IRegMaoService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\IRegMaoService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\IRegMaoService.cs",
@@ -624,19 +620,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 5,
               "Title": "RegMaoService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Web\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowDoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T14:20:00.365Z"
+              "WhenOpened": "2025-02-06T14:20:00.365Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "RegMaoController.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMaoController.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Web\\Controllers\\RegMaoController.cs",
@@ -648,7 +645,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "IRegMaoService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaoDeObraService\\IRegMaoService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaoDeObraService\\IRegMaoService.cs",
@@ -660,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "RegMaoService.cs",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Services\\RegistoMaoDeObraService\\RegMaoService.cs",
@@ -672,27 +669,74 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "RegMaoList.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoList.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoList.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoList.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoList.razor",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAowEAAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAowEAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-06T14:21:15.778Z"
+              "WhenOpened": "2025-02-06T14:21:15.778Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "RegMaoDetalhes.razor",
               "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoDetalhes.razor",
               "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoDetalhes.razor",
               "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoDetalhes.razor",
               "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Pages\\PageRegMao\\RegMaoDetalhes.razor",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAYwH8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAYwH8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-06T14:21:24.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegistoMaoDeObra.cs",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Models\\RegistoMaoDeObra.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T14:19:51.11Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "96624b5d-e03c-41d3-80af-fe57284155cd",
+        "Display": 2,
+        "X": 243,
+        "Y": 178,
+        "Width": 1574,
+        "Height": 931,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DropEstadosComponent.razor",
+              "DocumentMoniker": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\DropEstadosComponent.razor",
+              "RelativeDocumentMoniker": "Tp_DWC\\Tp_DWC.Shared\\Components\\DropEstadosComponent.razor",
+              "ToolTip": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Shared\\Components\\DropEstadosComponent.razor",
+              "RelativeToolTip": "Tp_DWC\\Tp_DWC.Shared\\Components\\DropEstadosComponent.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T16:48:07.643Z",
               "EditorCaption": ""
             }
           ]

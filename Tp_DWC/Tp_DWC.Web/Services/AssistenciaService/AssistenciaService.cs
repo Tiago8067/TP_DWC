@@ -19,6 +19,7 @@ namespace Tp_DWC.Web.Services.AssistenciaService
                 .Include(m => m.RegistosFotograficos)
                 .Include(m => m.RegistosMaoDeObra)
                 .Include(m => m.RegistosMateriais)
+                //.Include(a => a.Estado)
                 .FirstOrDefaultAsync(m => m.ClienteId == clientePk && m.NumeroInterno == assistenciaPk);
         }
 
@@ -28,7 +29,7 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             assistencia.ClienteId = clientePk;
 
             //estado por defeito para testar no inicio
-            assistencia.EstadoId = Guid.Parse("11111111-1111-1111-1111-111111111111");
+            //assistencia.EstadoId = Guid.Parse("11111111-1111-1111-1111-111111111111");
 
             _context.Assistencias.Add(assistencia);
             await _context.SaveChangesAsync();

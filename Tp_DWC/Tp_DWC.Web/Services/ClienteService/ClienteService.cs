@@ -19,13 +19,6 @@ namespace Tp_DWC.Web.Services.ClienteService
 
         public async Task<Cliente?> GetClientesById(Guid pk)
         {
-            //var cliente = await _context.Clientes.FindAsync(pk);
-            //var cliente = await _context.Clientes
-            //                        .Include(c => c.Moradas.Where(m => m.ClienteId == pk))
-            //                        .Include(c => c.Contactos.Where(ct => ct.ClienteId == pk))
-            //                        .Include(c => c.Emails.Where(e => e.ClienteId == pk))
-            //                        .FirstOrDefaultAsync(c => c.PK_Cliente == pk);
-
             var cliente = await _context.Clientes
                                     .Include(c => c.Moradas) // Inclui os relacionamentos que forem necessários
                                     .Include(c => c.Contactos) 

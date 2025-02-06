@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mIeq4Yr/Y2P5blYIGGk0tYUq8UzfZOfJlDAcd5zcESo=",
+  "Hash": "lDDsm9F6atcrHOU/UEDsn8jIJg8kVSmUNKHYucTxPlA=",
   "Source": "Tp_DWC.Web",
   "BasePath": "_content/Tp_DWC.Web",
   "Mode": "Default",
@@ -292,8 +292,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "c4psmtvlwt",
-      "Integrity": "LAhPBnV0rDZYgvvlPNZ1qdX6yQ4u6Ptx3KFkuugTof4=",
+      "Fingerprint": "i9nm7lpbae",
+      "Integrity": "urW1mGgKWBzukXJMHIDtKWobGhLjiwC5+bGpQeIQllU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -5164,8 +5164,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "sde0q4rqpa",
-      "Integrity": "0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0=",
+      "Fingerprint": "uke7qu0kh5",
+      "Integrity": "cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.pdb"
@@ -5185,8 +5185,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "wg4v0d2iwg",
-      "Integrity": "YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk=",
+      "Fingerprint": "m5ng1iev4p",
+      "Integrity": "OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.wasm"
@@ -5206,8 +5206,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "thx7hmscpy",
-      "Integrity": "r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4=",
+      "Fingerprint": "4qna2i3pi4",
+      "Integrity": "nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.pdb"
@@ -5227,8 +5227,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "musxdj45ro",
-      "Integrity": "shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks=",
+      "Fingerprint": "10uxwqdxiw",
+      "Integrity": "3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.wasm"
@@ -5759,12 +5759,12 @@
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\33av6w8bla-yqsrs1xmzk.gz"
     },
     {
-      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz",
+      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz",
       "SourceId": "Tp_DWC.Web.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Tp_DWC.Shared#[.{fingerprint=sde0q4rqpa}]!.pdb.gz",
+      "RelativePath": "_framework/Tp_DWC.Shared#[.{fingerprint=uke7qu0kh5}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -5773,11 +5773,11 @@
       "RelatedAsset": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "rikbt6k193",
-      "Integrity": "o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU=",
+      "Fingerprint": "avd3dbk9xz",
+      "Integrity": "9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz"
+      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz"
     },
     {
       "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\3a93ggmrzz-ip8pk4p9ds.gz",
@@ -7775,12 +7775,12 @@
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\iezm3ywrng-tptq2av103.gz"
     },
     {
-      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz",
+      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz",
       "SourceId": "Tp_DWC.Web.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Tp_DWC.Web.Client#[.{fingerprint=thx7hmscpy}]!.pdb.gz",
+      "RelativePath": "_framework/Tp_DWC.Web.Client#[.{fingerprint=4qna2i3pi4}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7789,11 +7789,11 @@
       "RelatedAsset": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "1huc20dqv6",
-      "Integrity": "u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s=",
+      "Fingerprint": "ts69ozq9hj",
+      "Integrity": "re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz"
+      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz"
     },
     {
       "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\isjka4r9rx-9qczpn3q1h.gz",
@@ -7901,12 +7901,12 @@
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jqf692eebu-tfmvq1uell.gz"
     },
     {
-      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz",
+      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz",
       "SourceId": "Tp_DWC.Web.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Tp_DWC.Shared#[.{fingerprint=wg4v0d2iwg}]!.wasm.gz",
+      "RelativePath": "_framework/Tp_DWC.Shared#[.{fingerprint=m5ng1iev4p}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -7915,11 +7915,11 @@
       "RelatedAsset": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "xt4rc4eyqn",
-      "Integrity": "Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego=",
+      "Fingerprint": "ah2ynmc6tx",
+      "Integrity": "8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz"
+      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz"
     },
     {
       "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvy5yyv6k7-vqn7wix727.gz",
@@ -9182,7 +9182,7 @@
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\sfgaey2mis-4lmzg8k7wx.gz"
     },
     {
-      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-c4psmtvlwt.gz",
+      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-i9nm7lpbae.gz",
       "SourceId": "Tp_DWC.Web.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\",
@@ -9196,11 +9196,11 @@
       "RelatedAsset": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q2v5cfa8sr",
-      "Integrity": "bgvIVXbdn5j+Y5oBEd00nduJhyDMdn7v1+WB82J338o=",
+      "Fingerprint": "yks1uw892u",
+      "Integrity": "DpsGkuoNlh/oV3QhRcDrcAju9Ge/dFwacIBSRqwdpqc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-c4psmtvlwt.gz"
+      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-i9nm7lpbae.gz"
     },
     {
       "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\st2eh33jaj-ti4y7a6pvz.gz",
@@ -10295,12 +10295,12 @@
       "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zm5fujotp3-8ithpgtr9z.gz"
     },
     {
-      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz",
+      "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz",
       "SourceId": "Tp_DWC.Web.Client",
       "SourceType": "Project",
       "ContentRoot": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/Tp_DWC.Web.Client#[.{fingerprint=musxdj45ro}]!.wasm.gz",
+      "RelativePath": "_framework/Tp_DWC.Web.Client#[.{fingerprint=10uxwqdxiw}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -10309,11 +10309,11 @@
       "RelatedAsset": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ie1sl0n9cg",
-      "Integrity": "5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY=",
+      "Fingerprint": "t0igfnvpie",
+      "Integrity": "PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz"
+      "OriginalItemSpec": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz"
     },
     {
       "Identity": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\wwwroot\\appsettings.Development.json",
@@ -12294,28 +12294,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LAhPBnV0rDZYgvvlPNZ1qdX6yQ4u6Ptx3KFkuugTof4=\""
+          "Value": "\"urW1mGgKWBzukXJMHIDtKWobGhLjiwC5+bGpQeIQllU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:10 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LAhPBnV0rDZYgvvlPNZ1qdX6yQ4u6Ptx3KFkuugTof4="
+          "Value": "sha256-urW1mGgKWBzukXJMHIDtKWobGhLjiwC5+bGpQeIQllU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-c4psmtvlwt.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-i9nm7lpbae.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000068657741"
+          "Quality": "0.000068667170"
         }
       ],
       "ResponseHeaders": [
@@ -12333,15 +12333,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14564"
+          "Value": "14562"
         },
         {
           "Name": "ETag",
-          "Value": "\"bgvIVXbdn5j+Y5oBEd00nduJhyDMdn7v1+WB82J338o=\""
+          "Value": "\"DpsGkuoNlh/oV3QhRcDrcAju9Ge/dFwacIBSRqwdpqc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:00:12 GMT"
+          "Value": "Thu, 06 Feb 2025 17:12:30 GMT"
         },
         {
           "Name": "Vary",
@@ -12353,19 +12353,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LAhPBnV0rDZYgvvlPNZ1qdX6yQ4u6Ptx3KFkuugTof4=\""
+          "Value": "W/\"urW1mGgKWBzukXJMHIDtKWobGhLjiwC5+bGpQeIQllU=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LAhPBnV0rDZYgvvlPNZ1qdX6yQ4u6Ptx3KFkuugTof4="
+          "Value": "sha256-urW1mGgKWBzukXJMHIDtKWobGhLjiwC5+bGpQeIQllU="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-c4psmtvlwt.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ssh1i4xb9i-i9nm7lpbae.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -12382,7 +12382,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14564"
+          "Value": "14562"
         },
         {
           "Name": "Content-Type",
@@ -12390,11 +12390,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bgvIVXbdn5j+Y5oBEd00nduJhyDMdn7v1+WB82J338o=\""
+          "Value": "\"DpsGkuoNlh/oV3QhRcDrcAju9Ge/dFwacIBSRqwdpqc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:00:12 GMT"
+          "Value": "Thu, 06 Feb 2025 17:12:30 GMT"
         },
         {
           "Name": "Vary",
@@ -12404,7 +12404,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bgvIVXbdn5j+Y5oBEd00nduJhyDMdn7v1+WB82J338o="
+          "Value": "sha256-DpsGkuoNlh/oV3QhRcDrcAju9Ge/dFwacIBSRqwdpqc="
         }
       ]
     },
@@ -81086,6 +81086,167 @@
       ]
     },
     {
+      "Route": "_framework/Tp_DWC.Shared.m5ng1iev4p.wasm",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "272149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m5ng1iev4p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Shared.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Tp_DWC.Shared.m5ng1iev4p.wasm",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000012744049"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78467"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m5ng1iev4p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Shared.wasm"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Tp_DWC.Shared.m5ng1iev4p.wasm.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "78467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m5ng1iev4p"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Shared.wasm.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/Tp_DWC.Shared.pdb",
       "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.pdb",
       "Selectors": [],
@@ -81100,7 +81261,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "141184"
+          "Value": "145044"
         },
         {
           "Name": "Content-Type",
@@ -81108,28 +81269,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0=\""
+          "Value": "\"cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:10 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:29 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0="
+          "Value": "sha256-cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Shared.pdb",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000010717539"
+          "Quality": "0.000010397713"
         }
       ],
       "ResponseHeaders": [
@@ -81147,15 +81308,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "93304"
+          "Value": "96174"
         },
         {
           "Name": "ETag",
-          "Value": "\"o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU=\""
+          "Value": "\"9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81167,19 +81328,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0=\""
+          "Value": "W/\"cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0="
+          "Value": "sha256-cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Shared.pdb.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -81196,7 +81357,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "93304"
+          "Value": "96174"
         },
         {
           "Name": "Content-Type",
@@ -81204,11 +81365,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU=\""
+          "Value": "\"9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81218,12 +81379,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU="
+          "Value": "sha256-9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U="
         }
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Shared.sde0q4rqpa.pdb",
+      "Route": "_framework/Tp_DWC.Shared.uke7qu0kh5.pdb",
       "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -81237,7 +81398,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "141184"
+          "Value": "145044"
         },
         {
           "Name": "Content-Type",
@@ -81245,21 +81406,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0=\""
+          "Value": "\"cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:10 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:29 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sde0q4rqpa"
+          "Value": "uke7qu0kh5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0="
+          "Value": "sha256-cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY="
         },
         {
           "Name": "label",
@@ -81268,13 +81429,13 @@
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Shared.sde0q4rqpa.pdb",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz",
+      "Route": "_framework/Tp_DWC.Shared.uke7qu0kh5.pdb",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000010717539"
+          "Quality": "0.000010397713"
         }
       ],
       "ResponseHeaders": [
@@ -81292,15 +81453,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "93304"
+          "Value": "96174"
         },
         {
           "Name": "ETag",
-          "Value": "\"o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU=\""
+          "Value": "\"9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81312,17 +81473,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0=\""
+          "Value": "W/\"cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sde0q4rqpa"
+          "Value": "uke7qu0kh5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0GL/tCxHk5YMfMy/B76RH7LzgiKrIYzUAbnGmrBNzj0="
+          "Value": "sha256-cihvUymfqQiAKvtlW4P47F6f/xk2gp3FKGwFtwvWpTY="
         },
         {
           "Name": "label",
@@ -81331,8 +81492,8 @@
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Shared.sde0q4rqpa.pdb.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-sde0q4rqpa.gz",
+      "Route": "_framework/Tp_DWC.Shared.uke7qu0kh5.pdb.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\34ctq97us4-uke7qu0kh5.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -81349,7 +81510,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "93304"
+          "Value": "96174"
         },
         {
           "Name": "Content-Type",
@@ -81357,11 +81518,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU=\""
+          "Value": "\"9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81371,11 +81532,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sde0q4rqpa"
+          "Value": "uke7qu0kh5"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-o9F/KDLnGLhhB5GhkzeR0DPGV6Rz1u1N14cRWTLc6bU="
+          "Value": "sha256-9iHv+9U3DhYv1in+6Nb0Zzhg2Q0q7YbVd2P6Oq84j/U="
         },
         {
           "Name": "label",
@@ -81398,7 +81559,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "267541"
+          "Value": "272149"
         },
         {
           "Name": "Content-Type",
@@ -81406,28 +81567,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk=\""
+          "Value": "\"OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:10 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk="
+          "Value": "sha256-OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Shared.wasm",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000013022529"
+          "Quality": "0.000012744049"
         }
       ],
       "ResponseHeaders": [
@@ -81445,15 +81606,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76789"
+          "Value": "78467"
         },
         {
           "Name": "ETag",
-          "Value": "\"Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego=\""
+          "Value": "\"8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81465,19 +81626,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk=\""
+          "Value": "W/\"OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk="
+          "Value": "sha256-OqIZmcpIat0ujtxv+ogzlHhFXbID6cxJCIJx1YLmfOM="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Shared.wasm.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-m5ng1iev4p.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -81494,7 +81655,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "76789"
+          "Value": "78467"
         },
         {
           "Name": "Content-Type",
@@ -81502,11 +81663,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego=\""
+          "Value": "\"8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
+          "Value": "Thu, 06 Feb 2025 17:42:30 GMT"
         },
         {
           "Name": "Vary",
@@ -81516,173 +81677,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego="
+          "Value": "sha256-8u8UA29d5yb0ZTsHCHG1zPEcKOyw/YoBQo5Y1sEJg2Y="
         }
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Shared.wg4v0d2iwg.wasm",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Shared.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "267541"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:10 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wg4v0d2iwg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Shared.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Shared.wg4v0d2iwg.wasm",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000013022529"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "76789"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wg4v0d2iwg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YBwPWpHvpIo7hT73hUIJjGZWlh6iLe8dJcw0Q18WJbk="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Shared.wasm"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Shared.wg4v0d2iwg.wasm.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\jvuiccskar-wg4v0d2iwg.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "76789"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 16:01:11 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wg4v0d2iwg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Nc1u3Qzsy1VURf5JY+Lkiu6I6VYOFkIUwlFHnoJ9ego="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Shared.wasm.gz"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Web.Client.musxdj45ro.wasm",
+      "Route": "_framework/Tp_DWC.Web.Client.10uxwqdxiw.wasm",
       "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.wasm",
       "Selectors": [],
       "ResponseHeaders": [
@@ -81696,7 +81696,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7957"
+          "Value": "8469"
         },
         {
           "Name": "Content-Type",
@@ -81704,21 +81704,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks=\""
+          "Value": "\"3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:40 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:37 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "musxdj45ro"
+          "Value": "10uxwqdxiw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks="
+          "Value": "sha256-3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY="
         },
         {
           "Name": "label",
@@ -81727,13 +81727,13 @@
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Web.Client.musxdj45ro.wasm",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz",
+      "Route": "_framework/Tp_DWC.Web.Client.10uxwqdxiw.wasm",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000272628135"
+          "Quality": "0.000269541779"
         }
       ],
       "ResponseHeaders": [
@@ -81751,15 +81751,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3667"
+          "Value": "3709"
         },
         {
           "Name": "ETag",
-          "Value": "\"5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY=\""
+          "Value": "\"PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -81771,17 +81771,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks=\""
+          "Value": "W/\"3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "musxdj45ro"
+          "Value": "10uxwqdxiw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks="
+          "Value": "sha256-3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY="
         },
         {
           "Name": "label",
@@ -81790,8 +81790,8 @@
       ]
     },
     {
-      "Route": "_framework/Tp_DWC.Web.Client.musxdj45ro.wasm.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz",
+      "Route": "_framework/Tp_DWC.Web.Client.10uxwqdxiw.wasm.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -81808,7 +81808,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3667"
+          "Value": "3709"
         },
         {
           "Name": "Content-Type",
@@ -81816,11 +81816,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY=\""
+          "Value": "\"PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -81830,11 +81830,11 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "musxdj45ro"
+          "Value": "10uxwqdxiw"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY="
+          "Value": "sha256-PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o="
         },
         {
           "Name": "label",
@@ -81843,6 +81843,167 @@
       ]
     },
     {
+      "Route": "_framework/Tp_DWC.Web.Client.4qna2i3pi4.pdb",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.pdb",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16600"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:03:37 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4qna2i3pi4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Web.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Tp_DWC.Web.Client.4qna2i3pi4.pdb",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000103316458"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9678"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4qna2i3pi4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Web.Client.pdb"
+        }
+      ]
+    },
+    {
+      "Route": "_framework/Tp_DWC.Web.Client.4qna2i3pi4.pdb.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9678"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4qna2i3pi4"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8="
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/Tp_DWC.Web.Client.pdb.gz"
+        }
+      ]
+    },
+    {
       "Route": "_framework/Tp_DWC.Web.Client.pdb",
       "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.pdb",
       "Selectors": [],
@@ -81857,7 +82018,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16540"
+          "Value": "16600"
         },
         {
           "Name": "Content-Type",
@@ -81865,28 +82026,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4=\""
+          "Value": "\"nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:40 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:37 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4="
+          "Value": "sha256-nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Web.Client.pdb",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000103551828"
+          "Quality": "0.000103316458"
         }
       ],
       "ResponseHeaders": [
@@ -81904,15 +82065,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9656"
+          "Value": "9678"
         },
         {
           "Name": "ETag",
-          "Value": "\"u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s=\""
+          "Value": "\"re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -81924,19 +82085,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4=\""
+          "Value": "W/\"nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4="
+          "Value": "sha256-nNAtq1UQUYgbdi/WUe84pM8Jn5Itn2VwaJdgPN8McgY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Web.Client.pdb.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-4qna2i3pi4.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -81953,7 +82114,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9656"
+          "Value": "9678"
         },
         {
           "Name": "Content-Type",
@@ -81961,11 +82122,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s=\""
+          "Value": "\"re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -81975,168 +82136,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Web.Client.thx7hmscpy.pdb",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\bin\\Debug\\net9.0\\wwwroot\\_framework\\Tp_DWC.Web.Client.pdb",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "16540"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:40 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "thx7hmscpy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Web.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Web.Client.thx7hmscpy.pdb",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000103551828"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9656"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "thx7hmscpy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-r9FK5g3/tv+spUyCv/E+zF1edJFSuq9qino2vcnzjt4="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Web.Client.pdb"
-        }
-      ]
-    },
-    {
-      "Route": "_framework/Tp_DWC.Web.Client.thx7hmscpy.pdb.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\ipbmbd3iyj-thx7hmscpy.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9656"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "thx7hmscpy"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-u0gGCVxsf+ac789vmjeYRhswUF6lrpDAZegGvBPt/3s="
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/Tp_DWC.Web.Client.pdb.gz"
+          "Value": "sha256-re7meal4bOJItksvOOHcqMgeFhOkWYShxddEAiRU8t8="
         }
       ]
     },
@@ -82155,7 +82155,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7957"
+          "Value": "8469"
         },
         {
           "Name": "Content-Type",
@@ -82163,28 +82163,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks=\""
+          "Value": "\"3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:40 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:37 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks="
+          "Value": "sha256-3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Web.Client.wasm",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000272628135"
+          "Quality": "0.000269541779"
         }
       ],
       "ResponseHeaders": [
@@ -82202,15 +82202,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3667"
+          "Value": "3709"
         },
         {
           "Name": "ETag",
-          "Value": "\"5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY=\""
+          "Value": "\"PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -82222,19 +82222,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks=\""
+          "Value": "W/\"3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-shYCptxKOl7+uVdRM1av+FWSOt48F9xdIaxqj/KoHks="
+          "Value": "sha256-3xFjB6P52PWMSHZ3/yl7Y6XCQc7ieyooOduA0jGz8HY="
         }
       ]
     },
     {
       "Route": "_framework/Tp_DWC.Web.Client.wasm.gz",
-      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-musxdj45ro.gz",
+      "AssetFile": "C:\\Users\\Utilizador\\source\\repos\\Tp_DWC\\Tp_DWC\\Tp_DWC.Web.Client\\obj\\Debug\\net9.0\\compressed\\zwf33ok3fs-10uxwqdxiw.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -82251,7 +82251,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3667"
+          "Value": "3709"
         },
         {
           "Name": "Content-Type",
@@ -82259,11 +82259,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY=\""
+          "Value": "\"PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 06 Feb 2025 15:48:41 GMT"
+          "Value": "Thu, 06 Feb 2025 17:03:38 GMT"
         },
         {
           "Name": "Vary",
@@ -82273,7 +82273,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5iQ7KuCjrdr1EFXNHrCzBRoJL7E1o4SStnug3E1t/XY="
+          "Value": "sha256-PRpi9G1zpQVVxAJGBDPIjFoqZdHSwJrJm7vrpgtRU3o="
         }
       ]
     },

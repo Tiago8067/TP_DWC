@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRUYWJsZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Components/DropEstadosComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEcm9wRXN0YWRvc0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,8 +1,11 @@
 ﻿@page "/assistenciadetalhes"
 @page "/assistenciadetalhes/{clientePk}/{assistenciaPk?}"
 @using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Models.EstadoModels
 @using Tp_DWC.Shared.Services.AssistenciaService
+@using Tp_DWC.Shared.Services.EstadoService
 @inject IAssistenciaService AssistenciaService
+@inject IEstadoService EstadoService
 @inject NavigationManager NavigationManager
 
 @if (string.IsNullOrEmpty(clientePk))
@@ -43,6 +46,16 @@ else
 				<label>Observações</label>
 				<InputText class="form-control" @bind-Value="assis.Observacoes" />
 			</div>
+			<div class="form-group">
+				<label>Selecione um Estado</label>
+				<select class="form-select" @bind="selectedEstadoId">
+					<option value="">Selecione um estado</option>
+					@foreach (var estado in estados)
+					{
+						<option value="@estado.PK_Estado">@estado.Descricao</option>
+					}
+				</select>
+			</div>
 			<br />
 			<button type="submit" class="btn btn-warning me-2">
 				@(string.IsNullOrEmpty(assistenciaPk) ? "Adicionar Assistência" : "Atualizar Assistência")
@@ -58,16 +71,16 @@ else
 		@if (!string.IsNullOrEmpty(assistenciaPk))
 		{
 			<Tp_DWC.Shared.Pages.PageRegFot.RegFotList list="@assis.RegistosFotograficos"
-													   clientePk="@clientePk"
-													   assistenciaPk="@assistenciaPk" />
+			clientePk="@clientePk"
+			assistenciaPk="@assistenciaPk" />
 
 			<Tp_DWC.Shared.Pages.PageRegMao.RegMaoList list="@assis.RegistosMaoDeObra"
-													   clientePk="@clientePk"
-													   assistenciaPk="@assistenciaPk" />
+			clientePk="@clientePk"
+			assistenciaPk="@assistenciaPk" />
 
 			<Tp_DWC.Shared.Pages.PageRegMat.RegMatList list="@assis.RegistosMateriais"
-													   clientePk="@clientePk"
-													   assistenciaPk="@assistenciaPk" />
+			clientePk="@clientePk"
+			assistenciaPk="@assistenciaPk" />
 
 		}
 	</div>
@@ -82,8 +95,13 @@ else
 	private Assistencia assis { get; set; } = new Assistencia();
 	private string Message = string.Empty;
 
+	private IEnumerable<Estado> estados = new List<Estado>();
+	private Guid selectedEstadoId;
+
 	protected async override Task OnInitializedAsync()
 	{
+		//preencher a drop com estados
+		estados = await EstadoService.GetAllEstados() ?? new List<Estado>();
 		if (!string.IsNullOrEmpty(clientePk))
 		{
 			// Se for atualização (moradaPk informado), obtém a morada
@@ -126,11 +144,13 @@ else
 		Guid clienteId = Guid.Parse(clientePk);
 		if (string.IsNullOrEmpty(assistenciaPk))
 		{
+			assis.EstadoId = selectedEstadoId;
 			// Inserir nova morada para o cliente
 			result = await AssistenciaService.AddAssistenciaToCliente(clienteId, assis);
 		}
 		else
 		{
+			assis.EstadoId = selectedEstadoId;
 			// Atualizar a morada do cliente
 			int mPk = int.Parse(assistenciaPk);
 			result = await AssistenciaService.UpdateAssistenciaToCliente(clienteId, mPk, assis);

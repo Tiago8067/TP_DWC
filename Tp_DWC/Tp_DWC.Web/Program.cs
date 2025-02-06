@@ -12,6 +12,7 @@ using Tp_DWC.Web.Services.AssistenciaService;
 using Tp_DWC.Web.Services.RegistoFotograficoService;
 using Tp_DWC.Web.Services.RegistoMaoDeObraService;
 using Tp_DWC.Web.Services.RegistoMaterialService;
+using Tp_DWC.Web.Services.EstadoService;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiBaseAddress = builder.Configuration["ApiBaseAddress"];
@@ -45,6 +46,7 @@ builder.Services.AddScoped<IAssistenciaService, AssistenciaService>();
 builder.Services.AddScoped<IRegFotService, RegFotService>();
 builder.Services.AddScoped<IRegMaoService, RegMaoService>();
 builder.Services.AddScoped<IRegMatService, RegMatService>();
+builder.Services.AddScoped<IEstadoService, EstadoService>();
 
 //Adcionar os services do Frontend
 builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
@@ -85,6 +87,11 @@ builder.Services.AddHttpClient<Tp_DWC.Shared.Services.RegistoMaoDeObraService.IR
 });
 builder.Services.AddScoped<Tp_DWC.Shared.Services.RegistoMaterialService.IRegMatService, Tp_DWC.Shared.Services.RegistoMaterialService.RegMatService>();
 builder.Services.AddHttpClient<Tp_DWC.Shared.Services.RegistoMaterialService.IRegMatService, Tp_DWC.Shared.Services.RegistoMaterialService.RegMatService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.EstadoService.IEstadoService, Tp_DWC.Shared.Services.EstadoService.EstadoService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.EstadoService.IEstadoService, Tp_DWC.Shared.Services.EstadoService.EstadoService>(client =>
 {
     client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
 });

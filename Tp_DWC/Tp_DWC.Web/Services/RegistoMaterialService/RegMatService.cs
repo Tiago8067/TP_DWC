@@ -21,6 +21,7 @@ namespace Tp_DWC.Web.Services.RegistoMaterialService
         public async Task<List<RegistoMaterial>> AddRegMatToClient(int assistenciaPk, RegistoMaterial regMat)
         {
             regMat.AssistenciaId = assistenciaPk;
+            regMat.PrecoTotal = Math.Round(regMat.PrecoUnitario * 1.23M, 2);
             regMat.DataRegisto = DateTime.Now;
 
             _context.RegistoMaterials.Add(regMat);
@@ -55,7 +56,7 @@ namespace Tp_DWC.Web.Services.RegistoMaterialService
             existing.QuantidadeMaterial = regMatRequest.QuantidadeMaterial;
             existing.Descricao = regMatRequest.Descricao;
             existing.PrecoUnitario = regMatRequest.PrecoUnitario;
-            //existing.PrecoTotal = regMaoRequest.PrecoTotal;
+            existing.PrecoTotal = Math.Round(existing.PrecoUnitario * 1.23M, 2);
             existing.Observacoes = regMatRequest.Observacoes;
             existing.DataRegisto = DateTime.Now;
 
