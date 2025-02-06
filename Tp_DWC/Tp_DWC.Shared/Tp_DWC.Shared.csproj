@@ -23,6 +23,8 @@
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
+    <Folder Include="Pages\PageRegMat\" />
+    <Folder Include="Pages\PageRegMao\" />
   </ItemGroup>
 
 </Project>

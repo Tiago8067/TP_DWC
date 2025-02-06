@@ -9,6 +9,9 @@ using Tp_DWC.Web.Services.ContactoService;
 using Tp_DWC.Web.Services.EmailService;
 using System.Text.Json.Serialization;
 using Tp_DWC.Web.Services.AssistenciaService;
+using Tp_DWC.Web.Services.RegistoFotograficoService;
+using Tp_DWC.Web.Services.RegistoMaoDeObraService;
+using Tp_DWC.Web.Services.RegistoMaterialService;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiBaseAddress = builder.Configuration["ApiBaseAddress"];
@@ -39,6 +42,9 @@ builder.Services.AddScoped<IMoradaService, MoradaService>();
 builder.Services.AddScoped<IContactoService, ContactoService>();
 builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddScoped<IAssistenciaService, AssistenciaService>();
+builder.Services.AddScoped<IRegFotService, RegFotService>();
+builder.Services.AddScoped<IRegMaoService, RegMaoService>();
+builder.Services.AddScoped<IRegMatService, RegMatService>();
 
 //Adcionar os services do Frontend
 builder.Services.AddScoped<Tp_DWC.Shared.Services.ClienteService.IClienteService, Tp_DWC.Shared.Services.ClienteService.ClienteService>();
@@ -64,6 +70,21 @@ builder.Services.AddHttpClient<Tp_DWC.Shared.Services.EmailService.IEmailService
 });
 builder.Services.AddScoped<Tp_DWC.Shared.Services.AssistenciaService.IAssistenciaService, Tp_DWC.Shared.Services.AssistenciaService.AssistenciaService>();
 builder.Services.AddHttpClient<Tp_DWC.Shared.Services.AssistenciaService.IAssistenciaService, Tp_DWC.Shared.Services.AssistenciaService.AssistenciaService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.RegistoFotograficoService.IRegFotService, Tp_DWC.Shared.Services.RegistoFotograficoService.RegFotService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.RegistoFotograficoService.IRegFotService, Tp_DWC.Shared.Services.RegistoFotograficoService.RegFotService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.RegistoMaoDeObraService.IRegMaoService, Tp_DWC.Shared.Services.RegistoMaoDeObraService.RegMaoService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.RegistoMaoDeObraService.IRegMaoService, Tp_DWC.Shared.Services.RegistoMaoDeObraService.RegMaoService>(client =>
+{
+    client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
+});
+builder.Services.AddScoped<Tp_DWC.Shared.Services.RegistoMaterialService.IRegMatService, Tp_DWC.Shared.Services.RegistoMaterialService.RegMatService>();
+builder.Services.AddHttpClient<Tp_DWC.Shared.Services.RegistoMaterialService.IRegMatService, Tp_DWC.Shared.Services.RegistoMaterialService.RegMatService>(client =>
 {
     client.BaseAddress = new Uri(apiBaseAddress ?? "https://localhost:7258/");
 });

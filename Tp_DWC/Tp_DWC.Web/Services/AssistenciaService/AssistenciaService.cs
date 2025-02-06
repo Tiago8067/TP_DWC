@@ -16,6 +16,9 @@ namespace Tp_DWC.Web.Services.AssistenciaService
         public async Task<Assistencia?> GetAssistenciaByIdCliente(Guid clientePk, int assistenciaPk)
         {
             return await _context.Assistencias
+                .Include(m => m.RegistosFotograficos)
+                .Include(m => m.RegistosMaoDeObra)
+                .Include(m => m.RegistosMateriais)
                 .FirstOrDefaultAsync(m => m.ClienteId == clientePk && m.NumeroInterno == assistenciaPk);
         }
 

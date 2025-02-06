@@ -14,9 +14,9 @@ namespace Tp_DWC.Shared.Models
         [Key]
         public Guid PK_RegistoFotografico { get; set; } = Guid.NewGuid();
 
-        public string Foto { get; set; } // Caminho ou URL da foto
+        public string? Foto { get; set; } // Caminho ou URL da foto
 
-        public string Observacoes { get; set; }
+        public string? Observacoes { get; set; }
 
         [Required]
         public DateTime DataRegisto { get; set; }

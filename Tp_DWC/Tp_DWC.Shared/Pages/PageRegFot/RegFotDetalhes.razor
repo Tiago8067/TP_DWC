@@ -1,0 +1,165 @@
+﻿@page "/regfotdetalhes"
+@page "/regfotdetalhes/{clientePk}/{assistenciaPk}/{regFotPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.RegistoFotograficoService
+@inject IRegFotService RegFotService
+@inject NavigationManager NavigationManager
+
+@if (string.IsNullOrEmpty(assistenciaPk))
+{
+    <p>Assistência não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(regFotPk))
+    {
+        <PageTitle>Adicionar Novo Registo fotográfico</PageTitle>
+        <h3>Adicionar Novo Registo fotográfico</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Registo fotográfico</PageTitle>
+        <h3>Atualizar Registo fotográfico</h3>
+    }
+
+    <EditForm Model="@obj" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Foto</label>
+            <InputFile class="form-control" OnChange="HandleFileSelected" />
+        </div>
+        <div class="form-group">
+            <label>Observações</label>
+            <InputTextArea class="form-control" @bind-Value="obj.Observacoes" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning me-2">
+            @(string.IsNullOrEmpty(regFotPk) ? "Adicionar" : "Atualizar")
+        </button>
+        @if (!string.IsNullOrEmpty(regFotPk))
+        {
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string assistenciaPk { get; set; }
+    [Parameter]
+    public string regFotPk { get; set; }  // Opcional
+
+    private RegistoFotografico obj { get; set; } = new RegistoFotografico();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(assistenciaPk))
+        {
+            // Se for atualização 
+            if (!string.IsNullOrEmpty(regFotPk))
+            {
+                int mPk = int.Parse(assistenciaPk);
+                Guid cPk = Guid.Parse(regFotPk);
+                var result = await RegFotService.GetRegFotByIdCliente(mPk, cPk);
+                if (result != null)
+                {
+                    obj = result;
+                }
+                else
+                {
+                    Message = "RegistoFotografico não encontrada.";
+                }
+            }
+            else //se for novo 
+            {
+
+            }
+        }
+        else
+        {
+            Message = "Assistencia não informado.";
+        }
+    }
+
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        // seleciona o primeiro arquivo selecionado (se permitir apenas um)
+        var file = e.File;
+        if (file != null)
+        {
+            // Ler o arquivo como stream
+            using var stream = file.OpenReadStream(maxAllowedSize: 5_000_000); // 5 MB, por exemplo
+
+            // Converter o stream em array de bytes
+            byte[] fileBytes = new byte[stream.Length];
+            await stream.ReadAsync(fileBytes, 0, (int)stream.Length);
+
+            // Converter para base64
+            string base64 = Convert.ToBase64String(fileBytes);
+
+            // Se quiser armazenar como "data:image/png;base64,..."
+            // descubrir o content type do arquivo (por ex. "image/png")
+            var contentType = file.ContentType; // "image/png" ou "image/jpeg", etc.
+            obj.Foto = $"data:{contentType};base64,{base64}";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        int assistenciaId = int.Parse(assistenciaPk);
+        if (string.IsNullOrEmpty(regFotPk))
+        {
+            string aux = obj.Foto;
+            // Inserir nova morada para o cliente
+            result = await RegFotService.AddRegFotToClient(assistenciaId, obj);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid cPk = Guid.Parse(regFotPk);
+            result = await RegFotService.UpdateRegFotToCliente(assistenciaId, cPk, obj);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar o RegistoFotografico.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteAssistencia()
+    {
+        if (!string.IsNullOrEmpty(regFotPk))
+        {
+            int mPk = int.Parse(assistenciaPk);
+            Guid cPk = Guid.Parse(regFotPk);
+            bool result = await RegFotService.DeleteRegFotToCliente(mPk, cPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+            }
+            else
+            {
+                Message = "Erro ao eliminar RegistoFotografico.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+    }
+}

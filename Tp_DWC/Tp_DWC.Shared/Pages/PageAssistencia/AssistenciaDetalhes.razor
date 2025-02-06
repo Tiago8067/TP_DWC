@@ -54,6 +54,26 @@ else
         <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
         <p style="color: red;">@Message</p>
     </EditForm>
+
+    @if (!string.IsNullOrEmpty(assistenciaPk))
+    {
+        <!--Integrar Moradas deste Cliente-->
+        <Tp_DWC.Shared.Pages.PageRegFot.RegFotList list="@assis.RegistosFotograficos"
+                                                   clientePk="@clientePk"
+                                                   assistenciaPk="@assistenciaPk" />
+
+        <!--Integrar Contactos deste Cliente-->
+        @* <Tp_DWC.Shared.Pages.PageContacto.ContactosList contactos="@Cliente.Contactos"
+                                                        clientePk="@Pk" />
+
+        <!--Integrar Emails deste Cliente-->
+        <Tp_DWC.Shared.Pages.PageEmail.EmailsList emails="@Cliente.Emails"
+                                                  clientePk="@Pk" />
+
+        <!--Integrar Emails deste Cliente-->
+        <Tp_DWC.Shared.Pages.PageAssistencia.AssistenciaList assis="@Cliente.Assistencias"
+                                                             clientePk="@Pk" /> *@
+    }
 }
 
 @code {
