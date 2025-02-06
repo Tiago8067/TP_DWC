@@ -68,7 +68,7 @@ namespace Tp_DWC.Web.Controllers
         }
 
         [HttpDelete("ByCliente/{clientePk}/{assistenciaPk}")]
-        public async Task<IActionResult> DeleteEmailForCliente(Guid clientePk, int assistenciaPk)
+        public async Task<IActionResult> DeleteAssistenciaToCliente(Guid clientePk, int assistenciaPk)
         {
             var result = await _assistenciaService.DeleteAssistenciaToCliente(clientePk, assistenciaPk);
 

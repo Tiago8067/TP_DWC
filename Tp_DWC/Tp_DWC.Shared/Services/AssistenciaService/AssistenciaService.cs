@@ -51,7 +51,7 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao adicionar assistencia: {ex.Message}");
+                Console.WriteLine($"Erro ao adicionar assistência: {ex.Message}");
                 throw;
             }
         }
@@ -65,7 +65,7 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao atualizar assistencia: {ex.Message}");
+                Console.WriteLine($"Erro ao atualizar assistência: {ex.Message}");
                 throw;
             }
         }
@@ -79,7 +79,7 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Erro ao excluir Email: {ex.Message}");
+                Console.WriteLine($"Erro ao eliminar assistência: {ex.Message}");
                 throw;
             }
         }

@@ -25,7 +25,11 @@ else
     <EditForm Model="@assis" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
         <div class="form-group">
             <label>Data de previsão da resolução</label>
-            @* <InputText class="form-control" @bind-Value="assis.DataPrevisaoResolucao" /> *@
+            <InputDate class="form-control" @bind-Value="assis.DataPrevisaoResolucao" />
+        </div>
+        <div class="form-group">
+            <label>Data de previsão de entrega</label>
+            <InputDate class="form-control" @bind-Value="assis.DataPrevisaoEntrega" />
         </div>
         <div class="form-group">
             <label>Produto (breve descrição)</label>
@@ -45,7 +49,7 @@ else
         </button>
         @if (!string.IsNullOrEmpty(assistenciaPk))
         {
-            <button type="button" class="btn btn-danger me-2" @onclick="DeleteMorada">Eliminar Assistência</button>
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar Assistência</button>
         }
         <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
         <p style="color: red;">@Message</p>
@@ -78,6 +82,18 @@ else
                 else
                 {
                     Message = "Assistência não encontrada.";
+                }
+            }
+            else //se for nova assistencia 
+            {
+                // Se o campo estiver com o valor padrão (DateTime.MinValue), atribua DateTime.Now
+                if (assis.DataPrevisaoResolucao == default(DateTime))
+                {
+                    assis.DataPrevisaoResolucao = DateTime.Now;
+                }
+                if (assis.DataPrevisaoEntrega == default(DateTime))
+                {
+                    assis.DataPrevisaoEntrega = DateTime.Now;
                 }
             }
         }
@@ -118,7 +134,7 @@ else
         Message = "Alguns dados não foram validados corretamente.";
     }
 
-    private async Task DeleteMorada()
+    private async Task DeleteAssistencia()
     {
         if (!string.IsNullOrEmpty(assistenciaPk))
         {

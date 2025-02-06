@@ -89,7 +89,7 @@
   },
   {
     "ContainingType": "Tp_DWC.Web.Controllers.AssistenciaController",
-    "Method": "DeleteEmailForCliente",
+    "Method": "DeleteAssistenciaToCliente",
     "RelativePath": "api/Assistencia/ByCliente/{clientePk}/{assistenciaPk}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -806,6 +806,333 @@
       },
       {
         "Name": "moradaPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegFotController",
+    "Method": "GetRegFotByIdCliente",
+    "RelativePath": "api/RegFot/{assistenciaPk}/{regFotPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regFotPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegFotController",
+    "Method": "AddRegFotToClient",
+    "RelativePath": "api/RegFot/ByAssis/{assistenciaPk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regFot",
+        "Type": "Tp_DWC.Shared.Models.RegistoFotografico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.Assistencia",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegFotController",
+    "Method": "UpdateRegFotToCliente",
+    "RelativePath": "api/RegFot/ByAssis/{assistenciaPk}/{regFotPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regFotPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "regFot",
+        "Type": "Tp_DWC.Shared.Models.RegistoFotografico",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegFotController",
+    "Method": "DeleteRegFotToCliente",
+    "RelativePath": "api/RegFot/ByAssis/{assistenciaPk}/{regFotPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regFotPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMaoController",
+    "Method": "GetRegMaoByIdCliente",
+    "RelativePath": "api/RegMao/{assistenciaPk}/{regMaoPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMaoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.RegistoMaoDeObra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMaoController",
+    "Method": "AddRegMaoToClient",
+    "RelativePath": "api/RegMao/ByAssis/{assistenciaPk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMao",
+        "Type": "Tp_DWC.Shared.Models.RegistoMaoDeObra",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.RegistoMaoDeObra",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMaoController",
+    "Method": "UpdateRegMaoToCliente",
+    "RelativePath": "api/RegMao/ByAssis/{assistenciaPk}/{regMaoPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMaoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMao",
+        "Type": "Tp_DWC.Shared.Models.RegistoMaoDeObra",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMaoController",
+    "Method": "DeleteRegMaoToCliente",
+    "RelativePath": "api/RegMao/ByAssis/{assistenciaPk}/{regMaoPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMaoPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMatController",
+    "Method": "GetRegMatByIdCliente",
+    "RelativePath": "api/RegMat/{assistenciaPk}/{regMatPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMatPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.RegistoMaterial",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMatController",
+    "Method": "AddRegMatToClient",
+    "RelativePath": "api/RegMat/ByAssis/{assistenciaPk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMat",
+        "Type": "Tp_DWC.Shared.Models.RegistoMaterial",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.RegistoMaterial",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMatController",
+    "Method": "UpdateRegMatToCliente",
+    "RelativePath": "api/RegMat/ByAssis/{assistenciaPk}/{regMatPk}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMatPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMat",
+        "Type": "Tp_DWC.Shared.Models.RegistoMaterial",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.RegMatController",
+    "Method": "DeleteRegMaoToCliente",
+    "RelativePath": "api/RegMat/ByAssis/{assistenciaPk}/{regMatPk}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "regMatPk",
         "Type": "System.Guid",
         "IsRequired": true
       }

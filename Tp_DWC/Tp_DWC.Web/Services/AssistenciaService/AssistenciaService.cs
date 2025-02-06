@@ -45,10 +45,11 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             }
 
             // Atualiza os campos
-            existingAssistencia.DataCriacao = assistenciaRequest.DataCriacao;
+            //existingAssistencia.DataCriacao = assistenciaRequest.DataCriacao;
             existingAssistencia.DataPrevisaoResolucao = assistenciaRequest.DataPrevisaoResolucao;
             existingAssistencia.DataPrevisaoEntrega = assistenciaRequest.DataPrevisaoEntrega;
-            existingAssistencia.DataConclusao = assistenciaRequest.DataConclusao;
+            //se estado for resolvido adicionar data de conclusão
+            //existingAssistencia.DataConclusao = assistenciaRequest.DataConclusao; 
             existingAssistencia.DescricaoProduto = assistenciaRequest.DescricaoProduto;
             existingAssistencia.DescricaoProblema = assistenciaRequest.DescricaoProblema;
             existingAssistencia.Observacoes = assistenciaRequest.Observacoes;

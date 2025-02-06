@@ -21,8 +21,8 @@
         {
             <p><strong>Número Interno:</strong> @SelectedAssistencia.NumeroInterno</p>
             <p><strong>Data de registo da assistência:</strong> @SelectedAssistencia.DataCriacao</p>
-            <p><strong>Data de previsão da resolução:</strong> @SelectedAssistencia.DataPrevisaoResolucao</p>
-            <p><strong>Data de previsão de entrega:</strong> @SelectedAssistencia.DataPrevisaoEntrega</p>
+            <p><strong>Data de previsão da resolução:</strong> @SelectedAssistencia.DataPrevisaoResolucao.ToString("dd/MM/yyyy")</p>
+            <p><strong>Data de previsão de entrega:</strong> @SelectedAssistencia.DataPrevisaoEntrega.ToString("dd/MM/yyyy")</p>
             <p><strong>Produto (breve descrição):</strong> @SelectedAssistencia.DescricaoProduto</p>
             <p><strong>Descrição do problema (pelo cliente):</strong> @SelectedAssistencia.DescricaoProblema</p>
             <p><strong>Observações:</strong> @SelectedAssistencia.Observacoes</p>
@@ -46,8 +46,8 @@
     {
         item => ((Assistencia)item).NumeroInterno,
         item => ((Assistencia)item).DataCriacao,
-        item => ((Assistencia)item).DataPrevisaoResolucao,
-        item => ((Assistencia)item).DataPrevisaoEntrega
+        item => ((Assistencia)item).DataPrevisaoResolucao.ToString("dd/MM/yyyy"),
+        item => ((Assistencia)item).DataPrevisaoEntrega.ToString("dd/MM/yyyy")
     };
     private string EditClienteCallback(object item)
     {
