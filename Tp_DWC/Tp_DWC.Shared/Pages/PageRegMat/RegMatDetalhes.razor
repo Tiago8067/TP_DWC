@@ -1,0 +1,149 @@
+﻿@page "/regmatdetalhes"
+@page "/regmatdetalhes/{clientePk}/{assistenciaPk}/{regMatPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.RegistoMaterialService
+@inject IRegMatService RegMatService
+@inject NavigationManager NavigationManager
+
+@if (string.IsNullOrEmpty(assistenciaPk))
+{
+    <p>Assistência não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(regMatPk))
+    {
+        <PageTitle>Adicionar Novo Registo de Material</PageTitle>
+        <h3>Adicionar Novo Registo de Material</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Registo de Material</PageTitle>
+        <h3>Atualizar Registo de Material</h3>
+    }
+
+    <EditForm Model="@obj" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Quantidade (de material)</label>
+            <InputNumber typeof="int" class="form-control" @bind-Value="obj.QuantidadeMaterial" />
+        </div>
+        <div class="form-group">
+            <label>Descrição</label>
+            <InputText class="form-control" @bind-Value="obj.Descricao" />
+        </div>
+        <div class="form-group">
+            <label>Preço unitário</label>
+            <InputNumber typeof="decimal" class="form-control" @bind-Value="obj.PrecoUnitario" />
+        </div>
+        <div class="form-group">
+            <label>Observações</label>
+            <InputTextArea class="form-control" @bind-Value="obj.Observacoes" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning me-2">
+            @(string.IsNullOrEmpty(regMatPk) ? "Adicionar" : "Atualizar")
+        </button>
+        @if (!string.IsNullOrEmpty(regMatPk))
+        {
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string assistenciaPk { get; set; }
+    [Parameter]
+    public string regMatPk { get; set; }  // Opcional
+
+    private RegistoMaterial obj { get; set; } = new RegistoMaterial();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(assistenciaPk))
+        {
+            // Se for atualização
+            if (!string.IsNullOrEmpty(regMatPk))
+            {
+                int mPk = int.Parse(assistenciaPk);
+                Guid cPk = Guid.Parse(regMatPk);
+                var result = await RegMatService.GetRegMatByIdCliente(mPk, cPk);
+                if (result != null)
+                {
+                    obj = result;
+                }
+                else
+                {
+                    Message = "RegistoMaterial não encontrada.";
+                }
+            }
+            else //se for novo
+            {
+
+            }
+        }
+        else
+        {
+            Message = "Assistencia não informado.";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        int assistenciaId = int.Parse(assistenciaPk);
+        if (string.IsNullOrEmpty(regMatPk))
+        {
+            // Inserir nova morada para o cliente
+            result = await RegMatService.AddRegMatToClient(assistenciaId, obj);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid cPk = Guid.Parse(regMatPk);
+            result = await RegMatService.UpdateRegMatToCliente(assistenciaId, cPk, obj);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar o RegistoMaterial.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteAssistencia()
+    {
+        if (!string.IsNullOrEmpty(regMatPk))
+        {
+            int mPk = int.Parse(assistenciaPk);
+            Guid cPk = Guid.Parse(regMatPk);
+            bool result = await RegMatService.DeleteRegMatToCliente(mPk, cPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+            }
+            else
+            {
+                Message = "Erro ao eliminar RegistoMaterial.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+    }
+}

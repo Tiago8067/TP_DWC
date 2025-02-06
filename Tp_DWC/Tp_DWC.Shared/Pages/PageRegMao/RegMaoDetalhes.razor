@@ -1,0 +1,149 @@
+﻿@page "/regmaodetalhes"
+@page "/regmaodetalhes/{clientePk}/{assistenciaPk}/{regMaoPk?}"
+@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.RegistoMaoDeObraService
+@inject IRegMaoService RegMaoService
+@inject NavigationManager NavigationManager
+
+@if (string.IsNullOrEmpty(assistenciaPk))
+{
+    <p>Assistência não informado.</p>
+}
+else
+{
+    @if (string.IsNullOrEmpty(regMaoPk))
+    {
+        <PageTitle>Adicionar Novo Registo de Mão de Obra</PageTitle>
+        <h3>Adicionar Novo Registo de Mão de Obra</h3>
+    }
+    else
+    {
+        <PageTitle>Atualizar Registo de Mão de Obra</PageTitle>
+        <h3>Atualizar Registo de Mão de Obra</h3>
+    }
+
+    <EditForm Model="@obj" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+        <div class="form-group">
+            <label>Quantidade (nº de horas)</label>
+            <InputNumber typeof="int" class="form-control" @bind-Value="obj.QuantidadeHoras" />
+        </div>
+        <div class="form-group">
+            <label>Descrição</label>
+            <InputText class="form-control" @bind-Value="obj.Descricao" />
+        </div>
+        <div class="form-group">
+            <label>Preço unitário</label>
+            <InputNumber typeof="decimal" class="form-control" @bind-Value="obj.PrecoUnitario" />
+        </div>
+        <div class="form-group">
+            <label>Observações</label>
+            <InputTextArea class="form-control" @bind-Value="obj.Observacoes" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-warning me-2">
+            @(string.IsNullOrEmpty(regMaoPk) ? "Adicionar" : "Atualizar")
+        </button>
+        @if (!string.IsNullOrEmpty(regMaoPk))
+        {
+            <button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar</button>
+        }
+        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
+        <p style="color: red;">@Message</p>
+    </EditForm>
+}
+
+@code {
+    [Parameter]
+    public string clientePk { get; set; }
+    [Parameter]
+    public string assistenciaPk { get; set; }
+    [Parameter]
+    public string regMaoPk { get; set; }  // Opcional
+
+    private RegistoMaoDeObra obj { get; set; } = new RegistoMaoDeObra();
+    private string Message = string.Empty;
+
+    protected async override Task OnInitializedAsync()
+    {
+        if (!string.IsNullOrEmpty(assistenciaPk))
+        {
+            // Se for atualização 
+            if (!string.IsNullOrEmpty(regMaoPk))
+            {
+                int mPk = int.Parse(assistenciaPk);
+                Guid cPk = Guid.Parse(regMaoPk);
+                var result = await RegMaoService.GetRegMaoByIdCliente(mPk, cPk);
+                if (result != null)
+                {
+                    obj = result;
+                }
+                else
+                {
+                    Message = "RegistoMaoDeObra não encontrada.";
+                }
+            }
+            else //se for novo 
+            {
+
+            }
+        }
+        else
+        {
+            Message = "Assistencia não informado.";
+        }
+    }
+
+    private async Task HandleValidRequest()
+    {
+        bool result;
+        int assistenciaId = int.Parse(assistenciaPk);
+        if (string.IsNullOrEmpty(regMaoPk))
+        {
+            // Inserir nova morada para o cliente
+            result = await RegMaoService.AddRegMaoToClient(assistenciaId, obj);
+        }
+        else
+        {
+            // Atualizar a morada do cliente
+            Guid cPk = Guid.Parse(regMaoPk);
+            result = await RegMaoService.UpdateRegMaoToCliente(assistenciaId, cPk, obj);
+        }
+
+        if (result)
+        {
+            NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+        }
+        else
+        {
+            Message = "Falha ao salvar o RegistoMaoDeObra.";
+        }
+    }
+
+    private void HandleInvalidRequest()
+    {
+        Message = "Alguns dados não foram validados corretamente.";
+    }
+
+    private async Task DeleteAssistencia()
+    {
+        if (!string.IsNullOrEmpty(regMaoPk))
+        {
+            int mPk = int.Parse(assistenciaPk);
+            Guid cPk = Guid.Parse(regMaoPk);
+            bool result = await RegMaoService.DeleteRegMaoToCliente(mPk, cPk);
+            if (result)
+            {
+                NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+            }
+            else
+            {
+                Message = "Erro ao eliminar RegistoMaoDeObra.";
+            }
+        }
+    }
+
+    private void GoBack()
+    {
+        NavigationManager.NavigateTo($"/assistenciadetalhes/{clientePk}/{assistenciaPk}");
+    }
+}

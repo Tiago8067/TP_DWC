@@ -23,8 +23,15 @@
 
   <ItemGroup>
     <Folder Include="Data\Migrations\" />
-    <Folder Include="Pages\PageRegMat\" />
-    <Folder Include="Pages\PageRegMao\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="Pages\PageRegMao\RegMaoDetalhes.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\PageRegMao\RegMaoList.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -17,13 +17,13 @@
     AdditionalButtons="RenderAdditionalButtons">
 </Tp_DWC.Shared.Components.ComponentTable>
 
-<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes de Registo Fotográfico da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
     <BodyContent>
         @if (itemSelected != null)
         {
-            <p><strong>Número Interno:</strong> <img src="@itemSelected.Foto" style="width:200px;" /></p>
-            <p><strong>Data de registo da assistência:</strong> @itemSelected.Observacoes</p>
-            <p><strong>Data de previsão da resolução:</strong> @itemSelected.DataRegisto</p>
+            <p><strong>Foto:</strong> <img src="@itemSelected.Foto" style="width:200px;" /></p>
+            <p><strong>Observações:</strong> @itemSelected.Observacoes</p>
+            <p><strong>Data de registo:</strong> @itemSelected.DataRegisto</p>
         }
     </BodyContent>
 </Tp_DWC.Shared.Components.ComponentModal>

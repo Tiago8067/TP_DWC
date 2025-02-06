@@ -96,6 +96,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVJlZ0ZvdFxSZWdGb3RMaXN0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageRegMao/RegMaoDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVJlZ01hb1xSZWdNYW9EZXRhbGhlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageRegMao/RegMaoList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVJlZ01hb1xSZWdNYW9MaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageRegMat/RegMatDetalhes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVJlZ01hdFxSZWdNYXREZXRhbGhlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageRegMat/RegMatList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZVJlZ01hdFxSZWdNYXRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,90 @@
+﻿@using Tp_DWC.Shared.Models
+
+<h3>
+    Registo de Mão de Obra da Assistência
+</h3>
+
+<a href="@($"/regmaodetalhes/{clientePk}/{assistenciaPk}")" class="btn btn-outline-success">
+	Adicionar Novo 
+</a>
+
+<br />
+
+<Tp_DWC.Shared.Components.ComponentTable Items="list"
+    Headers="headers"
+    Columns="columns"
+    EditCallback="EditClienteCallback"
+    AdditionalButtons="RenderAdditionalButtons">
+</Tp_DWC.Shared.Components.ComponentTable>
+
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes de Registo de Mão de Obra da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
+    <BodyContent>
+        @if (itemSelected != null)
+        {
+            <p><strong>Quantidade (nº de horas):</strong> @itemSelected.QuantidadeHoras</p>
+            <p><strong>Descrição:</strong> @itemSelected.Descricao</p>
+            <p><strong>Preço unitário:</strong> @itemSelected.PrecoUnitario</p>
+            <p><strong>Preço Total:</strong> @itemSelected.PrecoTotal</p>
+            <p><strong>Observações:</strong> @itemSelected.Observacoes</p>
+            <p><strong>Data do registo:</strong> @itemSelected.DataRegisto</p>
+        }
+    </BodyContent>
+</Tp_DWC.Shared.Components.ComponentModal>
+
+@code {
+    [Parameter]
+    public List<RegistoMaoDeObra> list { get; set; }
+
+    [Parameter]
+    public string assistenciaPk { get; set; }
+
+    [Parameter]
+    public string clientePk { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+    }
+
+    public List<string> headers { get; set; } = new List<string> { "QTD (nº H.)", "Preço unitário", "Preço Total", "Data de registo" };
+    public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
+    {
+        item => ((RegistoMaoDeObra)item).QuantidadeHoras,
+        item => ((RegistoMaoDeObra)item).PrecoUnitario,
+        item => ((RegistoMaoDeObra)item).PrecoTotal,
+        item => ((RegistoMaoDeObra)item).DataRegisto
+    };
+    private string EditClienteCallback(object item)
+    {
+        if (item is RegistoMaoDeObra obj)
+        {
+            return $"/regmaodetalhes/{clientePk}/{obj.AssistenciaId}/{obj.PK_RegistoMaoDeObra}";
+        }
+        return "#";
+    }
+
+    public RegistoMaoDeObra itemSelected { get; set; }
+    public bool IsModalOpen { get; set; } = false;
+    private void OpenModal(object item)
+    {
+        if (item is RegistoMaoDeObra obj)
+        {
+            itemSelected = obj;
+            IsModalOpen = true;
+        }
+    }
+
+    private void CloseModal()
+    {
+        IsModalOpen = false;
+        itemSelected = null;
+    }
+
+    private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
+    {
+        __builder.OpenElement(0, "button");
+        __builder.AddAttribute(1, "class", "btn btn-info ms-2");
+        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        __builder.AddContent(3, "Ver Detalhes");
+        __builder.CloseElement();
+    };
+}

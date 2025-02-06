@@ -7,173 +7,170 @@
 
 @if (string.IsNullOrEmpty(clientePk))
 {
-    <p>Cliente não informado.</p>
+	<p>Cliente não informado.</p>
 }
 else
 {
-    @if (string.IsNullOrEmpty(assistenciaPk))
-    {
-        <PageTitle>Adicionar Nova Assistência</PageTitle>
-        <h3>Adicionar Nova Assistência</h3>
-    }
-    else
-    {
-        <PageTitle>Atualizar Assistência</PageTitle>
-        <h3>Atualizar Assistência</h3>
-    }
+	@if (string.IsNullOrEmpty(assistenciaPk))
+	{
+		<PageTitle>Adicionar Nova Assistência</PageTitle>
+		<h3>Adicionar Nova Assistência</h3>
+	}
+	else
+	{
+		<PageTitle>Atualizar Assistência</PageTitle>
+		<h3>Atualizar Assistência</h3>
+	}
+	<div class="row">
+		<EditForm Model="@assis" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
+			<div class="form-group">
+				<label>Data de previsão da resolução</label>
+				<InputDate class="form-control" @bind-Value="assis.DataPrevisaoResolucao" />
+			</div>
+			<div class="form-group">
+				<label>Data de previsão de entrega</label>
+				<InputDate class="form-control" @bind-Value="assis.DataPrevisaoEntrega" />
+			</div>
+			<div class="form-group">
+				<label>Produto (breve descrição)</label>
+				<InputText class="form-control" @bind-Value="assis.DescricaoProduto" />
+			</div>
+			<div class="form-group">
+				<label>Descrição do problema (pelo cliente)</label>
+				<InputText class="form-control" @bind-Value="assis.DescricaoProblema" />
+			</div>
+			<div class="form-group">
+				<label>Observações</label>
+				<InputText class="form-control" @bind-Value="assis.Observacoes" />
+			</div>
+			<br />
+			<button type="submit" class="btn btn-warning me-2">
+				@(string.IsNullOrEmpty(assistenciaPk) ? "Adicionar Assistência" : "Atualizar Assistência")
+			</button>
+			@if (!string.IsNullOrEmpty(assistenciaPk))
+			{
+				<button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar Assistência</button>
+			}
+			<button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
+			<p style="color: red;">@Message</p>
+		</EditForm>
 
-    <EditForm Model="@assis" OnValidSubmit="@HandleValidRequest" OnInvalidSubmit="@HandleInvalidRequest">
-        <div class="form-group">
-            <label>Data de previsão da resolução</label>
-            <InputDate class="form-control" @bind-Value="assis.DataPrevisaoResolucao" />
-        </div>
-        <div class="form-group">
-            <label>Data de previsão de entrega</label>
-            <InputDate class="form-control" @bind-Value="assis.DataPrevisaoEntrega" />
-        </div>
-        <div class="form-group">
-            <label>Produto (breve descrição)</label>
-            <InputText class="form-control" @bind-Value="assis.DescricaoProduto" />
-        </div>
-        <div class="form-group">
-            <label>Descrição do problema (pelo cliente)</label>
-            <InputText class="form-control" @bind-Value="assis.DescricaoProblema" />
-        </div>
-        <div class="form-group">
-            <label>Observações</label>
-            <InputText class="form-control" @bind-Value="assis.Observacoes" />
-        </div>
-        <br />
-        <button type="submit" class="btn btn-warning me-2">
-            @(string.IsNullOrEmpty(assistenciaPk) ? "Adicionar Assistência" : "Atualizar Assistência")
-        </button>
-        @if (!string.IsNullOrEmpty(assistenciaPk))
-        {
-            <button type="button" class="btn btn-danger me-2" @onclick="DeleteAssistencia">Eliminar Assistência</button>
-        }
-        <button type="button" class="btn btn-primary" @onclick="GoBack">Voltar Atrás</button>
-        <p style="color: red;">@Message</p>
-    </EditForm>
+		@if (!string.IsNullOrEmpty(assistenciaPk))
+		{
+			<Tp_DWC.Shared.Pages.PageRegFot.RegFotList list="@assis.RegistosFotograficos"
+													   clientePk="@clientePk"
+													   assistenciaPk="@assistenciaPk" />
 
-    @if (!string.IsNullOrEmpty(assistenciaPk))
-    {
-        <!--Integrar Moradas deste Cliente-->
-        <Tp_DWC.Shared.Pages.PageRegFot.RegFotList list="@assis.RegistosFotograficos"
-                                                   clientePk="@clientePk"
-                                                   assistenciaPk="@assistenciaPk" />
+			<Tp_DWC.Shared.Pages.PageRegMao.RegMaoList list="@assis.RegistosMaoDeObra"
+													   clientePk="@clientePk"
+													   assistenciaPk="@assistenciaPk" />
 
-        <!--Integrar Contactos deste Cliente-->
-        @* <Tp_DWC.Shared.Pages.PageContacto.ContactosList contactos="@Cliente.Contactos"
-                                                        clientePk="@Pk" />
+			<Tp_DWC.Shared.Pages.PageRegMat.RegMatList list="@assis.RegistosMateriais"
+													   clientePk="@clientePk"
+													   assistenciaPk="@assistenciaPk" />
 
-        <!--Integrar Emails deste Cliente-->
-        <Tp_DWC.Shared.Pages.PageEmail.EmailsList emails="@Cliente.Emails"
-                                                  clientePk="@Pk" />
-
-        <!--Integrar Emails deste Cliente-->
-        <Tp_DWC.Shared.Pages.PageAssistencia.AssistenciaList assis="@Cliente.Assistencias"
-                                                             clientePk="@Pk" /> *@
-    }
+		}
+	</div>
 }
 
 @code {
-    [Parameter]
-    public string clientePk { get; set; }
-    [Parameter]
-    public string assistenciaPk { get; set; }  // Opcional
+	[Parameter]
+	public string clientePk { get; set; }
+	[Parameter]
+	public string assistenciaPk { get; set; }  // Opcional
 
-    private Assistencia assis { get; set; } = new Assistencia();
-    private string Message = string.Empty;
+	private Assistencia assis { get; set; } = new Assistencia();
+	private string Message = string.Empty;
 
-    protected async override Task OnInitializedAsync()
-    {
-        if (!string.IsNullOrEmpty(clientePk))
-        {
-            // Se for atualização (moradaPk informado), obtém a morada
-            if (!string.IsNullOrEmpty(assistenciaPk))
-            {
-                Guid cPk = Guid.Parse(clientePk);
-                int mPk = int.Parse(assistenciaPk);
-                var result = await AssistenciaService.GetAssistenciaByIdCliente(cPk, mPk);
-                if (result != null)
-                {
-                    assis = result;
-                }
-                else
-                {
-                    Message = "Assistência não encontrada.";
-                }
-            }
-            else //se for nova assistencia 
-            {
-                // Se o campo estiver com o valor padrão (DateTime.MinValue), atribua DateTime.Now
-                if (assis.DataPrevisaoResolucao == default(DateTime))
-                {
-                    assis.DataPrevisaoResolucao = DateTime.Now;
-                }
-                if (assis.DataPrevisaoEntrega == default(DateTime))
-                {
-                    assis.DataPrevisaoEntrega = DateTime.Now;
-                }
-            }
-        }
-        else
-        {
-            Message = "Cliente não informado.";
-        }
-    }
+	protected async override Task OnInitializedAsync()
+	{
+		if (!string.IsNullOrEmpty(clientePk))
+		{
+			// Se for atualização (moradaPk informado), obtém a morada
+			if (!string.IsNullOrEmpty(assistenciaPk))
+			{
+				Guid cPk = Guid.Parse(clientePk);
+				int mPk = int.Parse(assistenciaPk);
+				var result = await AssistenciaService.GetAssistenciaByIdCliente(cPk, mPk);
+				if (result != null)
+				{
+					assis = result;
+				}
+				else
+				{
+					Message = "Assistência não encontrada.";
+				}
+			}
+			else //se for nova assistencia
+			{
+				// Se o campo estiver com o valor padrão (DateTime.MinValue), atribua DateTime.Now
+				if (assis.DataPrevisaoResolucao == default(DateTime))
+				{
+					assis.DataPrevisaoResolucao = DateTime.Now;
+				}
+				if (assis.DataPrevisaoEntrega == default(DateTime))
+				{
+					assis.DataPrevisaoEntrega = DateTime.Now;
+				}
+			}
+		}
+		else
+		{
+			Message = "Cliente não informado.";
+		}
+	}
 
-    private async Task HandleValidRequest()
-    {
-        bool result;
-        Guid clienteId = Guid.Parse(clientePk);
-        if (string.IsNullOrEmpty(assistenciaPk))
-        {
-            // Inserir nova morada para o cliente
-            result = await AssistenciaService.AddAssistenciaToCliente(clienteId, assis);
-        }
-        else
-        {
-            // Atualizar a morada do cliente
-            int mPk = int.Parse(assistenciaPk);
-            result = await AssistenciaService.UpdateAssistenciaToCliente(clienteId, mPk, assis);
-        }
+	private async Task HandleValidRequest()
+	{
+		bool result;
+		Guid clienteId = Guid.Parse(clientePk);
+		if (string.IsNullOrEmpty(assistenciaPk))
+		{
+			// Inserir nova morada para o cliente
+			result = await AssistenciaService.AddAssistenciaToCliente(clienteId, assis);
+		}
+		else
+		{
+			// Atualizar a morada do cliente
+			int mPk = int.Parse(assistenciaPk);
+			result = await AssistenciaService.UpdateAssistenciaToCliente(clienteId, mPk, assis);
+		}
 
-        if (result)
-        {
-            NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
-        }
-        else
-        {
-            Message = "Falha ao salvar o assistencia.";
-        }
-    }
+		if (result)
+		{
+			NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+		}
+		else
+		{
+			Message = "Falha ao salvar o assistencia.";
+		}
+	}
 
-    private void HandleInvalidRequest()
-    {
-        Message = "Alguns dados não foram validados corretamente.";
-    }
+	private void HandleInvalidRequest()
+	{
+		Message = "Alguns dados não foram validados corretamente.";
+	}
 
-    private async Task DeleteAssistencia()
-    {
-        if (!string.IsNullOrEmpty(assistenciaPk))
-        {
-            Guid clienteId = Guid.Parse(clientePk);
-            int mPk = int.Parse(assistenciaPk);
-            bool result = await AssistenciaService.DeleteAssistenciaToCliente(clienteId, mPk);
-            if (result)
-            {
-                NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
-            }
-            else
-            {
-                Message = "Erro ao eliminar assistencia.";
-            }
-        }
-    }
+	private async Task DeleteAssistencia()
+	{
+		if (!string.IsNullOrEmpty(assistenciaPk))
+		{
+			Guid clienteId = Guid.Parse(clientePk);
+			int mPk = int.Parse(assistenciaPk);
+			bool result = await AssistenciaService.DeleteAssistenciaToCliente(clienteId, mPk);
+			if (result)
+			{
+				NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+			}
+			else
+			{
+				Message = "Erro ao eliminar assistencia.";
+			}
+		}
+	}
 
-    private void GoBack()
-    {
-        NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
-    }
+	private void GoBack()
+	{
+		NavigationManager.NavigateTo($"/clientedetalhes/{clientePk}");
+	}
 }

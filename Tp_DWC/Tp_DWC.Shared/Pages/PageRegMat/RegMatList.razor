@@ -1,0 +1,90 @@
+﻿@using Tp_DWC.Shared.Models
+
+<h3>
+    Registo de Material da Assistência
+</h3>
+
+<a href="@($"/regmatdetalhes/{clientePk}/{assistenciaPk}")" class="btn btn-outline-success">
+    Adicionar Novo
+</a>
+
+<br />
+
+<Tp_DWC.Shared.Components.ComponentTable Items="list"
+                                         Headers="headers"
+                                         Columns="columns"
+                                         EditCallback="EditClienteCallback"
+                                         AdditionalButtons="RenderAdditionalButtons">
+</Tp_DWC.Shared.Components.ComponentTable>
+
+<Tp_DWC.Shared.Components.ComponentModal Title="Detalhes de Registo de Material da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
+    <BodyContent>
+        @if (itemSelected != null)
+        {
+            <p><strong>Quantidade (de material):</strong> @itemSelected.QuantidadeMaterial</p>
+            <p><strong>Descrição:</strong> @itemSelected.Descricao</p>
+            <p><strong>Preço unitário:</strong> @itemSelected.PrecoUnitario</p>
+            <p><strong>Preço Total:</strong> @itemSelected.PrecoTotal</p>
+            <p><strong>Observações:</strong> @itemSelected.Observacoes</p>
+            <p><strong>Data do registo:</strong> @itemSelected.DataRegisto</p>
+        }
+    </BodyContent>
+</Tp_DWC.Shared.Components.ComponentModal>
+
+@code {
+    [Parameter]
+    public List<RegistoMaterial> list { get; set; }
+
+    [Parameter]
+    public string assistenciaPk { get; set; }
+
+    [Parameter]
+    public string clientePk { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+    }
+
+    public List<string> headers { get; set; } = new List<string> { "QTD (material)", "Preço unitário", "Preço Total", "Data de registo" };
+    public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
+    {
+        item => ((RegistoMaterial)item).QuantidadeMaterial,
+        item => ((RegistoMaterial)item).PrecoUnitario,
+        item => ((RegistoMaterial)item).PrecoTotal,
+        item => ((RegistoMaterial)item).DataRegisto
+    };
+    private string EditClienteCallback(object item)
+    {
+        if (item is RegistoMaterial obj)
+        {
+            return $"/regmatdetalhes/{clientePk}/{obj.AssistenciaId}/{obj.PK_RegistoMaterial}";
+        }
+        return "#";
+    }
+
+    public RegistoMaterial itemSelected { get; set; }
+    public bool IsModalOpen { get; set; } = false;
+    private void OpenModal(object item)
+    {
+        if (item is RegistoMaterial obj)
+        {
+            itemSelected = obj;
+            IsModalOpen = true;
+        }
+    }
+
+    private void CloseModal()
+    {
+        IsModalOpen = false;
+        itemSelected = null;
+    }
+
+    private RenderFragment<object> RenderAdditionalButtons => item => __builder =>
+    {
+        __builder.OpenElement(0, "button");
+        __builder.AddAttribute(1, "class", "btn btn-info ms-2");
+        __builder.AddAttribute(2, "onclick", EventCallback.Factory.Create(this, () => OpenModal(item)));
+        __builder.AddContent(3, "Ver Detalhes");
+        __builder.CloseElement();
+    };
+}
