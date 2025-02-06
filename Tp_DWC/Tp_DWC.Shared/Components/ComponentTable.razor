@@ -1,9 +1,13 @@
-﻿
+﻿@* 
 <table class="table">
     <thead>
         <tr>
             @foreach (var header in Headers)
             {
+                if (@header.Equals("Foto", StringComparison.OrdinalIgnoreCase))
+                {
+                    auxHeaderFoto = @header;
+                }
                 <th>@header</th>
             }
             <th>Ações</th>
@@ -15,7 +19,84 @@
             <tr>
                 @foreach (var column in Columns)
                 {
-                    <td>@column(item)</td>
+                    if (auxHeaderFoto.Equals("Foto", StringComparison.OrdinalIgnoreCase)){
+                        <img src="@column(item)" alt="Foto" style="max-width: 100px;" />
+                    }
+                    else {
+                        <td>@column(item)</td>
+                    }
+                }
+                <td>
+                    <a href="@EditCallback(item)" class="btn btn-success">Editar</a>
+                    @if (DeleteCallback.HasDelegate)
+                    {
+                        <button @onclick="() => DeleteCallback.InvokeAsync(item)" class="btn btn-danger">Apagar</button>
+                    }
+                    @if (AdditionalButtons != null)
+                    {
+                        @AdditionalButtons(item)
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public IEnumerable<object> Items { get; set; }
+
+    [Parameter]
+    public IEnumerable<string> Headers { get; set; }
+
+    [Parameter]
+    public IEnumerable<Func<object, object>> Columns { get; set; }
+
+    [Parameter]
+    public Func<object, string> EditCallback { get; set; }
+
+    [Parameter]
+    public EventCallback<object> DeleteCallback { get; set; }
+
+    [Parameter]
+    public RenderFragment<object> AdditionalButtons { get; set; }
+
+    public string auxHeaderFoto = "";
+} *@
+
+<table class="table">
+    <thead>
+        <tr>
+            @for (int i = 0; i < Headers.Count(); i++)
+            {
+                <th>@Headers.ElementAt(i)</th>
+            }
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Items)
+        {
+            <tr>
+                @for (int i = 0; i < Columns.Count(); i++)
+                {
+                    <td>
+                        @{
+                            // Obtém o valor da coluna para o item atual
+                            var value = Columns.ElementAt(i)(item);
+                            // Obtém o header correspondente
+                            var header = Headers.ElementAt(i);
+                        }
+                        @if (header.Equals("Foto", StringComparison.OrdinalIgnoreCase))
+                        {
+                            // Se o header for "Foto", renderize uma tag <img> object-fit: contain; cover
+                            <img src="@value" alt="Foto" class="rounded-circle" style="width: 100px; height: 100px; object-fit:cover;" />
+                        }
+                        else
+                        {
+                            @value
+                        }
+                    </td>
                 }
                 <td>
                     <a href="@EditCallback(item)" class="btn btn-success">Editar</a>

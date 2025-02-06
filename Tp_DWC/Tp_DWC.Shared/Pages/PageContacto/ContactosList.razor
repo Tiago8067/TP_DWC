@@ -36,7 +36,7 @@
 	{
 	}
 
-	public List<string> headers { get; set; } = new List<string> { "Tipo", "Numero" };
+	public List<string> headers { get; set; } = new List<string> { "Tipo de Contacto", "Numero" };
 	public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
 	{
 		item => ((Contacto)item).TipoContacto,

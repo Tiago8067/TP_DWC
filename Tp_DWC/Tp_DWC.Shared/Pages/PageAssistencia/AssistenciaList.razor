@@ -41,13 +41,14 @@
     {
     }
 
-    public List<string> headers { get; set; } = new List<string> { "Número Interno", "Data de registo", "Data de previsão da resolução", "Data de previsão de entrega" };
+    // public List<string> headers { get; set; } = new List<string> { "Número Interno", "Data de registo", "Data de previsão da resolução", "Data de previsão de entrega" };
+    public List<string> headers { get; set; } = new List<string> { "Número Interno", "Data de registo" };
     public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
     {
         item => ((Assistencia)item).NumeroInterno,
-        item => ((Assistencia)item).DataCriacao,
-        item => ((Assistencia)item).DataPrevisaoResolucao.ToString("dd/MM/yyyy"),
-        item => ((Assistencia)item).DataPrevisaoEntrega.ToString("dd/MM/yyyy")
+        item => ((Assistencia)item).DataCriacao//,
+        // item => ((Assistencia)item).DataPrevisaoResolucao.ToString("dd/MM/yyyy"),
+        // item => ((Assistencia)item).DataPrevisaoEntrega.ToString("dd/MM/yyyy")
     };
     private string EditClienteCallback(object item)
     {
