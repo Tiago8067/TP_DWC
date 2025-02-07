@@ -72,6 +72,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNsaWVudGVcRGV0YWxoZXNDbGllbnRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageContaCorrente/ContaCorrente.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNvbnRhQ29ycmVudGVcQ29udGFDb3JyZW50ZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Utilizador/source/repos/Tp_DWC/Tp_DWC/Tp_DWC.Shared/Pages/PageContacto/ContactosDetalhes.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnZUNvbnRhY3RvXENvbnRhY3Rvc0RldGFsaGVzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

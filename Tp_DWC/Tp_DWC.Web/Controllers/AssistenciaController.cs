@@ -81,6 +81,14 @@ namespace Tp_DWC.Web.Controllers
             return Ok(result);
         }
 
+        [HttpGet("ContaCorrente/{estadoId}/{clientePk}")]
+        public async Task<ActionResult<List<string>>> GetContaCorrente(Guid estadoId, Guid clientePk)
+        {
+            var result = await _assistenciaService.GetContaCorrente(estadoId, clientePk);
+            return Ok(result);
+        }
+
+
 
     }
 }

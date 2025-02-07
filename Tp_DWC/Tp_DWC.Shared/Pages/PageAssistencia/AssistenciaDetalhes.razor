@@ -96,20 +96,21 @@ else
 
 		@if (!string.IsNullOrEmpty(assistenciaPk))
 		{
+			<br />
 			<Tp_DWC.Shared.Pages.PageRegFot.RegFotList list="@assis.RegistosFotograficos"
 			clientePk="@clientePk"
 			assistenciaPk="@assistenciaPk" />
-
+			<br />
 			<Tp_DWC.Shared.Pages.PageRegMao.RegMaoList list="@assis.RegistosMaoDeObra"
 			clientePk="@clientePk"
 			assistenciaPk="@assistenciaPk" />
-
+			<br />
 			<Tp_DWC.Shared.Pages.PageRegMat.RegMatList list="@assis.RegistosMateriais"
 			clientePk="@clientePk"
 			assistenciaPk="@assistenciaPk" />
-
+			<br />
 			<Tp_DWC.Shared.Pages.PageHistoricoEstado.HistoricoEstadoList list="@assis.MudancasEstado" />
-
+			<br />
 		}
 	</div>
 }

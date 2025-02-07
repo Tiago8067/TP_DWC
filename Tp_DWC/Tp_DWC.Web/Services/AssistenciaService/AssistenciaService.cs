@@ -1,5 +1,6 @@
 ﻿using Tp_DWC.Shared.Data;
 using Tp_DWC.Shared.Models;
+using Tp_DWC.Shared.Models.EstadoModels;
 using Tp_DWC.Web.Services.EmailService;
 
 namespace Tp_DWC.Web.Services.AssistenciaService
@@ -105,5 +106,15 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             await _context.SaveChangesAsync();
             return await _context.Assistencias.ToListAsync();
         }
+
+        public async Task<List<string>> GetContaCorrente(Guid estadoId, Guid clientePk)
+        {
+            return await _context.Assistencias
+                .Where(a => a.ClienteId == clientePk && a.EstadoId == estadoId)
+                .Select(a => $"{a.NumeroInterno} | {a.DataCriacao:dd/MM/yyyy} | {(a.DataConclusao.HasValue ? a.DataConclusao.Value.ToString("dd/MM/yyyy") : "N/A")}")
+                .ToListAsync();
+        }
+
+
     }
 }

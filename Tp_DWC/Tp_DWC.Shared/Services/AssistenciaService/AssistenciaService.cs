@@ -104,6 +104,20 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
             }
         }
 
+        public async Task<List<string>?> GetContaCorrente(Guid estadoId, Guid clientePk)
+        {
+            try
+            {
+                return await _httpClient.GetFromJsonAsync<List<string>>($"api/Assistencia/ContaCorrente/{estadoId}/{clientePk}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao obter informações da ContaCorrente: {ex.Message}");
+                throw;
+            }
+        }
+
+
 
     }
 }
