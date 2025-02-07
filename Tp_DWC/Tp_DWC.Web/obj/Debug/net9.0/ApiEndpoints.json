@@ -621,6 +621,32 @@
     ]
   },
   {
+    "ContainingType": "Tp_DWC.Web.Controllers.EstadoController",
+    "Method": "GetEstadoDescricao",
+    "RelativePath": "api/Estado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tp_DWC.Web.Controllers.MoradaController",
     "Method": "GetAllMoradas",
     "RelativePath": "api/Morada",

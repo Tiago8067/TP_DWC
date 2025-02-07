@@ -1,18 +1,20 @@
 ﻿@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.EstadoService
+@inject IEstadoService EstadoService
 
 <h3>Assistências do Cliente</h3>
 
 <a href="@($"/assistenciadetalhes/{clientePk}")" class="btn btn-outline-success">
-	Adicionar uma Nova Assistência
+    Adicionar uma Nova Assistência
 </a>
 
 <br />
 
 <Tp_DWC.Shared.Components.ComponentTable Items="assis"
-    Headers="headers"
-    Columns="columns"
-    EditCallback="EditClienteCallback"
-    AdditionalButtons="RenderAdditionalButtons">
+Headers="headers"
+Columns="columns"
+EditCallback="EditClienteCallback"
+AdditionalButtons="RenderAdditionalButtons">
 </Tp_DWC.Shared.Components.ComponentTable>
 
 <Tp_DWC.Shared.Components.ComponentModal Title="Detalhes da Assistência" IsOpen="IsModalOpen" OnClose="CloseModal">
@@ -26,7 +28,7 @@
             <p><strong>Produto (breve descrição):</strong> @SelectedAssistencia.DescricaoProduto</p>
             <p><strong>Descrição do problema (pelo cliente):</strong> @SelectedAssistencia.DescricaoProblema</p>
             <p><strong>Observações:</strong> @SelectedAssistencia.Observacoes</p>
-            <p><strong>Estado:</strong> @SelectedAssistencia.Estado?.Descricao</p>
+            <p><strong>Estado:</strong> @descricaoEstado</p>
         }
     </BodyContent>
 </Tp_DWC.Shared.Components.ComponentModal>
@@ -38,6 +40,8 @@
     [Parameter]
     public string clientePk { get; set; }
 
+    private string descricaoEstado = string.Empty;
+
     protected async override Task OnInitializedAsync()
     {
     }
@@ -48,11 +52,15 @@
     public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
     {
         item => ((Assistencia)item).NumeroInterno,
-        item => ((Assistencia)item).DataCriacao,
+        item => ((Assistencia)item).DataCriacao//,
+        // item => ((Assistencia)item).EstadoId
+        // string decricaoEstado = EstadoService.GetEstadoDescricaoById(((Assistencia)item).EstadoId) ?? ""
+        // item => EstadoService.GetEstadoDescricaoById(((Assistencia)item).EstadoId) ?? ""
         // item => ((Assistencia)item).Estado.Descricao
         // item => ((Assistencia)item).DataPrevisaoResolucao.ToString("dd/MM/yyyy"),
         // item => ((Assistencia)item).DataPrevisaoEntrega.ToString("dd/MM/yyyy")
     };
+
     private string EditClienteCallback(object item)
     {
         if (item is Assistencia assis)
@@ -64,10 +72,12 @@
 
     public Assistencia SelectedAssistencia { get; set; }
     public bool IsModalOpen { get; set; } = false;
-    private void OpenModal(object item)
+    private async void OpenModal(object item)
     {
         if (item is Assistencia assistencia)
         {
+
+            descricaoEstado = await EstadoService.GetEstadoDescricaoById(assistencia.EstadoId) ?? "";
             SelectedAssistencia = assistencia;
             IsModalOpen = true;
         }

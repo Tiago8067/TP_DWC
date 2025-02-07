@@ -71,7 +71,10 @@
             {
                 <th>@Headers.ElementAt(i)</th>
             }
-            <th>Ações</th>
+            @if (EditCallback != null || AdditionalButtons != null)
+			{
+				<th>Ações</th>
+			}
         </tr>
     </thead>
     <tbody>
@@ -87,19 +90,39 @@
                             // Obtém o header correspondente
                             var header = Headers.ElementAt(i);
                         }
-                        @if (header.Equals("Foto", StringComparison.OrdinalIgnoreCase))
+                        @if (item is Tp_DWC.Shared.Models.MudancaEstado mudanca)
                         {
-                            // Se o header for "Foto", renderize uma tag <img> object-fit: contain; cover
-                            <img src="@value" alt="Foto" class="rounded-circle" style="width: 100px; height: 100px; object-fit:cover;" />
-                        }
-                        else
-                        {
-                            @value
-                        }
+                            //busca da descricao do estado
+                            var stringValue = value?.ToString();
+                            if (Guid.TryParse(stringValue, out Guid idEstado))
+                            {
+                                <ComponentEstadoDescricao EstadoId="idEstado" />
+                            }
+                            else
+                            {
+                                @value
+                            }
+						}
+						else
+						{
+
+							@if (header.Equals("Foto", StringComparison.OrdinalIgnoreCase))
+							{
+								// Se o header for "Foto", renderize uma tag <img> object-fit: contain; cover
+								<img src="@value" alt="Foto" class="rounded-circle" style="width: 100px; height: 100px; object-fit:cover;" />
+							}
+							else
+							{
+								@value
+							}
+						}
                     </td>
                 }
                 <td>
-                    <a href="@EditCallback(item)" class="btn btn-success">Editar</a>
+                    @if (EditCallback != null)
+                    {
+                        <a href="@EditCallback(item)" class="btn btn-success">Editar</a>
+                    }
                     @if (DeleteCallback.HasDelegate)
                     {
                         <button @onclick="() => DeleteCallback.InvokeAsync(item)" class="btn btn-danger">Apagar</button>
@@ -132,4 +155,5 @@
 
     [Parameter]
     public RenderFragment<object> AdditionalButtons { get; set; }
+
 }

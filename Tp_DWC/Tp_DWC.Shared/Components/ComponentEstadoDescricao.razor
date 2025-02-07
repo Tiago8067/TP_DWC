@@ -1,0 +1,23 @@
+﻿@using Tp_DWC.Shared.Models.EstadoModels
+@inject IEstadoService EstadoService
+
+@if (descricao == null)
+{
+    <span>Carregando...</span>
+}
+else
+{
+    <span>@descricao</span>
+}
+
+@code {
+    [Parameter]
+    public Guid EstadoId { get; set; }
+
+    private string? descricao;
+
+    protected override async Task OnInitializedAsync()
+    {
+        descricao = await EstadoService.GetEstadoDescricaoById(EstadoId) ?? "N/D";
+    }
+}

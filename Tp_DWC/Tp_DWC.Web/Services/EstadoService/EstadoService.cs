@@ -17,5 +17,12 @@ namespace Tp_DWC.Web.Services.EstadoService
             return await _context.Estados.ToListAsync();
         }
 
+        public async Task<string?> GetEstadoDescricaoById(Guid id)
+        {
+            return await _context.Estados
+                         .Where(e => e.PK_Estado == id)
+                         .Select(e => e.Descricao)
+                         .FirstOrDefaultAsync();
+        }
     }
 }

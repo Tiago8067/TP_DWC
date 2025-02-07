@@ -1,0 +1,30 @@
+﻿@using Tp_DWC.Shared.Models
+@using Tp_DWC.Shared.Services.MudancaEstadoService
+@inject IMudancaEstadoService MudancaEstadoService
+
+<h3>Histórico de Mudanças de Estado</h3>
+
+<br />
+
+<Tp_DWC.Shared.Components.ComponentTable Items="list"
+										 Headers="headers"
+										 Columns="columns">
+</Tp_DWC.Shared.Components.ComponentTable>
+
+@code {
+	[Parameter]
+	public List<MudancaEstado> list { get; set; }
+
+	protected async override Task OnInitializedAsync()
+	{
+	}
+
+	public List<string> headers { get; set; } = new List<string> { "Estado Atual", "Novo Estado", "Data da mudança do estado" };
+	public List<Func<object, object>> columns { get; set; } = new List<Func<object, object>>
+	{
+		item => ((MudancaEstado)item).EstadoAtualId,
+		item => ((MudancaEstado)item).NovoEstadoId,
+		item => ((MudancaEstado)item).DataMudanca
+	};
+
+}

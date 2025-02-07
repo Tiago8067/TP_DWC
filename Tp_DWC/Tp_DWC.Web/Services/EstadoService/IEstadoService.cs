@@ -5,5 +5,6 @@ namespace Tp_DWC.Web.Services.EstadoService
     public interface IEstadoService
     {
         Task<List<Estado>> GetAllEstados();
+        Task<string?> GetEstadoDescricaoById(Guid id);
     }
 }

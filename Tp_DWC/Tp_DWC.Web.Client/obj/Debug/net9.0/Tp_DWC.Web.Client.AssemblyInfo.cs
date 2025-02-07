@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Tp_DWC.Web.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58c265a321d2597f4709e6e54c0e5872d41f1880")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2f49441eb4f41407b75981b71e6068d6d95b559f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Tp_DWC.Web.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tp_DWC.Web.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

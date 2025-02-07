@@ -29,5 +29,23 @@ namespace Tp_DWC.Shared.Services.EstadoService
                 throw;
             }
         }
+
+        public async Task<string?> GetEstadoDescricaoById(Guid id)
+        {
+            try
+            {
+                //return await _httpClient.GetFromJsonAsync<string>($"api/Estado/{id}");
+                // Obtém a resposta como string
+                var result = await _httpClient.GetStringAsync($"api/Estado/{id}");
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao obter descrição do estado: {ex.Message}");
+                throw;
+            }
+        }
+
+
     }
 }

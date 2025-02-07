@@ -20,6 +20,7 @@ namespace Tp_DWC.Web.Services.AssistenciaService
                 .Include(m => m.RegistosMaoDeObra)
                 .Include(m => m.RegistosMateriais)
                 //.Include(a => a.Estado)
+                .Include(m => m.MudancasEstado)
                 .FirstOrDefaultAsync(m => m.ClienteId == clientePk && m.NumeroInterno == assistenciaPk);
         }
 
@@ -30,6 +31,11 @@ namespace Tp_DWC.Web.Services.AssistenciaService
 
             //estado por defeito para testar no inicio
             //assistencia.EstadoId = Guid.Parse("11111111-1111-1111-1111-111111111111");
+            //Guid estadoResolvido = Guid.Parse("44444444-4444-4444-4444-444444444444");
+            //if(assistencia.EstadoId == estadoResolvido)
+            //{
+            //    assistencia.DataConclusao = DateTime.Now;
+            //}
 
             _context.Assistencias.Add(assistencia);
             await _context.SaveChangesAsync();
@@ -65,7 +71,12 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             existingAssistencia.DataPrevisaoResolucao = assistenciaRequest.DataPrevisaoResolucao;
             existingAssistencia.DataPrevisaoEntrega = assistenciaRequest.DataPrevisaoEntrega;
             //se estado for resolvido adicionar data de conclusão
-            //existingAssistencia.DataConclusao = assistenciaRequest.DataConclusao; 
+            //Guid estadoResolvido = Guid.Parse("44444444-4444-4444-4444-444444444444");
+            //if (assistenciaRequest.EstadoId == estadoResolvido)
+            //{
+            //    assistenciaRequest.DataConclusao = DateTime.Now;
+            //}
+            assistenciaRequest.DataConclusao = assistenciaRequest.DataConclusao;
             existingAssistencia.DescricaoProduto = assistenciaRequest.DescricaoProduto;
             existingAssistencia.DescricaoProblema = assistenciaRequest.DescricaoProblema;
             existingAssistencia.Observacoes = assistenciaRequest.Observacoes;

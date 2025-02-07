@@ -108,6 +108,8 @@ else
 			clientePk="@clientePk"
 			assistenciaPk="@assistenciaPk" />
 
+			<Tp_DWC.Shared.Pages.PageHistoricoEstado.HistoricoEstadoList list="@assis.MudancasEstado" />
+
 		}
 	</div>
 }
@@ -149,7 +151,8 @@ else
 				}
 
 				//busca pela descricao do estado atual
-				EstadoAtual = assis.EstadoId.ToString();
+				EstadoAtual = await EstadoService.GetEstadoDescricaoById(assis.EstadoId) ?? "";
+				// EstadoAtual = assis.EstadoId.ToString();
 			}
 			else //se for nova assistencia
 			{
@@ -180,6 +183,13 @@ else
 			// aqui realiza-se a inserção da assistencia, ou seja, primeria assistencia
 			//inserir estado da assistencia ao objeto para guardar
 			assis.EstadoId = selectedEstadoId;
+
+			//para guardar data de conclusão se estado resolvido
+			Guid estadoResolvido = Guid.Parse("44444444-4444-4444-4444-444444444444");
+			if (assis.EstadoId == estadoResolvido)
+			{
+				assis.DataConclusao = DateTime.Now;
+			}
 
 			// Inserir nova asis para o cliente
 			var novaAssis = await AssistenciaService.AddAssistenciaToClienteObj(clienteId, assis);
@@ -222,6 +232,14 @@ else
 
 			// Atualizar a morada do cliente
 			assis.EstadoId = selectedEstadoId;
+
+			//para guardar data de conclusão se estado resolvido
+			Guid estadoResolvido = Guid.Parse("44444444-4444-4444-4444-444444444444");
+			if (assis.EstadoId == estadoResolvido)
+			{
+				assis.DataConclusao = DateTime.Now;
+			}
+
 			result = await AssistenciaService.UpdateAssistenciaToCliente(clienteId, mPk, assis);
 
 		}

@@ -22,5 +22,16 @@ namespace Tp_DWC.Web.Controllers
             return Ok(estados);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<string>> GetEstadoDescricao(Guid id)
+        {
+            var descricao = await _estadoService.GetEstadoDescricaoById(id);
+            if (descricao == null)
+            {
+                return NotFound("Estado não encontrado.");
+            }
+            return Ok(descricao);
+        }
+
     }
 }
