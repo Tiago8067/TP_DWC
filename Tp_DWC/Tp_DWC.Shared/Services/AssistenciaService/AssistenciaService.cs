@@ -42,12 +42,32 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
             }
         }
 
-        public async Task<bool> AddAssistenciaToCliente(Guid clientePk, Assistencia assistencia)
+        public async Task<bool> AddAssistenciaToClienteBool(Guid clientePk, Assistencia assistencia)
         {
             try
             {
                 var response = await _httpClient.PostAsJsonAsync($"api/Assistencia/ByCliente/{clientePk}", assistencia);
                 return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro ao adicionar assistência: {ex.Message}");
+                throw;
+            }
+        }
+
+        public async Task<Assistencia?> AddAssistenciaToClienteObj(Guid clientePk, Assistencia assistencia)
+        {
+            try
+            {
+                var response = await _httpClient.PostAsJsonAsync($"api/Assistencia/ByCliente/{clientePk}", assistencia);
+                if (response.IsSuccessStatusCode)
+                {
+                    // Desserializa o objeto inserido
+                    var result = await response.Content.ReadFromJsonAsync<Assistencia>();
+                    return result;
+                }
+                return null;
             }
             catch (Exception ex)
             {

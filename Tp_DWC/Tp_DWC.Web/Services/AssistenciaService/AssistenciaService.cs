@@ -37,6 +37,18 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             return await _context.Assistencias.ToListAsync();
         }
 
+        public async Task<Assistencia?> AddAssistenciaToClientv2(Guid clientePk, Assistencia assistencia)
+        {
+            assistencia.ClienteId = clientePk;
+            _context.Assistencias.Add(assistencia);
+            await _context.SaveChangesAsync();
+
+            // Opcional: se por algum motivo o objeto não estiver atualizado, você pode recarregá-lo:
+            await _context.Entry(assistencia).ReloadAsync();
+
+            return assistencia;
+        }
+
         public async Task<List<Assistencia>?> UpdateAssistenciaToCliente(Guid clientePk, int assistenciaPk, Assistencia assistenciaRequest)
         {
             // Buscar a morada existente
@@ -57,6 +69,7 @@ namespace Tp_DWC.Web.Services.AssistenciaService
             existingAssistencia.DescricaoProduto = assistenciaRequest.DescricaoProduto;
             existingAssistencia.DescricaoProblema = assistenciaRequest.DescricaoProblema;
             existingAssistencia.Observacoes = assistenciaRequest.Observacoes;
+            existingAssistencia.EstadoId = assistenciaRequest.EstadoId;
 
             try
             {

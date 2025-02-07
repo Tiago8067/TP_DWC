@@ -6,6 +6,7 @@ namespace Tp_DWC.Web.Services.EmailService
     {
         Task<Assistencia?> GetAssistenciaByIdCliente(Guid clientePk, int assistenciaPk);
         Task<List<Assistencia>> AddAssistenciaToClient(Guid clientePk, Assistencia assistencia);
+        Task<Assistencia?> AddAssistenciaToClientv2(Guid clientePk, Assistencia assistencia);
         Task<List<Assistencia>?> UpdateAssistenciaToCliente(Guid clientePk, int assistenciaPk, Assistencia assistenciaRequest);
         Task<List<Assistencia>?> DeleteAssistenciaToCliente(Guid clientePk, int assistenciaPk);
     }

@@ -6,6 +6,7 @@ using Tp_DWC.Shared.Services.ContactoService;
 using Tp_DWC.Shared.Services.EmailService;
 using Tp_DWC.Shared.Services.EstadoService;
 using Tp_DWC.Shared.Services.MoradaService;
+using Tp_DWC.Shared.Services.MudancaEstadoService;
 using Tp_DWC.Shared.Services.RegistoFotograficoService;
 using Tp_DWC.Shared.Services.RegistoMaoDeObraService;
 using Tp_DWC.Shared.Services.RegistoMaterialService;
@@ -32,5 +33,6 @@ builder.Services.AddScoped<IRegFotService, RegFotService>();
 builder.Services.AddScoped<IRegMaoService, RegMaoService>();
 builder.Services.AddScoped<IRegMatService, RegMatService>();
 builder.Services.AddScoped<IEstadoService, EstadoService>();
+builder.Services.AddScoped<IMudancaEstadoService, MudancaEstadoService>();
 
 await builder.Build().RunAsync();

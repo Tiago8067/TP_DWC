@@ -13,6 +13,7 @@ namespace Tp_DWC.Shared.Models
     public class Assistencia
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Gera o id automaticamente
         public int NumeroInterno { get; set; } // Gerado pelo sistema
 
         [Required]

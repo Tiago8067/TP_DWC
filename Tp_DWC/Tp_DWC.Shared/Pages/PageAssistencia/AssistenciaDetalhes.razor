@@ -4,8 +4,10 @@
 @using Tp_DWC.Shared.Models.EstadoModels
 @using Tp_DWC.Shared.Services.AssistenciaService
 @using Tp_DWC.Shared.Services.EstadoService
+@using Tp_DWC.Shared.Services.MudancaEstadoService
 @inject IAssistenciaService AssistenciaService
 @inject IEstadoService EstadoService
+@inject IMudancaEstadoService MudancaEstadoService
 @inject NavigationManager NavigationManager
 
 @if (string.IsNullOrEmpty(clientePk))
@@ -46,16 +48,40 @@ else
 				<label>Observações</label>
 				<InputText class="form-control" @bind-Value="assis.Observacoes" />
 			</div>
-			<div class="form-group">
-				<label>Selecione um Estado</label>
-				<select class="form-select" @bind="selectedEstadoId">
-					<option value="">Selecione um estado</option>
-					@foreach (var estado in estados)
-					{
-						<option value="@estado.PK_Estado">@estado.Descricao</option>
-					}
-				</select>
-			</div>
+
+			@if (string.IsNullOrEmpty(assistenciaPk))
+			{
+				<div class="form-group">
+					<label>Selecione um Estado</label>
+					<select class="form-select" @bind="selectedEstadoId">
+						<option value="">Selecione um estado</option>
+						@foreach (var estado in estados)
+						{
+							<option value="@estado.PK_Estado">@estado.Descricao</option>
+						}
+					</select>
+				</div>
+			}
+			else
+			{
+				<div class="form-group">
+					<label>Estado Atual</label>
+					<InputText class="form-control" @bind-Value="EstadoAtual" readonly />
+				</div>
+				<div class="form-group">
+					<label>Selecione um Novo Estado</label>
+					<select class="form-select" @bind="selectedEstadoId">
+						<option value="">Selecione um estado</option>
+						@foreach (var estado in estados)
+						{
+							<option value="@estado.PK_Estado">@estado.Descricao</option>
+						}
+					</select>
+				</div>
+			}
+
+
+
 			<br />
 			<button type="submit" class="btn btn-warning me-2">
 				@(string.IsNullOrEmpty(assistenciaPk) ? "Adicionar Assistência" : "Atualizar Assistência")
@@ -98,6 +124,9 @@ else
 	private IEnumerable<Estado> estados = new List<Estado>();
 	private Guid selectedEstadoId;
 
+	private MudancaEstado mudancaEstado { get; set; } = new MudancaEstado();
+	private string EstadoAtual = string.Empty;
+
 	protected async override Task OnInitializedAsync()
 	{
 		//preencher a drop com estados
@@ -118,6 +147,9 @@ else
 				{
 					Message = "Assistência não encontrada.";
 				}
+
+				//busca pela descricao do estado atual
+				EstadoAtual = assis.EstadoId.ToString();
 			}
 			else //se for nova assistencia
 			{
@@ -141,19 +173,57 @@ else
 	private async Task HandleValidRequest()
 	{
 		bool result;
+		bool result2;
 		Guid clienteId = Guid.Parse(clientePk);
 		if (string.IsNullOrEmpty(assistenciaPk))
 		{
+			// aqui realiza-se a inserção da assistencia, ou seja, primeria assistencia
+			//inserir estado da assistencia ao objeto para guardar
 			assis.EstadoId = selectedEstadoId;
-			// Inserir nova morada para o cliente
-			result = await AssistenciaService.AddAssistenciaToCliente(clienteId, assis);
+
+			// Inserir nova asis para o cliente
+			var novaAssis = await AssistenciaService.AddAssistenciaToClienteObj(clienteId, assis);
+
+			if (novaAssis != null)
+			{
+				int mPk = novaAssis.NumeroInterno;
+
+				//inserir primeiro estado para o historico de estados
+				mudancaEstado.EstadoAtualId = selectedEstadoId;
+				result2 = await MudancaEstadoService.AddMudEstToClient(mPk, mudancaEstado);
+
+				if (!result2)
+				{
+					//sair e mostrar mensagem 
+					result = false;
+					Message = "Falha ao salvar a mudança de estado.";
+					return;
+				}
+
+			}
+			else 
+			{
+				//sair e mostrar mensagem
+				result = false;
+				return;
+			}
+			result = true;
+
 		}
 		else
 		{
-			assis.EstadoId = selectedEstadoId;
-			// Atualizar a morada do cliente
+
 			int mPk = int.Parse(assistenciaPk);
+
+			//inserir estado para o historico de estados
+			mudancaEstado.EstadoAtualId = assis.EstadoId;
+			mudancaEstado.NovoEstadoId = selectedEstadoId;
+			result = await MudancaEstadoService.AddMudEstToClient(mPk, mudancaEstado);
+
+			// Atualizar a morada do cliente
+			assis.EstadoId = selectedEstadoId;
 			result = await AssistenciaService.UpdateAssistenciaToCliente(clienteId, mPk, assis);
+
 		}
 
 		if (result)
@@ -162,7 +232,7 @@ else
 		}
 		else
 		{
-			Message = "Falha ao salvar o assistencia.";
+			Message += "Falha ao salvar o assistencia.";
 		}
 	}
 

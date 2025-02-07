@@ -11,7 +11,8 @@ namespace Tp_DWC.Shared.Services.AssistenciaService
     {
         Task<Assistencia?> GetAssistenciaByIdCliente(Guid clientePk, int assistenciaPk);
         Task<bool> DeleteAssistenciaToCliente(Guid clientePk, int assistenciaPk);
-        Task<bool> AddAssistenciaToCliente(Guid clientePk, Assistencia assistencia);
+        Task<bool> AddAssistenciaToClienteBool(Guid clientePk, Assistencia assistencia);
+        Task<Assistencia?> AddAssistenciaToClienteObj(Guid clientePk, Assistencia assistencia);
         Task<bool> UpdateAssistenciaToCliente(Guid clientePk, int assistenciaPk, Assistencia assistencia);
     }
 }

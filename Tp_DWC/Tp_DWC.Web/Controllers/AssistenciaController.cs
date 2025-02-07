@@ -33,7 +33,8 @@ namespace Tp_DWC.Web.Controllers
         {
             try
             {
-                var result = await _assistenciaService.AddAssistenciaToClient(clientePk, assistencia);
+                //var result = await _assistenciaService.AddAssistenciaToClient(clientePk, assistencia);
+                var result = await _assistenciaService.AddAssistenciaToClientv2(clientePk, assistencia);
                 return Ok(result);
             }
             catch (Exception ex)

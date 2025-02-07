@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Tp_DWC.Shared.Models.EstadoModels;
 
@@ -18,13 +19,15 @@ namespace Tp_DWC.Shared.Models
         [Required]
         [ForeignKey("EstadoAtual")]
         public Guid EstadoAtualId { get; set; }
-        public Estado EstadoAtual { get; set; }
+        [JsonIgnore]
+        public Estado? EstadoAtual { get; set; }
 
         // Relacionamento com a tabela que vai ter os Estados possiveis
         [Required]
         [ForeignKey("NovoEstado")]
         public Guid NovoEstadoId { get; set; }
-        public Estado NovoEstado { get; set; }
+        [JsonIgnore]
+        public Estado? NovoEstado { get; set; }
 
         [Required]
         public DateTime DataMudanca { get; set; }
@@ -33,6 +36,7 @@ namespace Tp_DWC.Shared.Models
         [Required]
         [ForeignKey("Assistencia")]
         public int AssistenciaId { get; set; }
-        public Assistencia Assistencia { get; set; }
+        [JsonIgnore]  // Isso evita que o ASP.NET Core valide ou serializa essa propriedade
+        public Assistencia? Assistencia { get; set; }
     }
 }

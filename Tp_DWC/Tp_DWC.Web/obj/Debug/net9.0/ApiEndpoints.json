@@ -833,6 +833,68 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Tp_DWC.Web.Controllers.MudancaEstadoController",
+    "Method": "GetMudEstByIdCliente",
+    "RelativePath": "api/MudancaEstado/{assistenciaPk}/{mudEstPk}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mudEstPk",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.MudancaEstado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Tp_DWC.Web.Controllers.MudancaEstadoController",
+    "Method": "AddRegMaoToClient",
+    "RelativePath": "api/MudancaEstado/ByAssis/{assistenciaPk}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "assistenciaPk",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "mudEst",
+        "Type": "Tp_DWC.Shared.Models.MudancaEstado",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Tp_DWC.Shared.Models.MudancaEstado",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Tp_DWC.Web.Controllers.RegFotController",
     "Method": "GetRegFotByIdCliente",
     "RelativePath": "api/RegFot/{assistenciaPk}/{regFotPk}",
